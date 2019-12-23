@@ -22,7 +22,7 @@ FONT = [headerfont], 20, U, #000000
 TEXT = , [name], 0, 0, 100%, 20%
 
 ; Card image - TODO needs refinement
-IMAGE = , [img], 0, 20%, 100%, 40%, 0, P
+IMAGE = , [img], 0, 25%, 100%, 50%, 0, P, 25%
 
 ; Card body
 FONT = [bodyfont], 14, T, #000000
