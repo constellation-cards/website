@@ -1,0 +1,41 @@
+﻿; Source for our list of cards
+DOWNLOAD = https://docs.google.com/spreadsheets/d/1UtVEvYOGJw5yFUugdXLwpXIJ3qEorw5V1rS81YkKj3Y/export?format=xlsx, cards.xlsx
+
+; A custom range
+[all]=1-{(name)}
+
+; Use a serif font for the header, sans-serif for the body,
+; for accessibility
+[headerfont]=Georgia
+[bodyfont]=Verdana
+
+; Printing on 3x5 cards in portrait mode
+CARDSIZE=7.62,12.7
+PAGE=7.62,12.7,PORTRAIT,HVEO,#FFFFFF,[all]
+MARGINS=0,0,0,0
+
+LINKMULTI = num
+LINK = cards.xlsx
+
+; Card header
+FONT = [headerfont], 20, U, #000000
+TEXT = , [name], 0, 0, 100%, 20%
+
+; Card image - TODO needs refinement
+IMAGE = , [img], 0, 20%, 100%, 40%, 0, P
+
+; Card body
+FONT = [bodyfont], 14, , #000000
+TEXT = , [desc], 5%, 15%, 90%, 30%, left, wordwrap
+
+; Card writing prompts
+FONT = [bodyfont], 12, , #000000
+TEXT = , [prompts], 5%, 45%, 90%, 38%, left, wordwrap
+
+; Card icons
+ICON = , T, plus.svg
+ICON = , B, error.svg
+ICON = , X, like-1.svg
+ICONS = , [icons], 0%, 83%, 40%, 20%, 20%, 10%, 0, PN
+
+; TODO custom rules
