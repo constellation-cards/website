@@ -19,27 +19,27 @@ LINK = cards.xlsx
 
 ; Card header
 FONT = [headerfont], 20, U, #000000
-TEXT = , [name], 0, 0, 100%, 20%
+TEXT = [all], [name], 0, 0, 100%, 20%
 
 ; Card image - TODO needs refinement
-IMAGE = , [img], 0, 25%, 100%, 50%, 0, P, 25%
+IMAGE = [all], [img], 0, 25%, 100%, 50%, 0, P, 25%
 
 ; Card body
 FONT = [bodyfont], 14, T, #000000
-TEXT = , [desc], 5%, 15%, 90%, 85%, left, wordwrap
+TEXT = [all], [desc], 5%, 15%, 90%, 85%, left, wordwrap
 
 ; Card writing prompts
 FONT = [bodyfont], 12, T, #000000
-TEXT = , [prompts], 5%, 45%, 90%, 38%, left, wordwrap
+TEXT = [all], [prompts], 5%, 45%, 90%, 38%, left, wordwrap
 
 ; Card rules
 FONT = [bodyfont], 10, IT, #000000
-TEXT = , [rule], 25%, 80%, 50%, 20%, center, wwbottom
+TEXT = [all], [rule], 25%, 85%, 50%, 15%, center, wwcenter
 
 ; Card icons
-ICON = , T, plus.svg
-ICON = , B, error.svg
-ICON = , X, like-1.svg
-ICONS = , [icons], 0%, 59%, 20%, 40%, 20%, 10%, 0, PN, left, bottom
+ICON = [all], T, plus.svg
+ICON = [all], B, error.svg
+ICON = [all], X, like-1.svg
+ICONS = [all], [icons], 0%, 79%, 100%, 20%, 20%, 10%, 0, PN, left, bottom
 
 ; TODO custom rules
