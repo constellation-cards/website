@@ -17,29 +17,35 @@ MARGINS=0,0,0,0
 LINKMULTI = num
 LINK = cards.xlsx
 
+; Reference fonts
+HTMLFONT = HeadFont, [headerfont], 20, U, #000000, center
+HTMLFONT = BodyFont, [bodyfont], 14, , #000000, left
+HTMLFONT = PromptFont, [bodyfont], 12, , #000000, left
+HTMLFONT = RuleFont, [bodyfont], 10, I, #000000, center
+HTMLKEY = [all], (ul), "<UL STYLE='padding: 0; margin-left: 1em;'>"
+HTMLMARGINS = RuleFont, 0, 0, 0, 0, center
+
 ; Card header
-FONT = [headerfont], 20, U, #000000
-TEXT = [all], [name], 0, 0, 100%, 20%
+HTMLTEXT = [all], [name], 0, 0, 100%, 20%, #FFFFFF, 0, EZ, 100, HeadFont
 
 ; Card image - TODO needs refinement
 IMAGE = [all], [img], 0, 25%, 100%, 50%, 0, P, 25%
 
 ; Card body
-FONT = [bodyfont], 14, T, #000000
-TEXT = [all], [desc], 5%, 15%, 90%, 85%, left, wordwrap
+HTMLTEXT = [all], [desc], 5%, 15%, 90%, 85%, #FFFFFF, 0, EZ, 100, BodyFont
 
 ; Card writing prompts
-FONT = [bodyfont], 12, T, #000000
-TEXT = [all], [prompts], 5%, 45%, 90%, 38%, left, wordwrap
+;FONT = [bodyfont], 12, T, #000000
+;TEXT = [all], [prompts], 5%, 45%, 90%, 38%, left, wordwrap
+HTMLTEXT = [all], [prompts], 5%, 45%, 90%, 38%, #FFFFFF, 0, EZ, 100, PromptFont
 
 ; Card rules
-FONT = [bodyfont], 10, IT, #000000
-TEXT = [all], [rule], 25%, 85%, 50%, 15%, center, wwcenter
+;FONT = [bodyfont], 10, IT, #000000
+;TEXT = [all], [rule], 25%, 85%, 50%, 15%, center, wwcenter
+HTMLTEXT = [all], [rule], 25%, 85%, 50%, 15%, #FFFFFF, 0, EZ, 100, RuleFont
 
 ; Card icons
 ICON = [all], T, plus.svg
 ICON = [all], B, error.svg
 ICON = [all], X, like-1.svg
 ICONS = [all], [icons], 0%, 79%, 100%, 20%, 20%, 10%, 0, PN, left, bottom
-
-; TODO custom rules
