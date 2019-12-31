@@ -1,0 +1,120 @@
+- front: &Northerner
+    name: Northerner
+    icons: C
+    desc: Snow-swept peaks and narrow valleys are your home.
+    prompts:
+      - Deal with or take advantage of cold
+      - Survive sudden misfortune
+      - Hide your emotions behind a gruff exterior
+  back:
+    <<: *Northerner
+    desc: They say your heart is frozen.
+    prompts:
+      - Fail to enjoy life's comforts
+      - Seem disinterested or distant
+      - Make an expedient but cruel choice
+- front: &Southerner
+    name: Southerner
+    icons: C
+    desc: Fiery deserts and glittering oases are your home.
+    prompts:
+      - Deal with or take advantage of heat
+      - Keep going when all seems lost
+      - Put on a brave face to hide fear
+  back:
+    <<: *Southerner
+    desc: You'll do anything to survive.
+    prompts:
+      - x
+      - x
+      - x
+- front: &Easterner
+    name: Easterner
+    icons: C
+    desc: Mysterious mountains and river-lands are your home.
+    prompts:
+      - x
+      - Share the wisdom of the ancestors
+      - x
+  back:
+    <<: *Easterner
+    desc: x
+    prompts:
+      - x
+      - x
+      - x
+- front: &Westerner
+    name: Westerner
+    icons: C
+    desc: Islands, archipelagos, and boats are your home.
+    prompts:
+      - Deal with or take advantage of water
+      - Quickly adapt to shifting circumstances
+      - Speed away from trouble
+  back:
+    <<: *Westerner
+    desc: x
+    prompts:
+      - x
+      - x
+      - x
+- front: &CityFolk
+    name: City Folk
+    icons: C
+    desc: Big cities, centers of knowledge and trade, are your home.
+    prompts:
+      - Navigate hostile or difficult crowds
+      - Recite a lesson from your education
+      - Find someone selling something
+  back:
+    <<: *CityFolk
+    desc: x
+    prompts:
+      - x
+      - x
+      - x
+- front: &CountryFolk
+    name: Country Folk
+    icons: C
+    desc: Villages, farms, and manors are your home.
+    prompts:
+      - Work with the land and animals
+      - Do what common sense tells you
+      - x
+  back:
+    <<: *CountryFolk
+    desc: They look down on us, call us stupid and weak...
+    prompts:
+      - Be treated as inferior or backward
+      - x
+      - x
+- front: &ForestFolk
+    name: Forest Folk
+    icons: C
+    desc: Trappers' camps and green silences are your home.
+    prompts:
+      - Live and thrive off the wilderness
+      - Notice something hidden
+      - x
+  back:
+    <<: *ForestFolk
+    desc: x
+    prompts:
+      - x
+      - x
+      - x
+- front: &Scraplander
+    name: Scraplander
+    icons: C
+    desc: Haunted wastelands and blasted heaths are your home.
+    prompts:
+      - Deal with or take advantage of remnants of old wars and lost magic
+      - Salvage something
+      - x
+  back:
+    <<: *Scraplander
+    desc: They say we're no better than the trash we gather.
+    prompts:
+      - Eschew civilized conventions
+      - x
+      - x
