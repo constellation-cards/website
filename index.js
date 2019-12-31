@@ -44,7 +44,7 @@ function parseCardContents(fileContent) {
   const content = yaml.safeLoad(fileContent);
   content.forEach(card => {
     cards.unshift(cardToColumn(card.back, "B"));
-    cards.push(cardToColumn(card.front, "T"));  
+    cards.push(cardToColumn(card.front, "A"));
   })
 };
 

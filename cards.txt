@@ -15,7 +15,8 @@ PAGE=7.62,12.7,PORTRAIT,HVEO,#FFFFFF,[all]
 MARGINS=0,0,0,0
 
 LINKMULTI = num
-LINK = cards.xlsx
+; LINK = cards.xlsx
+LINK = cards.csv
 
 ; Reference fonts
 HTMLFONT = HeadFont, [headerfont], 20, U, #000000, center
@@ -46,7 +47,8 @@ HTMLTEXT = [all], JOIN([ulstart], [prompts], [ulend]), 5%, 45%, 90%, 38%, #FFFFF
 HTMLTEXT = [all], [rule], 25%, 85%, 50%, 15%, #FFFFFF, 0, ET, 100, RuleFont
 
 ; Card icons
-ICON = [all], T, plus.svg
+ICON = [all], A, plus.svg
 ICON = [all], B, error.svg
+ICON = [all], C, user-3.svg
 ICON = [all], X, like-1.svg
 ICONS = [all], [icons], 0%, 79%, 100%, 20%, 20%, 10%, 0, PN, left, bottom
