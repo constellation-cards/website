@@ -1,0 +1,26 @@
+{
+  "name": "flip-a-card",
+  "version": "1.0.0",
+  "description": "## Setup Instructions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/astralfrontier/flip-a-card.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/astralfrontier/flip-a-card/issues"
+  },
+  "homepage": "https://github.com/astralfrontier/flip-a-card#readme",
+  "dependencies": {
+    "csv-writer": "^1.5.0",
+    "escape-html": "^1.0.3",
+    "js-yaml": "^3.13.1",
+    "ramda": "^0.26.1"
+  }
+}
