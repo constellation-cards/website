@@ -2,9 +2,13 @@
     tags:
       - condition
     icons: X
-- front:
-    name: &conditions Condition Cards
+- template: &conditions
+    name: Condition Cards
+    tags:
+      - core-rules
     img: like-1.png
+  front:
+    <<: *conditions
     desc: Cards with this icon indicate an ongoing physical, mental, social, magical, etc. condition for a character.
     prompts:
       - "Generate a hit by taking on a new condition"
@@ -13,8 +17,7 @@
       - "Flipside: discard by spending downtime doing so"
     rule: Flip to not use Conditions
   back:
-    name: *conditions
-    img: like-1.png
+    <<: *conditions
     desc: Condition cards have no effect
     rule: Flip to use Conditions
 - front:
@@ -38,39 +41,39 @@
     name: Weakened
     desc: You've exerted yourself, or been mildly hurt, and need time to rest.
     prompts:
-      - Fatigue or exhaustion
+      - Fatigue or sleep deprivation
       - Hunger or dehydration
       - Weather or temperature extremes
   back:
     <<: *template
-    name: Ill
-    desc: You have nothing left to give, and can barely move or act.
+    name: Exhausted
+    desc: Every step is an effort. You need not just rest, but healing.
     prompts:
-      - Serious exhaustion
+      - Ongoing lack of rest
       - Disease or infection
       - Fever or delirium
 - front:
     <<: *template
     name: Obliged
-    desc: You've incurred a financial or other responsibility.
+    desc: You've incurred an important responsibility.
     prompts:
-      - Creditor asks for favors
-      - You're hassled for repayment
+      - Patron impatient or asks more
+      - Rivals or enemies interfere
       - Embarrassment if revealed
   back:
     <<: *template
     name: Indebted
     desc: You have significant debts that demand your time or attention.
     prompts:
-      - Pursuit by creditors
-      - Attention from the law
+      - Pursuit by patron
+      - Attention from powerful forces
       - Bad reputation
 - front:
     <<: *template
-    name: Noticed
-    desc: "Someone's looking for, or at, you."
+    name: Wanted
+    desc: Someone powerful or dangerous is interested in you.
     prompts:
-      - Scrutiny from city guards
+      - Scrutiny from guards, thugs, etc.
       - Someone tailing you
       - Stalked by an animal
   back:
@@ -78,6 +81,70 @@
     name: Pursued
     desc: You're being chased, by someone or something that wishes you ill.
     prompts:
-      - Uncomfortable hiding places
-      - Imminent attack
-      - Threat to current goal
+      - Forced to hide from searchers
+      - Risk of imminent attacks
+      - Threat to current goals
+- front:
+    <<: *template
+    name: Magicked
+    desc: A spell or other power is affecting you.
+    prompts:
+      - Charms, illusions, or other deceptions
+      - Taboos or limitations on action
+      - Discomfort or distraction
+  back:
+    <<: *template
+    name: Cursed
+    desc: A powerful and baneful magic has you in its grip.
+    prompts:
+      - Geases or other powerful compulsions
+      - Unbreakable or complex taboos
+      - Pain or great misfortune
+- front:
+    <<: *template
+    name: Mutated
+    desc: You've been physically changed by magic or an artifact.
+    prompts:
+      - Animal ears or other features
+      - Monstrous modifications
+      - Partial petrification or zombification
+  back:
+    <<: *template
+    name: Transformed
+    desc: You've been physically remade into something new, but not forever.
+    prompts:
+      - Polymorphed into an animal
+      - Changed into a monster
+      - Zombified
+- front:
+    <<: *template
+    name: Disarmed
+    desc: Vital gear you depend on has been damaged or taken
+    prompts:
+      - Blunted or broken blades
+      - Damaged or partial armor
+      - Malfunctioning magical tools
+  back:
+    <<: *template
+    name: Broken
+    desc: Vital gear you depend on is unavailable and must be replaced
+    prompts:
+      - Nothing left but scrap
+      - Spellbook lost or unreadable
+      - Magical tools disenchanted
+- front:
+    <<: *template
+    name: Hindered
+    desc: A sense or faculty you normally depend on has been weakened due to injury, magic, or stress.
+    prompts:
+      - Unable to clearly see or hear
+      - Unable to speak clearly
+      - Magical senses or powers unreliable
+  back:
+    <<: *template
+    name: Impeded
+    desc: A sense or faculty you normally depend on has been temporarily lost.
+    prompts:
+      - Temporarily blind or deaf
+      - Mute or unable to communicate
+      - Spellcasting or other special quality
