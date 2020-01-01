@@ -1,7 +1,11 @@
 Num,Icons,Name,Img,Desc,Prompts,Rule
-1,BX,Pursued,,"You&#39;re being chased, by someone or something that wishes you ill.",<li>Uncomfortable hiding places</li><li>Imminent attack</li><li>Threat to current goal</li>,
-1,BX,Indebted,,You have significant debts that demand your time or attention.,<li>Pursuit by creditors</li><li>Attention from the law</li><li>Bad reputation</li>,
-1,BX,Ill,,"You have nothing left to give, and can barely move or act.",<li>Serious exhaustion</li><li>Disease or infection</li><li>Fever or delirium</li>,
+1,BX,Impeded,,A sense or faculty you normally depend on has been temporarily lost.,<li>Temporarily blind or deaf</li><li>Mute or unable to communicate</li><li>Spellcasting or other special quality</li>,
+1,BX,Broken,,Vital gear you depend on is unavailable and must be replaced,<li>Nothing left but scrap</li><li>Spellbook lost or unreadable</li><li>Magical tools disenchanted</li>,
+1,BX,Transformed,,"You&#39;ve been physically remade into something new, but not forever.",<li>Polymorphed into an animal</li><li>Changed into a monster</li><li>Zombified</li>,
+1,BX,Cursed,,A powerful and baneful magic has you in its grip.,<li>Geases or other powerful compulsions</li><li>Unbreakable or complex taboos</li><li>Pain or great misfortune</li>,
+1,BX,Pursued,,"You&#39;re being chased, by someone or something that wishes you ill.",<li>Forced to hide from searchers</li><li>Risk of imminent attacks</li><li>Threat to current goals</li>,
+1,BX,Indebted,,You have significant debts that demand your time or attention.,<li>Pursuit by patron</li><li>Attention from powerful forces</li><li>Bad reputation</li>,
+1,BX,Exhausted,,"Every step is an effort. You need not just rest, but healing.",<li>Ongoing lack of rest</li><li>Disease or infection</li><li>Fever or delirium</li>,
 1,BX,Wounded,,Your injuries are severe. You must get medical attention soon.,<li>Significant blood loss</li><li>Broken or twisted limbs</li><li>Shock or disorientation</li>,
 1,B,Condition Cards,like-1.png,Condition cards have no effect,,Flip to use Conditions
 1,BC,Scraplander,,They say you&#39;re no better than the trash you gather.,<li>Rush into risk</li><li>Defy civilization&#39;s customs</li><li>Express a dangerous or weird quirk</li><li>Subvert the stereotype</li>,
@@ -30,6 +34,10 @@ Num,Icons,Name,Img,Desc,Prompts,Rule
 1,AC,Scraplander,,Haunted wastelands and blasted heaths are your home.,<li>Deal with or take advantage of remnants of old wars and lost magic</li><li>Salvage or repair anything</li><li>Reveal a useful item or experience</li>,
 1,A,Condition Cards,like-1.png,"Cards with this icon indicate an ongoing physical, mental, social, magical, etc. condition for a character.",<li>Generate a hit by taking on a new condition</li><li>Generate a hit by aggravating a condition (flip over)</li><li>Topside: discard after spending a scene attending to condition</li><li>Flipside: discard by spending downtime doing so</li>,Flip to not use Conditions
 1,AX,Hurt,,"You&#39;ve been bloodied, bruised, stunned, or otherwise physically harmed.",<li>Weapon attacks</li><li>Creatures&#39; natural attacks</li><li>Natural disasters</li>,
-1,AX,Weakened,,"You&#39;ve exerted yourself, or been mildly hurt, and need time to rest.",<li>Fatigue or exhaustion</li><li>Hunger or dehydration</li><li>Weather or temperature extremes</li>,
-1,AX,Obliged,,You&#39;ve incurred a financial or other responsibility.,<li>Creditor asks for favors</li><li>You&#39;re hassled for repayment</li><li>Embarrassment if revealed</li>,
-1,AX,Noticed,,"Someone&#39;s looking for, or at, you.",<li>Scrutiny from city guards</li><li>Someone tailing you</li><li>Stalked by an animal</li>,
+1,AX,Weakened,,"You&#39;ve exerted yourself, or been mildly hurt, and need time to rest.",<li>Fatigue or sleep deprivation</li><li>Hunger or dehydration</li><li>Weather or temperature extremes</li>,
+1,AX,Obliged,,You&#39;ve incurred an important responsibility.,<li>Patron impatient or asks more</li><li>Rivals or enemies interfere</li><li>Embarrassment if revealed</li>,
+1,AX,Wanted,,Someone powerful or dangerous is interested in you.,"<li>Scrutiny from guards, thugs, etc.</li><li>Someone tailing you</li><li>Stalked by an animal</li>",
+1,AX,Magicked,,A spell or other power is affecting you.,"<li>Charms, illusions, or other deceptions</li><li>Taboos or limitations on action</li><li>Discomfort or distraction</li>",
+1,AX,Mutated,,You&#39;ve been physically changed by magic or an artifact.,<li>Animal ears or other features</li><li>Monstrous modifications</li><li>Partial petrification or zombification</li>,
+1,AX,Disarmed,,Vital gear you depend on has been damaged or taken,<li>Blunted or broken blades</li><li>Damaged or partial armor</li><li>Malfunctioning magical tools</li>,
+1,AX,Hindered,,"A sense or faculty you normally depend on has been weakened due to injury, magic, or stress.",<li>Unable to clearly see or hear</li><li>Unable to speak clearly</li><li>Magical senses or powers unreliable</li>,
