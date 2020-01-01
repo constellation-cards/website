@@ -1,0 +1,54 @@
+; Source for our list of cards
+DOWNLOAD = https://docs.google.com/spreadsheets/d/1UtVEvYOGJw5yFUugdXLwpXIJ3qEorw5V1rS81YkKj3Y/export?format=xlsx, cards.xlsx
+
+; A custom range
+[all]=1-{(name)}
+
+; Use a serif font for the header, sans-serif for the body,
+; for accessibility
+[headerfont]=Georgia
+[bodyfont]=Verdana
+
+; Printing on 3x5 cards in portrait mode
+CARDSIZE=7.62,12.7
+PAGE=7.62,12.7,PORTRAIT,HVEO,#FFFFFF,[all]
+MARGINS=0,0,0,0
+
+LINKMULTI = num
+; LINK = cards.xlsx
+LINK = cards.csv
+
+; Reference fonts
+HTMLFONT = HeadFont, [headerfont], 20, U, #000000, center
+HTMLMARGINS = HeadFont, 1
+HTMLFONT = BodyFont, [bodyfont], 14, , #000000, left
+HTMLFONT = PromptFont, [bodyfont], 12, , #000000, left
+HTMLFONT = RuleFont, [bodyfont], 10, I, #000000, center
+HTMLMARGINS = RuleFont, 0, 0, 0, 0, center
+
+[ulstart] = "<UL STYLE='padding: 0; margin-left: 1em;'>"
+[ulend] = "</UL>"
+
+; Card header
+HTMLTEXT = [all], [name], 0, 0, 100%, 20%, #FFFFFF, 0, ET, 100, HeadFont
+
+; Card image - TODO needs refinement
+IMAGE = [all], [img], 0, 25%, 100%, 50%, 0, P, 25%
+
+; Card body
+HTMLTEXT = [all], [desc], 5%, 15%, 90%, 85%, #FFFFFF, 0, ET, 100, BodyFont
+
+; Card writing prompts
+HTMLTEXT = [all], JOIN([ulstart], [prompts], [ulend]), 5%, 45%, 90%, 38%, #FFFFFF, 0, ET, 100, PromptFont
+
+; Card rules
+;FONT = [bodyfont], 10, IT, #000000
+;TEXT = [all], [rule], 25%, 85%, 50%, 15%, center, wwcenter
+HTMLTEXT = [all], [rule], 25%, 85%, 50%, 15%, #FFFFFF, 0, ET, 100, RuleFont
+
+; Card icons
+ICON = [all], A, plus.svg
+ICON = [all], B, error.svg
+ICON = [all], C, user-3.svg
+ICON = [all], X, like-1.svg
+ICONS = [all], [icons], 0%, 79%, 100%, 20%, 20%, 10%, 0, PN, left, bottom
