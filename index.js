@@ -1,9 +1,8 @@
-const escapeHtml = require('escape-html'),
-      yaml = require('js-yaml');
+const escapeHtml = require('escape-html')
 
-const { join, map, split } = require('ramda');
+const { join, map, split } = require('ramda')
 
-const { getCardData } = require('./lib/card-data');
+const { getCardData } = require('./lib/card-data')
 
 /**
  * Create and return a CSV writer.
