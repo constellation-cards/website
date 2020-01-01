@@ -15,6 +15,6 @@ jobs:
     - run: npm ci
     - run: npm run build
     - name: deploy to gh-pages
-      run: gh-pages -d public -r https://$GH_PAT@github.com/astralfrontier/flip-a-card.git
+      run: npm run deploy-ci
       env:
         GH_PAT: ${{ secrets.GH_PAT }}
