@@ -1,4 +1,5 @@
 const escapeHtml = require('escape-html')
+const path = require('path')
 
 const { join, map, split } = require('ramda')
 
@@ -53,4 +54,4 @@ async function outputCards(sourcedir, destfile) {
   await csvWriter.writeRecords(printedCards);
 }
 
-outputCards('card-data', 'cards.csv').catch(console.error)
+outputCards('card-data', path.join('static', 'nandeck', 'cards.csv')).catch(console.error)
