@@ -12,7 +12,7 @@ const Header = ({ siteTitle }) => (
       <Nav className="mr-auto">
         <Nav.Link href={withPrefix('/')}>Home</Nav.Link>
         <Nav.Link href={withPrefix('/all-cards')}>All Cards</Nav.Link>
-        <Nav.Link href={withPrefix('/nandeck.zip')}>Download</Nav.Link>
+        <Nav.Link href={withPrefix('/flip-a-card.zip')}>Download</Nav.Link>
       </Nav>
     </Navbar.Collapse>
   </Navbar>

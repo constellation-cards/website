@@ -13,9 +13,10 @@ Homepage: https://astralfrontier.github.io/flip-a-card/
 
 ## Deck Build Instructions
 
-1. Open [this link](https://docs.google.com/spreadsheets/d/1UtVEvYOGJw5yFUugdXLwpXIJ3qEorw5V1rS81YkKj3Y/export?format=xlsx) and save this file as `cards.xlsx` in the same directory where you cloned this repository
+1. Open https://astralfrontier.github.io/flip-a-card/ and click "Download"
+2. Unzip/extract the files to a project folder
 2. Open nanDECK
-3. Click "Open deck", select the file "cards.txt" in this directory
+3. Click "Open deck", select the file "cards.txt" from the project folder
 4. Click "Validate deck"
 5. Click "Build deck"
 6. If all looks well, click "PDF"
