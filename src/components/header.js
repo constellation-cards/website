@@ -13,6 +13,7 @@ const Header = ({ siteTitle }) => (
         <Nav.Link href={withPrefix('/')}>Home</Nav.Link>
         <Nav.Link href={withPrefix('/all-cards')}>All Cards</Nav.Link>
         <Nav.Link href={withPrefix('/flip-a-card.zip')}>Download</Nav.Link>
+        <Nav.Link href={'https://github.com/astralfrontier/flip-a-card'}>Github</Nav.Link>
       </Nav>
     </Navbar.Collapse>
   </Navbar>
