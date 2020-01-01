@@ -1,6 +1,10 @@
 import React from "react"
 import { graphql, Link } from 'gatsby'
 
+import Container from "react-bootstrap/Container"
+import Row from "react-bootstrap/Row"
+import Col from "react-bootstrap/Col"
+
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -24,22 +28,35 @@ const groupedCards = data => {
   )
 }
 
-const IndexPage = ({data}) => (
+const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
-    {map((cardGroup) => (
-      <div>
-        <h3>{cardGroup.tag}</h3>
-        <ul>
-          {map(node => (
-            <li>
-              <Link to={node.path}>{cardName(node)}</Link>
-            </li>
-          ), cardGroup.nodes)}
-        </ul>
-        <pre>{JSON.stringify(cardGroup.cards)}</pre>
-      </div>
-    ), groupedCards(data))}
+    <Container>
+      <Row>
+        <Col sm={6}>
+          {map((cardGroup) => (
+            <div>
+              <h3>{cardGroup.tag}</h3>
+              <ul>
+                {map(node => (
+                  <li>
+                    <Link to={node.path}>{cardName(node)}</Link>
+                  </li>
+                ), cardGroup.nodes)}
+              </ul>
+              <pre>{JSON.stringify(cardGroup.cards)}</pre>
+            </div>
+          ), groupedCards(data))}
+
+        </Col>
+        <Col sm={6}>
+          <h3>Articles and Background</h3>
+          <ul>
+            <li><Link to="/using-conditions">Using Conditions</Link></li>
+          </ul>
+        </Col>
+      </Row>
+    </Container>
   </Layout>
 )
 
