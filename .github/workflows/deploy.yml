@@ -7,6 +7,8 @@ jobs:
   deploy:
     name: deploy
     runs-on: ubuntu-latest
+    secrets:
+      - GH_PAT
     steps:
     - uses: actions/checkout@master
     - uses: actions/setup-node@v1
@@ -16,7 +18,5 @@ jobs:
     - run: npm run build
     - name: github pages
       uses: maxheld83/ghpages@v0.2.1
-      secrets:
-        - GH_PAT
       env:
         BUILD_DIR: public/
