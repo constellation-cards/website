@@ -1,0 +1,21 @@
+on:
+  push:
+    branches:
+      - master
+name: Deploy master branch
+jobs:
+  deploy:
+    name: deploy
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
+    - run: npm ci
+    - run: npm run build
+    - name: github pages
+      uses: maxheld83/ghpages@v0.2.1
+      env:
+        BUILD_DIR: public/
+        GH_PAT: ${{ secrets.GH_PAT }}
