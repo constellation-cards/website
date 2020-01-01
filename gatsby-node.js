@@ -69,9 +69,13 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
   })
 
   cards.forEach(card => {
-    const cardSlug = slug(card.front.name)
-    console.log(cardSlug);
+    const cardSlug = slug(card.front.name).toLowerCase()
+    createPage({
+      path: cardSlug,
+      component: path.resolve('src/components/card.js'),
+      context: {
+        card
+      }
+    })
   })
-
-  // TODO: create pages for each card
 }
