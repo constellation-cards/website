@@ -49,7 +49,7 @@ function parseCardContents(fileContent) {
 };
 
 async function parseAllCards() {
-  const filepaths = getCardFiles('src');
+  const filepaths = getCardFiles('card-data');
   for (let filepath of filepaths) {
     const fileContent = fs.readFileSync(filepath, 'utf8').toString();
     parseCardContents(fileContent);    
