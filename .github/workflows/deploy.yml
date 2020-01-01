@@ -7,8 +7,6 @@ jobs:
   deploy:
     name: deploy
     runs-on: ubuntu-latest
-    secrets:
-      - GH_PAT
     steps:
     - uses: actions/checkout@master
     - uses: actions/setup-node@v1
@@ -16,7 +14,7 @@ jobs:
         node-version: '12.x'
     - run: npm ci
     - run: npm run build
-    - name: github pages
-      uses: maxheld83/ghpages@v0.2.1
+    - name: deploy to gh-pages
+      run: gh-pages -d public -r https://$GH_PAT@github.com/astralfrontier/flip-a-card.git
       env:
-        BUILD_DIR: public/
+        GH_PAT: ${{ secrets.GH_PAT }}
