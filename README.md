@@ -1,5 +1,7 @@
 # Flip-a-Card
 
+Homepage: https://astralfrontier.github.io/flip-a-card/
+
 ## Setup Instructions
 
 1. Download nanDECK from [this link](http://www.nand.it/nandeck/)
