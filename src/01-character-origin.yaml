@@ -5,14 +5,15 @@
     prompts:
       - Deal with or take advantage of cold
       - Survive sudden misfortune
-      - Hide your emotions behind a gruff exterior
+      - Bury your emotions and move forward
   back:
     <<: *Northerner
     desc: They say your heart is frozen.
     prompts:
-      - Fail to enjoy life's comforts
-      - Seem disinterested or distant
-      - Make an expedient but cruel choice
+      - Eschew material comfort
+      - Act disinterested or distant
+      - Distrust an outsider
+      - Subvert the stereotype
 - front: &Southerner
     name: Southerner
     icons: C
@@ -20,29 +21,31 @@
     prompts:
       - Deal with or take advantage of heat
       - Keep going when all seems lost
-      - Put on a brave face to hide fear
+      - Inspire in the face of hardship
   back:
     <<: *Southerner
-    desc: You'll do anything to survive.
+    desc: They say the desert has burned weakness out of you.
     prompts:
-      - x
-      - x
-      - x
+      - Uphold a complex code of honor
+      - Make an expedient but cruel choice
+      - Stand by your group, right or wrong
+      - Subvert the stereotype
 - front: &Easterner
     name: Easterner
     icons: C
     desc: Mysterious mountains and river-lands are your home.
     prompts:
-      - x
-      - Share the wisdom of the ancestors
-      - x
+      - Work with earth and metal
+      - Share the wisdom of past generations
+      - Understand unspoken things
   back:
     <<: *Easterner
-    desc: x
+    desc: They say you are distant and arrogant.
     prompts:
-      - x
-      - x
-      - x
+      - Mask your emotions behind politeness
+      - Follow your own ways in strange lands
+      - Extol the virtues of your own culture
+      - Subvert the stereotype
 - front: &Westerner
     name: Westerner
     icons: C
@@ -53,11 +56,12 @@
       - Speed away from trouble
   back:
     <<: *Westerner
-    desc: x
+    desc: They say you're unreliable or untrustworthy.
     prompts:
-      - x
-      - x
-      - x
+      - Fail to uphold an obligation
+      - Betray a trust
+      - Let someone else pay the price
+      - Subvert the stereotype
 - front: &CityFolk
     name: City Folk
     icons: C
@@ -68,11 +72,12 @@
       - Find someone selling something
   back:
     <<: *CityFolk
-    desc: x
+    desc: They say you've sold your soul to the city.
     prompts:
-      - x
-      - x
-      - x
+      - Establish dominance through aggression
+      - Value the material
+      - Rely on money over friendship
+      - Subvert the stereotype
 - front: &CountryFolk
     name: Country Folk
     icons: C
@@ -80,41 +85,44 @@
     prompts:
       - Work with the land and animals
       - Do what common sense tells you
-      - x
+      - Show hospitality to everyone
   back:
     <<: *CountryFolk
-    desc: They look down on us, call us stupid and weak...
+    desc: They look down on you as rustic bumpkins.
     prompts:
-      - Be treated as inferior or backward
-      - x
-      - x
+      - Distrust the sophisticated
+      - Ask something everyone else knows
+      - Rigidly uphold tradition
+      - Subvert the stereotype
 - front: &ForestFolk
     name: Forest Folk
     icons: C
     desc: Trappers' camps and green silences are your home.
     prompts:
-      - Live and thrive off the wilderness
+      - Live and thrive in the wilderness
       - Notice something hidden
-      - x
+      - Find a path to your goal
   back:
     <<: *ForestFolk
-    desc: x
+    desc: They say you're creepy and aloof.
     prompts:
-      - x
-      - x
-      - x
+      - Refuse offers of aid or comfort
+      - Bluntly say a hard truth
+      - Keep an outsider distant from you
+      - Subvert the stereotype
 - front: &Scraplander
     name: Scraplander
     icons: C
     desc: Haunted wastelands and blasted heaths are your home.
     prompts:
       - Deal with or take advantage of remnants of old wars and lost magic
-      - Salvage something
-      - x
+      - Salvage or repair anything
+      - Reveal a useful item or experience
   back:
     <<: *Scraplander
-    desc: They say we're no better than the trash we gather.
+    desc: They say you're no better than the trash you gather.
     prompts:
-      - Eschew civilized conventions
-      - x
-      - x
+      - Rush into risk
+      - Defy civilization's customs
+      - Express a dangerous or weird quirk
+      - Subvert the stereotype
