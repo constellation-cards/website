@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/flip-a-card",
   siteMetadata: {
     title: `Flip-a-Card`,
     description: `A project page for a new RPG`,
