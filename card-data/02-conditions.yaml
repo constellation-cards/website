@@ -1,3 +1,7 @@
+- template: &template
+    tags:
+      - condition
+    icons: X
 - front:
     name: &conditions Condition Cards
     img: like-1.png
@@ -14,64 +18,64 @@
     desc: Condition cards have no effect
     rule: Flip to use Conditions
 - front:
+    <<: *template
     name: Hurt
-    icons: X
     desc: You've been bloodied, bruised, stunned, or otherwise physically harmed.
     prompts:
       - Weapon attacks
       - Creatures' natural attacks
       - Natural disasters
   back:
+    <<: *template
     name: Wounded
-    icons: X
     desc: Your injuries are severe. You must get medical attention soon.
     prompts:
       - Significant blood loss
       - Broken or twisted limbs
       - Shock or disorientation
 - front:
+    <<: *template
     name: Weakened
-    icons: X
     desc: You've exerted yourself, or been mildly hurt, and need time to rest.
     prompts:
       - Fatigue or exhaustion
       - Hunger or dehydration
       - Weather or temperature extremes
   back:
+    <<: *template
     name: Ill
-    icons: X
     desc: You have nothing left to give, and can barely move or act.
     prompts:
       - Serious exhaustion
       - Disease or infection
       - Fever or delirium
 - front:
+    <<: *template
     name: Obliged
-    icons: X
     desc: You've incurred a financial or other responsibility.
     prompts:
       - Creditor asks for favors
       - You're hassled for repayment
       - Embarrassment if revealed
   back:
+    <<: *template
     name: Indebted
-    icons: X
     desc: You have significant debts that demand your time or attention.
     prompts:
       - Pursuit by creditors
       - Attention from the law
       - Bad reputation
 - front:
+    <<: *template
     name: Noticed
-    icons: X
     desc: "Someone's looking for, or at, you."
     prompts:
       - Scrutiny from city guards
       - Someone tailing you
       - Stalked by an animal
   back:
+    <<: *template
     name: Pursued
-    icons: X
     desc: You're being chased, by someone or something that wishes you ill.
     prompts:
       - Uncomfortable hiding places

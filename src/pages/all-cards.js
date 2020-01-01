@@ -26,16 +26,18 @@ query AllCards {
     edges {
       node {
         front {
-          desc
-          icons
           name
+          tags
+          icons
+          desc
           prompts
           rule
         }
         back {
-          desc
-          icons
           name
+          tags
+          icons
+          desc
           prompts
           rule
         }

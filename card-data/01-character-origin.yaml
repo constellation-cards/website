@@ -1,6 +1,11 @@
-- front: &Northerner
-    name: Northerner
+- template: &template
+    tags:
+      - character
+      - origin
     icons: C
+- front: &Northerner
+    <<: *template
+    name: Northerner
     desc: Snow-swept peaks and narrow valleys are your home.
     prompts:
       - Deal with or take advantage of cold
@@ -15,8 +20,8 @@
       - Distrust an outsider
       - Subvert the stereotype
 - front: &Southerner
+    <<: *template
     name: Southerner
-    icons: C
     desc: Fiery deserts and glittering oases are your home.
     prompts:
       - Deal with or take advantage of heat
@@ -31,8 +36,8 @@
       - Stand by your group, right or wrong
       - Subvert the stereotype
 - front: &Easterner
+    <<: *template
     name: Easterner
-    icons: C
     desc: Mysterious mountains and river-lands are your home.
     prompts:
       - Work with earth and metal
@@ -47,8 +52,8 @@
       - Extol the virtues of your own culture
       - Subvert the stereotype
 - front: &Westerner
+    <<: *template
     name: Westerner
-    icons: C
     desc: Islands, archipelagos, and boats are your home.
     prompts:
       - Deal with or take advantage of water
@@ -63,8 +68,8 @@
       - Let someone else pay the price
       - Subvert the stereotype
 - front: &CityFolk
+    <<: *template
     name: City Folk
-    icons: C
     desc: Big cities, centers of knowledge and trade, are your home.
     prompts:
       - Navigate hostile or difficult crowds
@@ -79,8 +84,8 @@
       - Rely on money over friendship
       - Subvert the stereotype
 - front: &CountryFolk
+    <<: *template
     name: Country Folk
-    icons: C
     desc: Villages, farms, and manors are your home.
     prompts:
       - Work with the land and animals
@@ -95,8 +100,8 @@
       - Rigidly uphold tradition
       - Subvert the stereotype
 - front: &ForestFolk
+    <<: *template
     name: Forest Folk
-    icons: C
     desc: Trappers' camps and green silences are your home.
     prompts:
       - Live and thrive in the wilderness
@@ -111,8 +116,8 @@
       - Keep an outsider distant from you
       - Subvert the stereotype
 - front: &Scraplander
+    <<: *template
     name: Scraplander
-    icons: C
     desc: Haunted wastelands and blasted heaths are your home.
     prompts:
       - Deal with or take advantage of remnants of old wars and lost magic

@@ -25,27 +25,24 @@ exports.sourceNodes = ({ actions: { createNode }, createNodeId, createContentDig
 }
 
 exports.createPages = async ({ graphql, actions: { createPage } }) => {
-  const blogPostTemplate = path.resolve(`src/templates/blog-post.js`)
-  // Query for markdown nodes to use in creating pages.
-  // You can query for whatever data you want to create pages for e.g.
-  // products, portfolio items, landing pages, etc.
-  // Variables can be added as the second function parameter
   const {data, errors} = await graphql(`
     query MyQuery {
       allCardFace {
         edges {
           node {
             front {
-              desc
-              icons
               name
+              tags
+              icons
+              desc
               prompts
               rule
             }
             back {
-              desc
-              icons
               name
+              tags
+              icons
+              desc
               prompts
               rule
             }

@@ -13,32 +13,23 @@ const cardName = node => {
 }
 
 const groupedCards = data => {
-  const cardGroups = groupBy(pathOr('Core Cards', ['context', 'card', 'front', 'icons']), pluck('node', data.allSitePage.edges))
+  const cardGroups = groupBy(edge => pathOr(['no tags'], ['context', 'card', 'front', 'tags'], edge)[0], pluck('node', data.allSitePage.edges))
   return reduce(
-    (a, icons) => append({
-      icons,
-      nodes: cardGroups[icons]
+    (a, tag) => append({
+      tag,
+      nodes: cardGroups[tag]
     }, a),
     [],
     keys(cardGroups)
   )
 }
 
-/*
-    <ul>
-    {data.allSitePage.edges.map((edge) => (
-      
-    ))}
-    </ul>
-
- */
-
 const IndexPage = ({data}) => (
   <Layout>
     <SEO title="Home" />
     {map((cardGroup) => (
       <div>
-        <h3>{cardGroup.icons}</h3>
+        <h3>{cardGroup.tag}</h3>
         <ul>
           {map(node => (
             <li>
@@ -64,10 +55,12 @@ query AllCardPages {
           card {
             front {
               name
+              tags
               icons
             }
             back {
               name
+              tags
               icons
             }
           }
