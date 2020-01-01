@@ -60,14 +60,6 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
 
   const cards = pluck('node', data.allCardFace.edges)
 
-  createPage({
-    path: '/',
-    component: path.resolve('src/components/front-page.js'),
-    context: {
-      cards
-    }
-  })
-
   cards.forEach(card => {
     const cardSlug = slug(card.front.name).toLowerCase()
     createPage({

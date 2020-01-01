@@ -26,7 +26,7 @@ const IndexPage = ({data}) => (
 export default IndexPage
 
 export const query = graphql`
-query MyQuery {
+query AllCardPages {
   allSitePage(filter: {context: {card: {front: {name: {glob: "*"}}}}}) {
     edges {
       node {
