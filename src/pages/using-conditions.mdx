@@ -1,10 +1,11 @@
 ---
 title: Using Conditions
+description: How to use, and when not to use, condition cards
 ---
 
 import SEO from "../components/seo"
 
-<SEO title={props.pageContext.frontmatter.title} />
+<SEO {...props.pageContext.frontmatter} />
 
 # Using Conditions
 
@@ -16,18 +17,23 @@ The rules for condition cards are:
 * You are bound by the fictional implications of the condition until discarded
 * The card is discarded when its fictional context is no longer applicable
 
-Many RPGs need a way to keep track of how hurt or inconvenienced the PCs are at the moment. Condition cards can do this, but they also serve other roles. Here's some ways to use the condition cards in your game.
+Many RPGs need a way to keep track of how hurt or inconvenienced the PCs are at the moment. Condition cards can do this, but they also serve other roles.
+
+### Provide success at a cost
 
 * The fighter wants to attack a target, but doesn't have another card they want to flip for success. They can take an outcome like "Broken" or "Hurt", trading injury to themselves or their weapons to buy a successful hit.
 * The prophet is leading the way through the wilderness and needs to meet a challenge to get out. They take "Weakened", saying that they've been sharing their rations and water with the others to get everyone a little further.
 * The thief wants to buy some new equipment in town, but can't find what they need. They can take the "Obliged" condition to obtain it from a crime-lord, who now has an interest in how they're using it.
 
-When do conditions not apply?
-
-* The monk who's been blind from birth doesn't have the "Hindered" condition card - they've learned to live as they are. However, their bardic companion who depends on their voice to sing would become Hindered if they overtaxed their singing ability in battle, or during a vital performance.
-* If you are a robotic character who doesn't sleep, you won't be "Weakened" by lack of sleep. However, if you have energy reserves that run down, the condition applies. This cuts both ways - you can't take the "Weakened" condition to meet a challenge unless the condition would apply.
-
-How are conditions aggravated, or dealt with?
+### Aggravating and clearing conditions
 
 * The healer who has already been "Mutated", being partially turned demonic by a curse, aggravates their condition to "Transformed" to meet a challenge. Rather than spending a single scene cleansing themselves of their taint, they must now spend some significant amount of downtime being brought back.
 * As the enemy closes in, a character who is "Wanted" says "The rest of you go ahead, I'll hold them off." They spend a scene attending to that condition, either in an onscreen battle or offscreen while the rest of the party escapes. Alternately, if someone is "Pursued", they might disperse into the forest or wilderness for awhile to let things cool down.
+
+### When do conditions not apply?
+
+Conditions are _temporary_ changes in what's normal _for a specific PC_, not a list of limitations compared to some hypothetical standard of "normal". Character backstories and ongoing situations aren't conditions in the mechanical sense.
+
+* The monk who's been blind from birth doesn't have the "Hindered" condition card - they're as competent as any other player character. However, their bardic companion who depends on their voice to sing would become Hindered if they overtaxed their singing ability in battle, or during a vital performance.
+* Similarly, a noble character who's always on the run from a villainous relative doesn't have the "Wanted" condition. This is just a part of their backstory.
+* If you are a robotic character who doesn't sleep, you won't be "Weakened" by lack of sleep. However, if you have energy reserves that run down, the condition applies. This cuts both ways - you can't take the "Weakened" condition to meet a challenge unless the condition would apply.
