@@ -5,16 +5,12 @@ import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 
+import slug from 'slug'
+
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import { append, groupBy, keys, map, pluck, pathOr, reduce } from 'ramda'
-
-const cardName = node => {
-  const frontName = node.context.card.front.name
-  const backName = node.context.card.back.name
-  return (frontName === backName) ? frontName : `${frontName} / ${backName}`
-}
 
 const groupedCards = data => {
   const cardGroups = groupBy(edge => pathOr(['no tags'], ['context', 'card', 'front', 'tags'], edge)[0], pluck('node', data.allSitePage.edges))
@@ -36,11 +32,13 @@ const IndexPage = ({ data }) => (
         <Col sm={6}>
           {map((cardGroup) => (
             <div>
-              <h3>{cardGroup.tag}</h3>
+              <h3>
+                <Link style={{"color": "inherit", "text-decoration": "inherit"}} to={`/tags/${slug(cardGroup.tag).toLowerCase()}`}>{cardGroup.tag}</Link>
+              </h3>
               <ul>
                 {map(node => (
                   <li>
-                    <Link to={node.path}>{cardName(node)}</Link>
+                    <Link to={node.path}>{node.context.card.name}</Link>
                   </li>
                 ), cardGroup.nodes)}
               </ul>
@@ -70,6 +68,7 @@ query AllCardPages {
         path
         context {
           card {
+            name
             front {
               name
               tags

@@ -1,14 +1,18 @@
 import React from "react"
 import Badge from "react-bootstrap/Badge"
 import Card from "react-bootstrap/Card"
+import { Link } from 'gatsby'
 
 import { /* join, */ map } from 'ramda'
+import slug from 'slug'
 
 // const singleBadge = tags => <Badge variant="secondary">{join(', ', tags || [])}</Badge>
 
 const multiBadge = tags => map(tag => (
   <span>
-    <Badge variant="secondary">{tag}</Badge>{` `}
+    <Badge variant="secondary">
+      <Link style={{"color": "inherit", "text-decoration": "inherit"}} to={`/tags/${slug(tag).toLowerCase()}`}>{tag}</Link>
+    </Badge>{` `}
   </span>
 ), tags || [])
 
