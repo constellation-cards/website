@@ -8,6 +8,14 @@ Num,Icons,Name,Img,Desc,Prompts,Rule
 1,BX,Exhausted,,"Every step is an effort. You need not just rest, but healing.",<li>Ongoing lack of rest</li><li>Disease or infection</li><li>Fever or delirium</li>,
 1,BX,Wounded,,Your injuries are severe. You must get medical attention soon.,<li>Significant blood loss</li><li>Broken or twisted limbs</li><li>Shock or disorientation</li>,
 1,B,Condition Cards,like-1.png,Condition cards have no effect,,Flip to use Conditions
+1,BC,UNKNOWN,,TBD,<li>TBD</li><li>TBD</li><li>TBD</li>,
+1,BC,Synthesist,,TBD,<li>TBD</li><li>TBD</li><li>TBD</li>,
+1,BC,Quester,,TBD,<li>TBD</li><li>TBD</li><li>TBD</li>,
+1,BC,Performer,,TBD,<li>TBD</li><li>TBD</li><li>TBD</li>,
+1,BC,Opportunist,,TBD,<li>TBD</li><li>TBD</li><li>TBD</li>,
+1,BC,Guardian,,TBD,<li>TBD</li><li>TBD</li><li>TBD</li>,
+1,BC,Fighter,,TBD,<li>TBD</li><li>TBD</li><li>TBD</li>,
+1,BC,Dreamer,,"When the gulf between is and ought becomes too much, which will you choose?","<li>Reject the real, denounce the realist</li><li>Forget that you have friends</li><li>Lose sight of your dream for a time</li>",
 1,BC,Scraplander,,They say you&#39;re no better than the trash you gather.,<li>Rush into risk</li><li>Defy civilization&#39;s customs</li><li>Express a dangerous or weird quirk</li><li>Subvert the stereotype</li>,
 1,BC,Forest Folk,,They say you&#39;re creepy and aloof.,<li>Refuse offers of aid or comfort</li><li>Bluntly say a hard truth</li><li>Keep an outsider distant from you</li><li>Subvert the stereotype</li>,
 1,BC,Country Folk,,They look down on you as rustic bumpkins.,<li>Distrust the sophisticated</li><li>Ask something everyone else knows</li><li>Rigidly uphold tradition</li><li>Subvert the stereotype</li>,
@@ -16,6 +24,14 @@ Num,Icons,Name,Img,Desc,Prompts,Rule
 1,BC,Easterner,,They say you are distant and arrogant.,<li>Mask your emotions behind politeness</li><li>Follow your own ways in strange lands</li><li>Extol the virtues of your own culture</li><li>Subvert the stereotype</li>,
 1,BC,Southerner,,They say the desert has burned weakness out of you.,"<li>Uphold a complex code of honor</li><li>Make an expedient but cruel choice</li><li>Stand by your group, right or wrong</li><li>Subvert the stereotype</li>",
 1,BC,Northerner,,They say your heart is frozen.,<li>Eschew material comfort</li><li>Act disinterested or distant</li><li>Distrust an outsider</li><li>Subvert the stereotype</li>,
+1,BC,UNKNOWN,,TBD,<li>TBD</li><li>TBD</li><li>TBD</li>,
+1,BC,Wits,,TBD,<li>TBD</li><li>TBD</li><li>TBD</li>,
+1,BC,Tech,,TBD,<li>TBD</li><li>TBD</li><li>TBD</li>,
+1,BC,Secrets,,TBD,<li>TBD</li><li>TBD</li><li>TBD</li>,
+1,BC,Magic,,TBD,<li>TBD</li><li>TBD</li><li>TBD</li>,
+1,BC,Instinct,,TBD,<li>TBD</li><li>TBD</li><li>TBD</li>,
+1,BC,Charm,,TBD,<li>TBD</li><li>TBD</li><li>TBD</li>,
+1,BC,Courage,,TBD,<li>TBD</li><li>TBD</li><li>TBD</li>,
 1,B,Simple Dice,,"If another rule says to meet a challenge, you can roll 1d6:","<li>On 1-3, you get nothing</li><li>On 4-6, you generate 1 hit</li>",Flip to not use dice
 1,B,Challenges,,Resolve challenges strictly via narration.,,Flip to rely on hits
 1,B,The Facilitator,,"The game has a Facilitator (GM, MC, referee).<br><br>Facilitators have final authority over rules questions.<br><br>Whoever laid this card face up is the facilitator.",,Flip to play cooperatively
@@ -24,6 +40,14 @@ Num,Icons,Name,Img,Desc,Prompts,Rule
 1,A,The Facilitator,,"This game has no Facilitator (GM, MC, referee).<br><br>Resolve player disputes collectively.",,Flip to become the Facilitator
 1,A,Challenges,,"If any player thinks the outcome of your narration is uncertain, you&#39;ve been challenged.<br><br>Meet the challenge by getting a hit via some other rule.<br><br>If you don&#39;t, whoever posed the challenge narrates the outcome instead.",,Flip to resolve via narration
 1,A,Simple Dice,,The Simple Dice rule is not used in this game,,Flip to use Simple Dice
+1,AC,Courage,,TBD,<li>TBD</li><li>TBD</li><li>TBD</li>,
+1,AC,Charm,,TBD,<li>TBD</li><li>TBD</li><li>TBD</li>,
+1,AC,Instinct,,TBD,<li>TBD</li><li>TBD</li><li>TBD</li>,
+1,AC,Magic,,TBD,<li>TBD</li><li>TBD</li><li>TBD</li>,
+1,AC,Secrets,,TBD,<li>TBD</li><li>TBD</li><li>TBD</li>,
+1,AC,Tech,,TBD,<li>TBD</li><li>TBD</li><li>TBD</li>,
+1,AC,Wits,,TBD,<li>TBD</li><li>TBD</li><li>TBD</li>,
+1,AC,UNKNOWN,,TBD,<li>TBD</li><li>TBD</li><li>TBD</li>,
 1,AC,Northerner,,Snow-swept peaks and narrow valleys are your home.,<li>Deal with or take advantage of cold</li><li>Survive sudden misfortune</li><li>Bury your emotions and move forward</li>,
 1,AC,Southerner,,Fiery deserts and glittering oases are your home.,<li>Deal with or take advantage of heat</li><li>Keep going when all seems lost</li><li>Inspire in the face of hardship</li>,
 1,AC,Easterner,,Mysterious mountains and river-lands are your home.,<li>Work with earth and metal</li><li>Share the wisdom of past generations</li><li>Understand unspoken things</li>,
@@ -32,6 +56,14 @@ Num,Icons,Name,Img,Desc,Prompts,Rule
 1,AC,Country Folk,,"Villages, farms, and manors are your home.",<li>Work with the land and animals</li><li>Do what common sense tells you</li><li>Show hospitality to everyone</li>,
 1,AC,Forest Folk,,Trappers&#39; camps and green silences are your home.,<li>Live and thrive in the wilderness</li><li>Notice something hidden</li><li>Find a path to your goal</li>,
 1,AC,Scraplander,,Haunted wastelands and blasted heaths are your home.,<li>Deal with or take advantage of remnants of old wars and lost magic</li><li>Salvage or repair anything</li><li>Reveal a useful item or experience</li>,
+1,AC,Dreamer,,"Tomorrow beckons, if you can fix today. You can&#39;t change the world alone. But you aren&#39;t, are you?",<li>Remind someone of their best self</li><li>Light a candle to spite the darkness</li><li>Defy what&#39;s possible with what&#39;s necessary</li>,
+1,AC,Fighter,,TBD,<li>TBD</li><li>TBD</li><li>TBD</li>,
+1,AC,Guardian,,TBD,<li>TBD</li><li>TBD</li><li>TBD</li>,
+1,AC,Opportunist,,TBD,<li>TBD</li><li>TBD</li><li>TBD</li>,
+1,AC,Performer,,TBD,<li>TBD</li><li>TBD</li><li>TBD</li>,
+1,AC,Quester,,TBD,<li>TBD</li><li>TBD</li><li>TBD</li>,
+1,AC,Synthesist,,TBD,<li>TBD</li><li>TBD</li><li>TBD</li>,
+1,AC,UNKNOWN,,TBD,<li>TBD</li><li>TBD</li><li>TBD</li>,
 1,A,Condition Cards,like-1.png,"Cards with this icon indicate an ongoing physical, mental, social, magical, etc. condition for a character.",<li>Generate a hit by taking on a new condition</li><li>Generate a hit by aggravating a condition (flip over)</li><li>Topside: discard after spending a scene attending to condition</li><li>Flipside: discard by spending downtime doing so</li>,Flip to not use Conditions
 1,AX,Hurt,,"You&#39;ve been bloodied, bruised, stunned, or otherwise physically harmed.",<li>Weapon attacks</li><li>Creatures&#39; natural attacks</li><li>Natural disasters</li>,
 1,AX,Weakened,,"You&#39;ve exerted yourself, or been mildly hurt, and need time to rest.",<li>Fatigue or sleep deprivation</li><li>Hunger or dehydration</li><li>Weather or temperature extremes</li>,
