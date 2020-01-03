@@ -16,7 +16,7 @@ import { assoc, groupBy, map, mergeDeepRight, nth, partition, pipe, pluck, pathO
 const linkToTag = tag => <Link style={{"color": "inherit", "text-decoration": "inherit"}} to={`/tags/${slug(tag).toLowerCase()}`}>{tag}</Link>
 
 // Return a Link element pointing to an individual card, loaded from GraphQL
-const linkToCard = card => <Link to={`/tags/${slug(card.name).toLowerCase()}`}>{card.name}</Link>
+const linkToCard = card => <Link to={`/cards/${slug(card.name).toLowerCase()}`}>{card.name}</Link>
 
 const groupCards = (cards, depth, side) => groupBy(card => nth(depth, pathOr([], [side, 'tags'], card)), cards)
 
