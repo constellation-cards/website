@@ -51,6 +51,7 @@ const IndexPage = ({ data }) => (
           <h3>Articles and Background</h3>
           <ul>
             <li><Link to="/using-conditions">Using Conditions</Link></li>
+            <li><Link to="/playing-the-dreamer">Playing the Dreamer</Link></li>
           </ul>
         </Col>
       </Row>

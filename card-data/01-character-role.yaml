@@ -1,0 +1,141 @@
+- template: &template
+    tags:
+      - character
+      - role
+    icons: C
+- template: &Dreamer
+    <<: *template
+    name: Dreamer
+  front:
+    <<: *Dreamer
+    desc: "Tomorrow beckons, if you can fix today. You can't change the world alone. But you aren't, are you?"
+    prompts:
+      - Remind someone of their best self
+      - Light a candle to spite the darkness
+      - Defy what's possible with what's necessary
+  back:
+    <<: *Dreamer
+    desc: "When the gulf between is and ought becomes too much, which will you choose?"
+    prompts:
+      - Reject the real, denounce the realist
+      - Forget that you have friends
+      - Lose sight of your dream for a time
+- template: &Fighter
+    <<: *template
+    name: Fighter
+  front:
+    <<: *Fighter
+    desc: TBD
+    prompts:
+      - TBD
+      - TBD
+      - TBD
+  back:
+    <<: *Fighter
+    desc: TBD
+    prompts:
+      - TBD
+      - TBD
+      - TBD
+- template: &Guardian
+    <<: *template
+    name: Guardian
+  front:
+    <<: *Guardian
+    desc: TBD
+    prompts:
+      - TBD
+      - TBD
+      - TBD
+  back:
+    <<: *Guardian
+    desc: TBD
+    prompts:
+      - TBD
+      - TBD
+      - TBD
+- template: &Opportunist
+    <<: *template
+    name: Opportunist
+  front:
+    <<: *Opportunist
+    desc: TBD
+    prompts:
+      - TBD
+      - TBD
+      - TBD
+  back:
+    <<: *Opportunist
+    desc: TBD
+    prompts:
+      - TBD
+      - TBD
+      - TBD
+- template: &Performer
+    <<: *template
+    name: Performer
+  front:
+    <<: *Performer
+    desc: TBD
+    prompts:
+      - TBD
+      - TBD
+      - TBD
+  back:
+    <<: *Performer
+    desc: TBD
+    prompts:
+      - TBD
+      - TBD
+      - TBD
+- template: &Quester
+    <<: *template
+    name: Quester
+  front:
+    <<: *Quester
+    desc: TBD
+    prompts:
+      - TBD
+      - TBD
+      - TBD
+  back:
+    <<: *Quester
+    desc: TBD
+    prompts:
+      - TBD
+      - TBD
+      - TBD
+- template: &Synthesist
+    <<: *template
+    name: Synthesist
+  front:
+    <<: *Synthesist
+    desc: TBD
+    prompts:
+      - TBD
+      - TBD
+      - TBD
+  back:
+    <<: *Synthesist
+    desc: TBD
+    prompts:
+      - TBD
+      - TBD
+      - TBD
+- template: &unknown
+    <<: *template
+    name: UNKNOWN
+  front:
+    <<: *unknown
+    desc: TBD
+    prompts:
+      - TBD
+      - TBD
+      - TBD
+  back:
+    <<: *unknown
+    desc: TBD
+    prompts:
+      - TBD
+      - TBD
+      - TBD

@@ -1,0 +1,141 @@
+- template: &template
+    tags:
+      - character
+      - focus
+    icons: C
+- template: &Courage
+    <<: *template
+    name: Courage
+  front:
+    <<: *Courage
+    desc: TBD
+    prompts:
+      - TBD
+      - TBD
+      - TBD
+  back:
+    <<: *Courage
+    desc: TBD
+    prompts:
+      - TBD
+      - TBD
+      - TBD
+- template: &Charm
+    <<: *template
+    name: Charm
+  front:
+    <<: *Charm
+    desc: TBD
+    prompts:
+      - TBD
+      - TBD
+      - TBD
+  back:
+    <<: *Charm
+    desc: TBD
+    prompts:
+      - TBD
+      - TBD
+      - TBD
+- template: &Instinct
+    <<: *template
+    name: Instinct
+  front:
+    <<: *Instinct
+    desc: TBD
+    prompts:
+      - TBD
+      - TBD
+      - TBD
+  back:
+    <<: *Instinct
+    desc: TBD
+    prompts:
+      - TBD
+      - TBD
+      - TBD
+- template: &Magic
+    <<: *template
+    name: Magic
+  front:
+    <<: *Magic
+    desc: TBD
+    prompts:
+      - TBD
+      - TBD
+      - TBD
+  back:
+    <<: *Magic
+    desc: TBD
+    prompts:
+      - TBD
+      - TBD
+      - TBD
+- template: &Secrets
+    <<: *template
+    name: Secrets
+  front:
+    <<: *Secrets
+    desc: TBD
+    prompts:
+      - TBD
+      - TBD
+      - TBD
+  back:
+    <<: *Secrets
+    desc: TBD
+    prompts:
+      - TBD
+      - TBD
+      - TBD
+- template: &Tech
+    <<: *template
+    name: Tech
+  front:
+    <<: *Tech
+    desc: TBD
+    prompts:
+      - TBD
+      - TBD
+      - TBD
+  back:
+    <<: *Tech
+    desc: TBD
+    prompts:
+      - TBD
+      - TBD
+      - TBD
+- template: &Wits
+    <<: *template
+    name: Wits
+  front:
+    <<: *Wits
+    desc: TBD
+    prompts:
+      - TBD
+      - TBD
+      - TBD
+  back:
+    <<: *Wits
+    desc: TBD
+    prompts:
+      - TBD
+      - TBD
+      - TBD
+- template: &unknown
+    <<: *template
+    name: UNKNOWN
+  front:
+    <<: *unknown
+    desc: TBD
+    prompts:
+      - TBD
+      - TBD
+      - TBD
+  back:
+    <<: *unknown
+    desc: TBD
+    prompts:
+      - TBD
+      - TBD
+      - TBD
