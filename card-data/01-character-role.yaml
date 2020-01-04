@@ -42,18 +42,18 @@
     name: Opportunist
   front:
     <<: *Opportunist
-    desc: TBD
+    desc: Life is unpredictable. When an opening comes, seize it. When a chance comes, take it.
     prompts:
-      - TBD
-      - TBD
-      - TBD
+      - Exploit or create a weakness
+      - Employ misdirection or deception
+      - Take a risk nobody else would
   back:
     <<: *Opportunist
-    desc: TBD
+    desc: There's only so much good luck to go around. Will you run out of yours, or take someone else's away?
     prompts:
-      - TBD
-      - TBD
-      - TBD
+      - Kick someone when they're down
+      - Betray a trust
+      - Let someone else pay the price
 - template: &Performer
     <<: *template
     name: Performer

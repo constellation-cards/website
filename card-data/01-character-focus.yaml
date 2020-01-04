@@ -37,6 +37,23 @@
       - TBD
       - TBD
       - TBD
+- template: &Chi
+    <<: *template
+    name: Charm
+  front:
+    <<: *Chi
+    desc: TBD
+    prompts:
+      - TBD
+      - TBD
+      - TBD
+  back:
+    <<: *Chi
+    desc: TBD
+    prompts:
+      - TBD
+      - TBD
+      - TBD
 - template: &Instinct
     <<: *template
     name: Instinct

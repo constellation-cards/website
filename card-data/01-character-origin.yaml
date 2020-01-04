@@ -64,8 +64,8 @@
     desc: They say you're unreliable or untrustworthy.
     prompts:
       - Fail to uphold an obligation
-      - Betray a trust
-      - Let someone else pay the price
+      - Disappoint someone important
+      - Disappear when needed
       - Subvert the stereotype
 - front: &CityFolk
     <<: *template
