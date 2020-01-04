@@ -21,4 +21,4 @@ Homepage: https://astralfrontier.github.io/flip-a-card/
 5. Click "Build deck"
 6. If all looks well, click "PDF"
 
-Icons made by [Smashicons](https://www.flaticon.com/authors/smashicons) on flaticon.com, specifically [this](https://www.flaticon.com/packs/essential-set-2) set
+Icons from [Feather](https://feathericons.com/), used under the MIT license.

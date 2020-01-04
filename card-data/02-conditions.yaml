@@ -6,7 +6,7 @@
     name: Condition Cards
     tags:
       - core-rules
-    img: like-1.png
+    img: heart.png
   front:
     <<: *conditions
     desc: Cards with this icon indicate an ongoing physical, mental, social, magical, etc. condition for a character.
