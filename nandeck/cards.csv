@@ -7,7 +7,7 @@ Num,Icons,Name,Img,Desc,Prompts,Rule
 1,BX,Indebted,,You have significant debts that demand your time or attention.,<li>Pursuit by patron</li><li>Attention from powerful forces</li><li>Bad reputation</li>,
 1,BX,Exhausted,,"Every step is an effort. You need not just rest, but healing.",<li>Ongoing lack of rest</li><li>Disease or infection</li><li>Fever or delirium</li>,
 1,BX,Wounded,,Your injuries are severe. You must get medical attention soon.,<li>Significant blood loss</li><li>Broken or twisted limbs</li><li>Shock or disorientation</li>,
-1,B,Condition Cards,like-1.png,Condition cards have no effect,,Flip to use Conditions
+1,B,Condition Cards,heart.png,Condition cards have no effect,,Flip to use Conditions
 1,BC,UNKNOWN,,TBD,<li>TBD</li><li>TBD</li><li>TBD</li>,
 1,BC,Synthesist,,TBD,<li>TBD</li><li>TBD</li><li>TBD</li>,
 1,BC,Soldier,,"Life is pain. There&#39;s no reward for this, only the next battle. When will you fall?",<li>Lash out at an easy target</li><li>Use your power selfishly</li><li>Lose faith in peace</li>,
@@ -64,7 +64,7 @@ Num,Icons,Name,Img,Desc,Prompts,Rule
 1,AC,Soldier,,"Life is struggle. Everyone has to fight, all the time. What do you fight for?",<li>Test your fate against an opponent</li><li>Make a sacrifice to support a hope</li><li>Stand up when everything says to stay down</li>,
 1,AC,Synthesist,,TBD,<li>TBD</li><li>TBD</li><li>TBD</li>,
 1,AC,UNKNOWN,,TBD,<li>TBD</li><li>TBD</li><li>TBD</li>,
-1,A,Condition Cards,like-1.png,"Cards with this icon indicate an ongoing physical, mental, social, magical, etc. condition for a character.",<li>Generate a hit by taking on a new condition</li><li>Generate a hit by aggravating a condition (flip over)</li><li>Topside: discard after spending a scene attending to condition</li><li>Flipside: discard by spending downtime doing so</li>,Flip to not use Conditions
+1,A,Condition Cards,heart.png,"Cards with this icon indicate an ongoing physical, mental, social, magical, etc. condition for a character.",<li>Generate a hit by taking on a new condition</li><li>Generate a hit by aggravating a condition (flip over)</li><li>Topside: discard after spending a scene attending to condition</li><li>Flipside: discard by spending downtime doing so</li>,Flip to not use Conditions
 1,AX,Hurt,,"You&#39;ve been bloodied, bruised, stunned, or otherwise physically harmed.",<li>Weapon attacks</li><li>Creatures&#39; natural attacks</li><li>Natural disasters</li>,
 1,AX,Weakened,,"You&#39;ve exerted yourself, or been mildly hurt, and need time to rest.",<li>Fatigue or sleep deprivation</li><li>Hunger or dehydration</li><li>Weather or temperature extremes</li>,
 1,AX,Obliged,,You&#39;ve incurred an important responsibility.,<li>Patron impatient or asks more</li><li>Rivals or enemies interfere</li><li>Embarrassment if revealed</li>,
