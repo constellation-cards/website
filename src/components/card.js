@@ -1,5 +1,6 @@
 import React from "react"
 import { map } from 'ramda'
+import slug from 'slug'
 
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
@@ -17,10 +18,10 @@ const CardPage = ({ pageContext: { title, cards } }) => (
       {map(card => (
         <Row>
           <Col sm={6}>
-            <CardFace side={card.front} brand="Front" />
+            <CardFace side={card.front} href={`/cards/${slug(card.name).toLowerCase()}`} brand="Front" />
           </Col>
           <Col sm={6}>
-            <CardFace side={card.back} brand="Back" />
+            <CardFace side={card.back} href={`/cards/${slug(card.name).toLowerCase()}`} brand="Back" />
           </Col>
         </Row>
       ), cards)}

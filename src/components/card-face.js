@@ -3,24 +3,26 @@ import Badge from "react-bootstrap/Badge"
 import Card from "react-bootstrap/Card"
 import { Link } from 'gatsby'
 
-import { /* join, */ map } from 'ramda'
+import { map } from 'ramda'
 import slug from 'slug'
 
 // const singleBadge = tags => <Badge variant="secondary">{join(', ', tags || [])}</Badge>
 
+const invisStyle = { "color": "inherit", "text-decoration": "inherit" }
+
 const multiBadge = tags => map(tag => (
   <span>
     <Badge variant="secondary">
-      <Link style={{"color": "inherit", "text-decoration": "inherit"}} to={`/tags/${slug(tag).toLowerCase()}`}>{tag}</Link>
+      <Link style={invisStyle} to={`/tags/${slug(tag).toLowerCase()}`}>{tag}</Link>
     </Badge>{` `}
   </span>
 ), tags || [])
 
-const CardFace = ({ side, brand }) => (
+const CardFace = ({ side, brand, href }) => (
   <div style={{ "margin-bottom": "1em" }}>
     <Card>
       <Card.Body>
-        <strong><u>{side.name} ({brand})</u></strong>{` `}
+        <strong><u><Link style={invisStyle} to={href}>{side.name} ({brand})</Link></u></strong>{` `}
         {multiBadge(side.tags)}
         <p>{side.desc}</p>
         <ul>
