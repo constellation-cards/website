@@ -20,23 +20,6 @@
       - Reject the real, denounce the realist
       - Forget that you have friends
       - Lose sight of your dream for a time
-- template: &Fighter
-    <<: *template
-    name: Fighter
-  front:
-    <<: *Fighter
-    desc: TBD
-    prompts:
-      - TBD
-      - TBD
-      - TBD
-  back:
-    <<: *Fighter
-    desc: TBD
-    prompts:
-      - TBD
-      - TBD
-      - TBD
 - template: &Guardian
     <<: *template
     name: Guardian
@@ -105,6 +88,23 @@
       - TBD
       - TBD
       - TBD
+- template: &Soldier
+    <<: *template
+    name: Soldier
+  front:
+    <<: *Soldier
+    desc: "Life is struggle. Everyone has to fight, all the time. What do you fight for?"
+    prompts:
+      - Test your fate against an opponent
+      - Make a sacrifice to support a hope
+      - Stand up when everything says to stay down
+  back:
+    <<: *Soldier
+    desc: "Life is pain. There's no reward for this, only the next battle. When will you fall?"
+    prompts:
+      - Lash out at an easy target
+      - Use your power selfishly
+      - Lose faith in peace
 - template: &Synthesist
     <<: *template
     name: Synthesist
