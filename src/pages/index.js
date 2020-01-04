@@ -104,12 +104,10 @@ query AllCardPages {
             front {
               name
               tags
-              icons
             }
             back {
               name
               tags
-              icons
             }
           }
         }

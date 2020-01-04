@@ -51,7 +51,6 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
             front {
               name
               tags
-              icons
               desc
               prompts
               rule
@@ -59,7 +58,6 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
             back {
               name
               tags
-              icons
               desc
               prompts
               rule

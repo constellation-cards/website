@@ -1,9 +1,18 @@
 const escapeHtml = require('escape-html')
 const path = require('path')
 
-const { join, map, split } = require('ramda')
+const { join, map, prepend, propOr, split } = require('ramda')
 
 const { getCardData } = require('./lib/card-data')
+
+const iconTagMap = {
+  'front': 'A',
+  'back': 'B',
+  'character': 'C',
+  'condition': 'X'
+}
+
+const iconsForTags = (tags) => join('', map(tag => propOr('', tag, iconTagMap), tags))
 
 /**
  * Create and return a CSV writer.
@@ -31,10 +40,10 @@ const createWriter = filename => {
  * @param {*} card 
  * @param {*} extraIcons 
  */
-function cardToColumn(card, extraIcons = "") {
+function cardToColumn(card, extraFlag) {
   return ({
     num: (parseInt(card.num) || 1),
-    icons: `${extraIcons}${card.icons || ''}`,
+    icons: iconsForTags(prepend(extraFlag, card.tags)),
     name: card.name || '',
     img: card.img || '',
     desc: join('<br><br>', split('\n', escapeHtml(card.desc))),
@@ -47,8 +56,8 @@ async function outputCards(sourcedir, destfile) {
   const allCards = getCardData(sourcedir);
   let printedCards = [];
   allCards.forEach(card => {
-    printedCards.unshift(cardToColumn(card.back, "B"));
-    printedCards.push(cardToColumn(card.front, "A"));
+    printedCards.unshift(cardToColumn(card.back, 'back'));
+    printedCards.push(cardToColumn(card.front, 'front'));
   });
   const csvWriter = createWriter(destfile);
   await csvWriter.writeRecords(printedCards);
