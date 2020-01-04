@@ -22,3 +22,5 @@ Homepage: https://astralfrontier.github.io/flip-a-card/
 6. If all looks well, click "PDF"
 
 Icons from [Feather](https://feathericons.com/), used under the MIT license.
+
+This game uses the [X-Card](http://tinyurl.com/x-card-rpg) safety feature as a core rule.
