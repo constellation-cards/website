@@ -25,18 +25,18 @@
     name: Guardian
   front:
     <<: *Guardian
-    desc: TBD
+    desc: You feel responsible for something or someone else. Their need propels you.
     prompts:
-      - TBD
-      - TBD
-      - TBD
+      - Keep your charge safe from something
+      - Identify and monitor a threat
+      - Endure the unimaginable
   back:
     <<: *Guardian
-    desc: TBD
+    desc: You control that which depends on you, and sometimes the weight grows too much.
     prompts:
-      - TBD
-      - TBD
-      - TBD
+      - Reshape your charge more to your liking
+      - Take advantage of your position
+      - Shut down your feelings or shut out your charge
 - template: &Opportunist
     <<: *template
     name: Opportunist
