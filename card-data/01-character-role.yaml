@@ -34,8 +34,8 @@
     <<: *Guardian
     desc: You control that which depends on you, and sometimes the weight grows too much.
     prompts:
-      - Reshape your charge more to your liking
-      - Take advantage of your position
+      - Assert your authority
+      - Cast suspicion too widely
       - Shut down your feelings or shut out your charge
 - template: &Opportunist
     <<: *template
