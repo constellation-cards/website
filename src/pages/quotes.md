@@ -8,9 +8,6 @@ George F. Kennan
 “You have enemies? Good. That means you’ve stood up for something, sometime in your life.”
 Winston Churchill
 
-“The more you sweat in training, the less you bleed in combat”
-Richard Marcinko
-
 “On the day of victory no fatigue is felt”
 German Proverb
 
