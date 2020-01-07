@@ -42,18 +42,18 @@
     name: Monster
   front:
     <<: *Monster
-    desc: TBD
+    desc: Your looks, reputation, or nature cause common folk to fear or reject you.
     prompts:
-      - TBD
-      - TBD
-      - TBD
+      - "Take advantage of others' fears"
+      - Exploit the source of your monstrousness
+      - Make common cause with other monsters
   back:
     <<: *Monster
-    desc: TBD
+    desc: To be the thing they say you are. How easy to do it accidentally. How tempting to choose it.
     prompts:
-      - TBD
-      - TBD
-      - TBD
+      - Make everything worse for yourself or an ally
+      - Fall prey to your darkness
+      - Spark conflict or dissent
 - template: &Opportunist
     <<: *template
     name: Opportunist
@@ -93,18 +93,18 @@
     name: Quester
   front:
     <<: *Quester
-    desc: TBD
+    desc: A vow, an ideal, a promise, a vision, a mission. Something drives you unstoppably onward.
     prompts:
-      - TBD
-      - TBD
-      - TBD
+      - Live the life your resolve demands
+      - Rally others to your cause
+      - Find a way forward despite everything
   back:
     <<: *Quester
-    desc: TBD
+    desc: That which is greater than you can also crush you beneath it.
     prompts:
-      - TBD
-      - TBD
-      - TBD
+      - Waver in your dedication to your quest
+      - Shut others out of assisting you
+      - Put your quest before more mundane matters
 - template: &Soldier
     <<: *template
     name: Soldier
