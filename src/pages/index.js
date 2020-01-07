@@ -10,7 +10,7 @@ import slug from 'slug'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import { assoc, groupBy, map, mergeDeepRight, nth, partition, pipe, pluck, pathOr } from 'ramda'
+import { assoc, groupBy, map, mergeDeepRight, nth, partition, pathOr } from 'ramda'
 
 // Return a Link element pointing to a given tag
 const linkToTag = tag => <Link style={{"color": "inherit", "text-decoration": "inherit"}} to={`/tags/${slug(tag).toLowerCase()}`}>{tag}</Link>
@@ -58,12 +58,7 @@ const sequenceCardTree = (formattedDepthCards, currentSequence) => {
 }
 
 const groupCardsByTag = data => {
-  const cards = pipe(
-    pluck('node'),
-    pluck('context'),
-    pluck('card')
-  )(data.allSitePage.edges)
-  const formattedDepthCards = groupCardsByTagDepth(cards, 0)
+  const formattedDepthCards = groupCardsByTagDepth(data.allCardFace.nodes, 0)
   return sequenceCardTree(formattedDepthCards, [])
 }
 
@@ -73,16 +68,17 @@ const IndexPage = ({ data }) => (
     <Container>
       <Row>
         <Col sm={6}>
-          <pre>
-            {groupCardsByTag(data)}
-          </pre>
+          {groupCardsByTag(data)}
         </Col>
         <Col sm={6}>
           <h3>Articles and Background</h3>
           <ul>
-            <li><Link to="/using-conditions">Using Conditions</Link></li>
-            <li><Link to="/playing-the-dreamer">Playing the Dreamer</Link></li>
-            <li><Link to="/playing-the-soldier">Playing the Soldier</Link></li>
+            {map(node => (
+              <li>
+                <Link to={node.path}>{node.context.frontmatter.title}</Link>
+              </li>
+            ), data.allSitePage.nodes
+            )}
           </ul>
         </Col>
       </Row>
@@ -93,23 +89,24 @@ const IndexPage = ({ data }) => (
 export default IndexPage
 
 export const query = graphql`
-query AllCardPages {
-  allSitePage(filter: {context: {card: {front: {name: {glob: "*"}}}}}) {
-    edges {
-      node {
-        path
-        context {
-          card {
-            name
-            front {
-              name
-              tags
-            }
-            back {
-              name
-              tags
-            }
-          }
+query {
+  allCardFace {
+    nodes {
+      name
+      front {
+        tags
+      }
+      back {
+        tags
+      }
+    }
+  }
+  allSitePage(filter: {context: {frontmatter: {draft: {ne: true}, title: {glob: "*"}}}}, sort: {fields: context___frontmatter___title, order: ASC}) {
+    nodes {
+      path
+      context {
+        frontmatter {
+          title
         }
       }
     }
