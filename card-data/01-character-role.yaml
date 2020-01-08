@@ -127,15 +127,15 @@
     name: Synthesist
   front:
     <<: *Synthesist
-    desc: TBD
+    desc: You create, fix, and remix.
     prompts:
-      - TBD
-      - TBD
-      - TBD
+      - Make something new out of what's available
+      - Repair or recreate something
+      - Bring creativity to bear against a problem
   back:
     <<: *Synthesist
-    desc: TBD
+    desc: What or who will you unmake, in your goal of making something new?
     prompts:
-      - TBD
-      - TBD
-      - TBD
+      - Tear down something valuable or important
+      - Keep something going at great cost
+      - Overuse the same solution
