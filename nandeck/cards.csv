@@ -9,7 +9,7 @@ Num,Icons,Name,Img,Desc,Prompts,Rule
 1,BX,Wounded,,Your injuries are severe. You must get medical attention soon.,<li>Significant blood loss</li><li>Broken or twisted limbs</li><li>Shock or disorientation</li>,
 1,B,Condition Cards,heart.png,Condition cards have no effect,,Flip to use Conditions
 1,BC,Synthesist,,"What or who will you unmake, in your goal of making something new?",<li>Tear down something valuable or important</li><li>Keep something going at great cost</li><li>Overuse the same solution</li>,
-1,BC,Soldier,,"Life is pain. There&#39;s no reward for this, only the next battle. When will you fall?",<li>Lash out at an easy target</li><li>Use your power selfishly</li><li>Lose faith in peace</li>,
+1,BC,Soldier,,"Life is pain. There&#39;s no reward for this, only the next battle. When will you fall?",<li>Lash out at an easy target</li><li>Use your power selfishly</li><li>Dismiss the peaceful alternative</li>,
 1,BC,Quester,,That which is greater than you can also crush you beneath it.,<li>Waver in your dedication to your quest</li><li>Shut others out of assisting you</li><li>Put your quest before more mundane matters</li>,
 1,BC,Performer,,"When anything you say matters, will you say the wrong thing, or for the wrong reasons?",<li>Show up or embarrass someone important</li><li>Draw unwanted attention</li><li>Provoke an unintended reaction</li>,
 1,BC,Opportunist,,"There&#39;s only so much good luck to go around. Will you run out of yours, or take someone else&#39;s away?",<li>Kick someone when they&#39;re down</li><li>Betray a trust</li><li>Let someone else pay the price</li>,
