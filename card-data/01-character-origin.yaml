@@ -72,16 +72,16 @@
     name: City Folk
     desc: Big cities, centers of knowledge and trade, are your home.
     prompts:
-      - Navigate hostile or difficult crowds
-      - Recite a lesson from your education
-      - Find someone selling something
+      - Get around in crowded or complex areas
+      - Use a lesson the city taught you
+      - Find a guy who knows a guy
   back:
     <<: *CityFolk
     desc: They say you've sold your soul to the city.
     prompts:
       - Establish dominance through aggression
-      - Value the material
-      - Rely on money over friendship
+      - Overvalue the material
+      - Take advantage of a relationship
       - Subvert the stereotype
 - front: &CountryFolk
     <<: *template
@@ -120,8 +120,8 @@
     name: Scraplander
     desc: Haunted wastelands and blasted heaths are your home.
     prompts:
+      - Survive through attentiveness and preparation
       - Deal with or take advantage of remnants of old wars and lost magic
-      - Salvage or repair anything
       - Reveal a useful item or experience
   back:
     <<: *Scraplander
