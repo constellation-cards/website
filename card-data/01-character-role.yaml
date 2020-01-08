@@ -121,7 +121,7 @@
     prompts:
       - Lash out at an easy target
       - Use your power selfishly
-      - Lose faith in peace
+      - Dismiss the peaceful alternative
 - template: &Synthesist
     <<: *template
     name: Synthesist
