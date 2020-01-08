@@ -12,8 +12,10 @@ import SEO from "../components/seo"
 
 import { assoc, groupBy, map, mergeDeepRight, nth, partition, pathOr } from 'ramda'
 
+const upper = s => s.replace(/^\w/, c => c.toUpperCase())
+
 // Return a Link element pointing to a given tag
-const linkToTag = tag => <Link style={{"color": "inherit", "text-decoration": "inherit"}} to={`/tags/${slug(tag).toLowerCase()}`}>{tag}</Link>
+const linkToTag = tag => <Link style={{"color": "inherit", "text-decoration": "inherit"}} to={`/tags/${slug(tag).toLowerCase()}`}>{upper(tag)}</Link>
 
 // Return a Link element pointing to an individual card, loaded from GraphQL
 const linkToCard = card => <Link to={`/cards/${slug(card.name).toLowerCase()}`}>{card.name}</Link>
@@ -43,7 +45,7 @@ const sequenceCardTree = (formattedDepthCards, currentSequence) => {
   const sortedKeys = [...Object.keys(formattedDepthCards)].sort()
   for (let key of sortedKeys) {
     const data = formattedDepthCards[key]
-    const Header = `h${(data.depth+2)}`
+    const Header = `h${(data.depth+1) * 2}`
     currentSequence.push(<Header>{linkToTag(key)}</Header>)
     currentSequence.push((
       <ul>
