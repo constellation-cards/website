@@ -47,8 +47,11 @@ HTMLTEXT = [all], JOIN([ulstart], [prompts], [ulend]), 5%, 45%, 90%, 38%, #FFFFF
 HTMLTEXT = [all], [rule], 25%, 85%, 50%, 15%, #FFFFFF, 0, ET, 100, RuleFont
 
 ; Card icons
-ICON = [all], A, plus-circle.svg
-ICON = [all], B, minus-circle.svg
+ICON = [all], A, arrow-up-circle.svg
+ICON = [all], B, arrow-down-circle.svg
 ICON = [all], C, smile.svg
+ICON = [all], D, home.svg
+ICON = [all], E, eye.svg
+ICON = [all], F, key.svg
 ICON = [all], X, heart.svg
 ICONS = [all], [icons], 0%, 79%, 100%, 20%, 20%, 10%, 0, PN, left, bottom
