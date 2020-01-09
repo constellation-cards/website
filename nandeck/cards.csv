@@ -8,6 +8,7 @@ Num,Icons,Name,Img,Desc,Prompts,Rule
 1,BX,Exhausted,,"Every step is an effort. You need not just rest, but healing.",<li>Ongoing lack of rest</li><li>Disease or infection</li><li>Fever or delirium</li>,
 1,BX,Wounded,,Your injuries are severe. You must get medical attention soon.,<li>Significant blood loss</li><li>Broken or twisted limbs</li><li>Shock or disorientation</li>,
 1,B,Condition Cards,heart.png,Condition cards have no effect,,Flip to use Conditions
+1,B,Character Cards,smile.png,See other side for rules,,
 1,BC,Synthesist,,"What or who will you unmake, in your goal of making something new?",<li>Tear down something valuable or important</li><li>Keep something going at great cost</li><li>Overuse the same solution</li>,
 1,BC,Soldier,,"Life is pain. There&#39;s no reward for this, only the next battle. When will you fall?",<li>Lash out at an easy target</li><li>Use your power selfishly</li><li>Dismiss the peaceful alternative</li>,
 1,BC,Quester,,That which is greater than you can also crush you beneath it.,<li>Waver in your dedication to your quest</li><li>Shut others out of assisting you</li><li>Put your quest before more mundane matters</li>,
@@ -34,7 +35,7 @@ Num,Icons,Name,Img,Desc,Prompts,Rule
 1,BC,Charm,,TBD,<li>TBD</li><li>TBD</li><li>TBD</li>,
 1,BC,Courage,,TBD,<li>TBD</li><li>TBD</li><li>TBD</li>,
 1,B,X-Card,x.png,"&quot;And if there is ever an issue, anyone can call for a break and we can talk privately. I know it sounds funny but it will help us play amazing games together and usually I&#39;m the one who uses the X card to protect myself from all of you! Please help make this game fun for everyone. Thank you!&quot;",,Lay this card at the center of the play area
-1,B,Simple Dice,,"If another rule says to meet a challenge, you can roll 1d6:","<li>On 1-3, you get nothing</li><li>On 4-6, you generate 1 hit</li>",Flip to not use dice
+1,B,Simple Dice,,"If another rule says to meet a challenge, you can roll 1d6:","<li>On 1-3, you get nothing</li><li>On 4-6, you get 1 hit</li>",Flip to not use dice
 1,B,Challenges,,Resolve challenges strictly via narration.,,Flip to rely on hits
 1,B,The Facilitator,,"The game has a Facilitator (GM, MC, referee).<br><br>Facilitators have final authority over rules questions.<br><br>Whoever laid this card face up is the facilitator.",,Flip to play cooperatively
 1,B,The Game,,See the other side for rules,,
@@ -68,7 +69,8 @@ Num,Icons,Name,Img,Desc,Prompts,Rule
 1,AC,Quester,,"A vow, an ideal, a promise, a vision, a mission. Something drives you unstoppably onward.",<li>Live the life your resolve demands</li><li>Rally others to your cause</li><li>Find a way forward despite everything</li>,
 1,AC,Soldier,,"Life is struggle. Everyone has to fight, all the time. What do you fight for?",<li>Test your fate against an opponent</li><li>Make a sacrifice to support a hope</li><li>Stand up when everything says to stay down</li>,
 1,AC,Synthesist,,"You create, fix, and remix.",<li>Make something new out of what&#39;s available</li><li>Repair or recreate something</li><li>Bring creativity to bear against a problem</li>,
-1,A,Condition Cards,heart.png,"Cards with this icon indicate an ongoing physical, mental, social, magical, etc. condition for a character.",<li>Generate a hit by taking on a new condition</li><li>Generate a hit by aggravating a condition (flip over)</li><li>Topside: discard after spending a scene attending to condition</li><li>Flipside: discard by spending downtime doing so</li>,Flip to not use Conditions
+1,A,Character Cards,smile.png,"Cards with this icon are character cards.<br><br>These cards describe a PC&#39;s most important traits.<br><br>To create a new PC, pick three cards.",<li>Topside: get a hit by flipping the card</li><li>Flipside: flip when a prompt is narrated by anyone</li>,
+1,A,Condition Cards,heart.png,"Cards with this icon indicate an ongoing physical, mental, social, magical, etc. condition for a character.",<li>Get a hit by taking a condition</li><li>Get a hit by flipping a condition card to aggravate it</li><li>Topside: discard after spending a scene attending to condition</li><li>Flipside: discard by spending downtime doing so</li>,Flip to not use Conditions
 1,AX,Hurt,,"You&#39;ve been bloodied, bruised, stunned, or otherwise physically harmed.",<li>Weapon attacks</li><li>Creatures&#39; natural attacks</li><li>Natural disasters</li>,
 1,AX,Weakened,,"You&#39;ve exerted yourself, or been mildly hurt, and need time to rest.",<li>Fatigue or sleep deprivation</li><li>Hunger or dehydration</li><li>Weather or temperature extremes</li>,
 1,AX,Obliged,,You&#39;ve incurred an important responsibility.,<li>Patron impatient or asks more</li><li>Rivals or enemies interfere</li><li>Embarrassment if revealed</li>,
