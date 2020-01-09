@@ -2,7 +2,6 @@
     tags:
       - character
       - focus
-    icons: C
 - template: &Courage
     <<: *template
     name: Courage

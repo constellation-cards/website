@@ -1,7 +1,6 @@
 - template: &template
     tags:
       - condition
-    icons: X
 - template: &conditions
     name: Condition Cards
     tags:

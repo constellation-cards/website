@@ -2,7 +2,6 @@
     tags:
       - character
       - role
-    icons: C
 - template: &Dreamer
     <<: *template
     name: Dreamer

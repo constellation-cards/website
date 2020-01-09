@@ -9,6 +9,9 @@ const iconTagMap = {
   'front': 'A',
   'back': 'B',
   'character': 'C',
+  'origin': 'D',
+  'role': 'E',
+  'focus': 'F',
   'condition': 'X'
 }
 

@@ -2,7 +2,6 @@
     tags:
       - character
       - origin
-    icons: C
 - front: &Northerner
     <<: *template
     name: Northerner
