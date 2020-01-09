@@ -39,7 +39,7 @@
       - TBD
 - template: &Chi
     <<: *template
-    name: Charm
+    name: Chi
   front:
     <<: *Chi
     desc: TBD
@@ -134,23 +134,6 @@
       - TBD
   back:
     <<: *Wits
-    desc: TBD
-    prompts:
-      - TBD
-      - TBD
-      - TBD
-- template: &unknown
-    <<: *template
-    name: UNKNOWN
-  front:
-    <<: *unknown
-    desc: TBD
-    prompts:
-      - TBD
-      - TBD
-      - TBD
-  back:
-    <<: *unknown
     desc: TBD
     prompts:
       - TBD
