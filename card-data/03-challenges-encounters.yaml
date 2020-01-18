@@ -1,0 +1,276 @@
+- template: &encounter
+    tags:
+      - challenge
+      - encounter
+- front: &Bandit
+    <<: *encounter
+    name: Bandit
+    desc: |-
+      A thief, thug, outlaw, or other miscreant.
+    prompts:
+      - Handles stolen goods
+      - Willing to work for coin
+      - Cunning and clever
+  back:
+    <<: *Bandit
+    prompts:
+      - Armed with stolen or crude weapons
+      - Greedy, desperate, or afraid
+      - Dirty tricks and quick escapes
+- front: &Kobold
+    <<: *encounter
+    name: Kobold
+    desc: |-
+      An invisible sprite that can manifest as an animal, rough-hewn humanoid, or flame.
+    prompts:
+      - TBD
+  back:
+    <<: *Kobold
+    prompts:
+      - TBD
+- front: &Ogre
+    <<: *encounter
+    name: Ogre
+    desc: |-
+      TBD
+    prompts:
+      - TBD
+  back:
+    <<: *Ogre
+    prompts:
+      - TBD
+- template: &modifier
+    tags:
+      - challenge
+      - encounter
+      - modifier
+- front: &Armored
+    <<: *modifier
+    name: Armored
+    desc: Not all armor helps the wearer all the time. How does it work for you?
+    prompts:
+      - Protection is heavy or cumbersome
+      - You're inside the walls with them
+  back:
+    <<: *Armored
+    desc: Significant physical protection which you must bypass to get through. What kind?
+    prompts:
+      - Solidly-built armor or natural hide
+      - Walls, barriers, cover
+      - Magical force fields
+- front: &Camp
+    <<: *modifier
+    name: Camp
+    desc: A temporary encampment, outpost, home base, den, etc.
+    prompts:
+      - Lose pursuers in the chaos
+      - Obtain something the camp has
+  back:
+    <<: *Camp
+    prompts:
+      - PCs probably outnumbered
+      - Shifting or complicated layout
+      - Traps, surprises, reinforcements
+- front: &Diabolical
+    <<: *modifier
+    name: Diabolical
+    desc: TBD
+    prompts:
+      - TBD
+  back:
+    <<: *Diabolical
+    desc: TBD
+    prompts:
+      - TBD
+- front: &Elemental
+    <<: *modifier
+    name: Elemental
+    desc: TBD
+    prompts:
+      - TBD
+  back:
+    <<: *Elemental
+    desc: TBD
+    prompts:
+      - TBD
+- front: &Flying
+    <<: *modifier
+    name: Flying
+    desc: TBD
+    prompts:
+      - TBD
+  back:
+    <<: *Flying
+    desc: TBD
+    prompts:
+      - TBD
+- front: &Gang
+    <<: *modifier
+    name: Gang
+    desc: Size doesn't always matter.
+    prompts:
+      - Disagreement among members
+      - The leader is toppled or embarrassed
+      - Individuals singled out for something
+  back:
+    <<: *Gang
+    desc: The challenge is a group of individuals.
+    prompts:
+      - Strength in numbers
+      - Surrounded or cut off
+      - Shouted down by the crowd
+- front: &Hybrid
+    <<: *modifier
+    name: Hybrid
+    desc: TBD
+    prompts:
+      - TBD
+  back:
+    <<: *Hybrid
+    desc: TBD
+    prompts:
+      - TBD
+- front: &Large
+    <<: *modifier
+    name: Large
+    desc: The bigger they are, the harder they fall.
+    prompts:
+      - Lumbering and clumsy
+      - Can't get into small spaces
+      - Easier to hit
+  back:
+    <<: *Large
+    desc: The challenge is enormous in size!
+    prompts:
+      - Resistant to normal scale effects
+      - Can reach or hit whole areas at once
+      - Stronger or more durable
+- front: &Monstrous
+    <<: *modifier
+    name: Monstrous
+    desc: TBD
+    prompts:
+      - TBD
+  back:
+    <<: *Monstrous
+    desc: TBD
+    prompts:
+      - TBD
+- front: &Notorious
+    <<: *modifier
+    name: Notorious
+    desc: TBD
+    prompts:
+      - TBD
+  back:
+    <<: *Notorious
+    desc: TBD
+    prompts:
+      - TBD
+- front: &Ominous
+    <<: *modifier
+    name: Ominous
+    desc: TBD
+    prompts:
+      - TBD
+  back:
+    <<: *Ominous
+    desc: TBD
+    prompts:
+      - TBD
+- front: &Poisonous
+    <<: *modifier
+    name: Poisonous
+    desc: TBD
+    prompts:
+      - TBD
+  back:
+    <<: *Poisonous
+    desc: TBD
+    prompts:
+      - TBD
+- front: &Quick
+    <<: *modifier
+    name: Quick
+    desc: TBD
+    prompts:
+      - TBD
+  back:
+    <<: *Quick
+    desc: TBD
+    prompts:
+      - TBD
+- front: &Resilient
+    <<: *modifier
+    name: Resilient
+    desc: TBD
+    prompts:
+      - TBD
+  back:
+    <<: *Resilient
+    desc: TBD
+    prompts:
+      - TBD
+- front: &Spectral
+    <<: *modifier
+    name: Spectral
+    desc: TBD
+    prompts:
+      - TBD
+  back:
+    <<: *Spectral
+    desc: TBD
+    prompts:
+      - TBD
+- front: &Tense
+    <<: *modifier
+    name: Tense
+    desc: Sometimes tension can work to your advantage.
+    prompts:
+      - They're willing to cooperate to make this go away
+      - Someone learns an important truth
+      - A deceit or secret is exposed
+  back:
+    <<: *Tense
+    desc: The situation is risky or unstable but they're willing to talk.
+    prompts:
+      - Fear, anger, or mistrust
+      - Misunderstanding or confusion
+      - Deceit from one side or a third party
+- front: &Vicious
+    <<: *modifier
+    name: Vicious
+    desc: TBD
+    prompts:
+      - TBD
+  back:
+    <<: *Vicious
+    desc: TBD
+    prompts:
+      - TBD
+- front: &Weird
+    <<: *modifier
+    name: Weird
+    desc: The challenge's nature may work against it after all.
+    prompts:
+      - Find limitations of the curse or change
+      - Challenge over-relies on its powers
+      - Learn a vital lesson about magic
+  back:
+    <<: *Weird
+    desc: The challenge is strange or magical in some fashion.
+    prompts:
+      - Magically enhanced, changed, or cursed
+      - Can wield mystic power or spells
+      - Confusing or seemingly impossible abilities
+- front: &Zombie
+    <<: *modifier
+    name: Zombie
+    desc: TBD
+    prompts:
+      - TBD
+  back:
+    <<: *Zombie
+    desc: TBD
+    prompts:
+      - TBD
