@@ -1,18 +1,14 @@
 - template: &template
     tags:
       - core-rules
-- template: &thegame
+- front: &thegame
     <<: *template
     name: The Game
-  front:
-    <<: *thegame
     desc: |-
       This is a game whose rules are on cards.
       To add a rule, write a card.
       Follow every rule on the cards on the table.
-  back:
-    <<: *thegame
-    desc: See the other side for rules
+  back: *thegame
 - template: &facilitator
     <<: *template
     name: The Facilitator
