@@ -34,6 +34,55 @@ more structure would be welcome. Maybe we only flip core rule cards at key
 moments in play like between sessions or encounters. Maybe there's something to
 limit how often one person can flip a core card like some currency or something.
 
+## Comments about the cards and card formats
+So far, I'm noticing three distinct types of cards:
+
+-   _Toggles_ between states. Each side gives the rules for one of the states and 
+    gives instructions to flip the card to switch to the other state.
+    
+-   _Dual natures_ that represent something that has some characteristics that are
+    generally positive and some that are generally negative. One side lists some
+    of the positives, the other lists some negatives.
+    
+    Dual natures are prompts. When you demonstrate the charcteristics of the face-up
+    side in the game, you can flip the card. I assume, but haven't seen it explicitly
+    stated, that flipping one of your character cards in this way implicitly gives
+    you a _hit_.
+    
+-   _Severity_ of a situation. Condition cards are the prototypical example. One
+    side describes a moderate mitigating situation. The other side describes a
+    more severe version of the same situation.
+    
+    Severity cards are introduced and flipped in response to mechanical or
+    fictional events. E.g. you get hit by a sword, so you get the wounded card.
+    Later you get patched up by your cleric and you discard the card. So the
+    typical flow of these cards (in a complete cycle) is: 
+    
+    ```
+    out of play -> side A -> side B -> side A -> out of play
+    ```
+    
+    I assume that the facilitator (if there is one) makes the call about when
+    these cards are introduced, flipped, and removed. Otherwise we arrive at those
+    actions by consensus.
+    
+### Toggle cards
+Toggles are flipped arbitrarily (as far as I can tell, see my questions about
+core rules cards). The two sides are neutral and equivalent--that is, one side
+isn't more or less desirable from an in-fiction standpoint.
+
+The current format for toggles is to have the same title on both sides with the
+body text describing the states. I recommend that you change this to title each
+side to indicate the current state. For example, instead of having a card entitled
+_The Facilitator_ on both sides with clarifying text, have a card that says
+something like "We make decisions together" on one side and "I make the decisions"
+on the other. There are going to be a lot of cards on the table, and the easier it
+is for everyone to quickly take in the current state, the better.
+
+For toggle cards, it doesn't really make sense to call one side the front and one
+the back. Obviously, you'll use those terms behind the scenes in the data, but to
+the players, both sides should be equal. Unless you want to set up an explicit
+default state.
 <!---
 ----|----10---|----20---|----30---|----40---|----50---|----60---|----70---|----80
 --->
