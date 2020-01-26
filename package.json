@@ -6,6 +6,7 @@
   "scripts": {
     "build": "gatsby build",
     "build-csv": "node build-csv.js && zip -9jr static/flip-a-card.zip static/nandeck/*",
+    "build-tex": "./build-tex.sh",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
