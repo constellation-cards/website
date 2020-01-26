@@ -17,7 +17,7 @@ jobs:
     - name: Compile LaTeX document
       uses: xu-cheng/latex-action@master
       with:
-        root_file: template/cards.tex
+        root_file: cards.tex
         args: -xelatex -file-line-error -interaction=nonstopmode
     - run: cp cards.pdf static/
     - run: npm run build -- --prefix-paths
