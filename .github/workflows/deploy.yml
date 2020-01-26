@@ -19,7 +19,7 @@ jobs:
       with:
         root_file: template/cards.tex
         args: -xelatex -file-line-error -interaction=nonstopmode
-    - run: cp template/cards.pdf static/
+    - run: cp cards.pdf static/
     - run: npm run build -- --prefix-paths
     - name: Deploy
       uses: docker://peaceiris/gh-pages:v2
