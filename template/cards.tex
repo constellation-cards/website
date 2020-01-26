@@ -1,0 +1,47 @@
+% !TeX program = xelatex
+
+\documentclass[parskip]{scrartcl}
+\usepackage[paperwidth=3in, paperheight=5in, margin=3mm]{geometry} % Print on 3x5 cards
+
+%%% Fonts
+\usepackage{fontspec}
+\defaultfontfeatures{Scale=MatchLowercase}
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+\usepackage{parskip}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+
+%%% Sections
+\newfontfamily\cardheaderfont[Path = fonts/, SizeFeatures={Size=20}]{NotoSerif-Bold} % Serif header
+\usepackage{sectsty}
+\usepackage[normalem]{ulem} % Support underlines in sections
+\setcounter{secnumdepth}{0} % Sections are not numbered
+\sectionfont{\cardheaderfont\centering} % Sections are centered
+% TODO: debug why underline adds an extra wraparound dot
+
+%%% Body
+\newfontfamily\cardbodyfont[Path = fonts/, SizeFeatures={Size=14}]{Lato-Regular}
+
+%%% Prompts
+\newfontfamily\cardpromptfont[Path = fonts/, SizeFeatures={Size=12}]{Lato-Regular}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}} % Support for bulleted lists
+
+%%% Rules
+\newfontfamily\cardrulefont[Path = fonts/, SizeFeatures={Size=10}]{Lato-Italic}
+
+% Document
+\begin{document}
+	\section{Armored}
+	\cardbodyfont
+	Significant physical protection which you must bypass to get through. What kind?
+	\cardpromptfont
+	\begin{itemize}
+		\tightlist
+		\item[-] Solidly-built armor or natural hide
+		\item[-] Walls, barriers, cover
+		\item[-] Magical force fields
+	\end{itemize}
+	\vspace*{\fill}
+	\cardrulefont
+	\centering\emph{Rules text goes here}
+\end{document}
