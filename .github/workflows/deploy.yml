@@ -15,10 +15,10 @@ jobs:
     - run: npm ci
     - run: npm run build-csv
     - name: Compile LaTeX document
-        uses: xu-cheng/latex-action@master
-        with:
-          root_file: template/cards.tex
-          args: -xelatex -file-line-error -interaction=nonstopmode
+      uses: xu-cheng/latex-action@master
+      with:
+        root_file: template/cards.tex
+        args: -xelatex -file-line-error -interaction=nonstopmode
     - run: cp template/cards.pdf static/
     - run: npm run build -- --prefix-paths
     - name: Deploy
