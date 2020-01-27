@@ -6,13 +6,32 @@
     tags:
       - core-rules
     iconImg: condition
-    desc: Cards with this icon indicate an ongoing physical, mental, social, magical, etc. condition for a character.
+    desc: |-
+      You've been affected by a temporary problem. Physical injury, mental disorder, social problems, magical curses, and so on are all conditions.
+      The condition is true within the fiction until cleared. If you have a condition card, and you narrate an action the condition would interfere with, you must meet the challenge of the condition.
+      You can take a condition to meet a challenge. Any player offering a challenge can suggest an appropriate condition.
     prompts:
-      - "Get a hit by taking a condition"
-      - "Get a hit by flipping a condition card to aggravate it"
-      - "Topside: discard after spending a scene attending to condition"
-      - "Flipside: discard by spending downtime doing so"
-  back: *conditions
+      - "Take a new condition to get a hit"
+      - "Flip topside to flipside to worsen the condition and get a hit"
+      - "Topside: discard after spending a scene attending to the condition"
+      - "Flipside: discard by spending downtime attending to the condition"
+    rule: Flip to see examples
+  back:
+    name: Condition Examples
+    tags:
+      - core-rules
+    iconImg: condition
+    desc: |-
+      Suggested uses of condition cards.
+      Clearing condition takes a scene or downtime. Use this time to set up or pay off plotlines relevant to the condition.
+    prompts:
+      - "You take Hurt to score a telling blow on the enemy."
+      - "The facilitator says you can take the long way around the danger, but you'll be Weakened."
+      - "Another player suggests that messing with the idol will leave you Magicked."
+      - "A cloud of darkness envelops you. If you want to stay in it, meet the challenge by taking Hindered (blind), otherwise you leave the cloud."
+      - "I spend a scene being healed by our cleric to discard Hurt. I wanted to talk to her anyway, about..."
+      - "I spend a week of downtime doing odd jobs to pay off Indebted. During that time, I listen for new adventure opportunities."
+    rule: Flip to see rules
 - front:
     <<: *template
     name: Hurt
