@@ -1,7 +1,14 @@
 const ejs = require('ejs')
 const fs = require('fs')
+const program = require('commander');
 
-const { isNil, map, prepend, propOr, reject } = require('ramda')
+program
+  .option('-s, --source-dir <dir>', 'Source directory for YAML', 'card-data')
+  .option('-t, --tag <tag>', 'Only show cards with a specific tag')
+
+program.parse(process.argv)
+
+const { filter, includes, isNil, map, prepend, propOr, reject } = require('ramda')
 
 const { getCardData, iconForTag } = require('./lib/card-data')
 
@@ -23,11 +30,20 @@ async function writeCardAsTex(face, extraFlag) {
   return tmpl
 }
 
-async function outputCards(sourcedir) {
-  const allCards = getCardData(sourcedir);
+function filterCards(options, allCards) {
+  if(options.tag) {
+    const incl = includes(options.tag)
+    return filter(card => incl(card.front.tags || []) || incl(card.back.tags || []), allCards)
+  } else {
+    return allCards
+  }
+}
+
+async function outputCards(options) {
+  const allCards = getCardData(options.sourceDir);
   let printedCards = [];
   let webCards = [];
-  for (let card of allCards) {
+  for (let card of filterCards(options, allCards)) {
     const frontFace = await writeCardAsTex(card.front, 'front')
     const backFace = await writeCardAsTex(card.back, 'back')
     printedCards.unshift(backFace);
@@ -41,4 +57,4 @@ async function outputCards(sourcedir) {
   fs.writeFileSync('cards.tex', webCardsTmpl)
 }
 
-outputCards('card-data').catch(console.error)
+outputCards(program).catch(console.error)
