@@ -12,7 +12,8 @@ const Header = ({ siteTitle }) => (
       <Nav className="mr-auto">
         <Nav.Link href={withPrefix('/')}>Home</Nav.Link>
         <Nav.Link href={withPrefix('/all-cards')}>All Cards</Nav.Link>
-        <Nav.Link href={withPrefix('/flip-a-card.zip')}>Download</Nav.Link>
+        <Nav.Link href={withPrefix('/cards.pdf')}>PDF</Nav.Link>
+        <Nav.Link href={withPrefix('/flip-a-card.zip')}>nanDECK</Nav.Link>
         <Nav.Link href={'https://github.com/astralfrontier/flip-a-card'}>Github</Nav.Link>
         <Nav.Link href={'https://trello.com/b/SNw135Vv/flip-a-card-ng'}>Trello</Nav.Link>
       </Nav>
