@@ -5,31 +5,35 @@ const { join, map, prepend, propOr } = require('ramda')
 const { getCardData } = require('./lib/card-data')
 
 function faceDataToTex(faceData) {
-  const text = [
-    '\\clearpage'
-  ]
+  const text = []
   if (faceData.name) {
     text.push(`\\section{${faceData.name}}`)
   }
   if (faceData.desc) {
-    text.push('\\cardbodyfont')
-    text.push(faceData.desc)
+    text.push(`{\\cardbodyfont`)
+    for (let line of faceData.desc.split('\n')) {
+      text.push(`${line.trim()}\\par`)
+    }
+    text.push(`}`)
   }
   if (faceData.prompts.length > 0) {
-    text.push('\\cardpromptfont')
+    text.push(`{\\cardpromptfont`)
     text.push('\\begin{itemize}')
     text.push('\\tightlist')
     for (let prompt of faceData.prompts) {
       text.push(`\\item[-] ${prompt}`)
     }
     text.push('\\end{itemize}')
+    text.push(`}`)
   }
   if (faceData.rule) {
     text.push('\\vspace*{\\fill}')
-    text.push('\\cardrulefont')
-    text.push(`\\centering\\emph{${faceData.rule}}`)
+    text.push('{\\cardrulefont\\center\\emph')
+    text.push(`${faceData.rule}\\par`)
+    text.push(`}`)
   }
-  return join('\n', text)
+  text.push(`\\clearpage`)
+  return join('', map(s => `${s}\n`, text))
 }
 
 function writeCardAsTex(face, extraFlag) {

@@ -7,3 +7,5 @@ xelatex -synctex=1 -interaction=nonstopmode cards.tex
 sh ./cleanup-cards.sh
 
 rm allcards.tex cards.{aux,log,synctex.gz}
+
+cp cards.pdf /mnt/c/Users/opens/Downloads
