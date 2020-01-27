@@ -8,10 +8,10 @@ const { getCardData } = require('./lib/card-data')
 const tagIconMapping = {
   "front": "arrow-up-circle.png",
   "back": "arrow-down-circle.png",
-  "character": "user.png",
+  "character": "star.png",
   "origin": "home.png",
   "focus": "key.png",
-  "role": "star.png",
+  "role": "user.png",
   "condition": "heart.png",
   "encounter": "alert-circle.png",
   "modifier": "plus-circle.png",
