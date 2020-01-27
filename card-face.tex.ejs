@@ -8,7 +8,7 @@
 <% } -%>
 <% if (prompts.length > 0) { -%>
 {\cardpromptfont
-\begin{itemize}
+\begin{itemize}[leftmargin=0.3cm]
 \tightlist
 <% for (let prompt of prompts) { -%>
 \item[-] <%- prompt %>
@@ -33,7 +33,7 @@
 \end{tikzpicture}
 <% if (img) { -%>
 \begin{tikzpicture}[remember picture, overlay]
-\node[inner sep=0pt, opacity=0.25, xshift=-0.42cm] at (current page.center) {%
+\node[inner sep=0pt, opacity=0.2, xshift=-0.42cm] at (current page.center) {%
 \includegraphics[width=3in,height=3in]{static/nandeck/<%- img %>}%
 };%
 \end{tikzpicture}
