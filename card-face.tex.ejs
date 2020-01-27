@@ -1,5 +1,4 @@
 \section{<%- name %>}
-
 <% if (desc) { -%>
 {\cardbodyfont
 <% for (let line of desc.split('\n')) { -%>
@@ -7,7 +6,6 @@
 <% } -%>
 }
 <% } -%>
-
 <% if (prompts.length > 0) { -%>
 {\cardpromptfont
 \begin{itemize}
@@ -18,14 +16,14 @@
 \end{itemize}
 }
 <% } -%>
-
 \vspace*{\fill}
 <% if (rule) { -%>
+\begin{adjustwidth}{1.5cm}{1.5cm}
 {\cardrulefont\center\emph
 <%- rule %>\par
 }
+\end{adjustwidth}
 <% } -%>
-
 \begin{tikzpicture}[remember picture,overlay,shift={(current page.south west)}]
 \node[anchor=south west]{
     \includegraphics[width=1cm]{static/nandeck/smile.png}
