@@ -25,7 +25,16 @@
 \end{adjustwidth}
 <% } -%>
 \begin{tikzpicture}[remember picture,overlay,shift={(current page.south west)}]
-\node[anchor=south west]{
-    \includegraphics[width=1cm]{static/nandeck/smile.png}
+<% for (let i = 0; i < icons.length; i++) { -%>
+\node[anchor=south west, xshift=-0.1cm, yshift=<%- (i - 0.1) %>cm]{
+    \includegraphics[width=1cm]{static/nandeck/<%- icons[i] %>}
 };
+<% } -%>
 \end{tikzpicture}
+<% if (img) { -%>
+\begin{tikzpicture}[remember picture, overlay]
+\node[inner sep=0pt, opacity=0.25, xshift=-0.42cm] at (current page.center) {%
+\includegraphics[width=3in,height=3in]{static/nandeck/<%- img %>}%
+};%
+\end{tikzpicture}
+<% } -%>

@@ -1,9 +1,26 @@
 const ejs = require('ejs')
 const fs = require('fs')
 
-const { prepend, propOr } = require('ramda')
+const { isNil, map, prepend, propOr, reject } = require('ramda')
 
 const { getCardData } = require('./lib/card-data')
+
+const tagIconMapping = {
+  "front": "arrow-up-circle.png",
+  "back": "arrow-down-circle.png",
+  "character": "user.png",
+  "origin": "home.png",
+  "focus": "key.png",
+  "role": "star.png",
+  "condition": "heart.png",
+  "encounter": "alert-circle.png",
+  "modifier": "plus-circle.png",
+  // "demo": "",
+}
+
+const tagsToIcons = faceData => {
+  return reject(isNil, map(tag => tagIconMapping[tag], faceData.tags))
+}
 
 async function writeCardAsTex(face, extraFlag) {
   const faceData = {
@@ -14,7 +31,8 @@ async function writeCardAsTex(face, extraFlag) {
     prompts: propOr([], 'prompts', face),
     rule: propOr('', 'rule', face)
   }
-  const tmpl = await ejs.renderFile('card-face.tex.ejs', faceData, {async: true})
+  const icons = tagsToIcons(faceData)
+  const tmpl = await ejs.renderFile('card-face.tex.ejs', {...faceData, icons}, {async: true})
   return tmpl
 }
 

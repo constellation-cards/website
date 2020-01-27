@@ -1,10 +1,8 @@
-- template: &characters
+- front: &characters
     name: Character Cards
     tags:
       - core-rules
-    img: smile.png
-  front:
-    <<: *characters
+    img: user.png
     desc: |-
       Cards with this icon are character cards.
       These cards describe a PC's most important traits.
@@ -12,6 +10,4 @@
     prompts:
       - "Topside: get a hit by flipping the card"
       - "Flipside: flip when a prompt is narrated by anyone"
-  back:
-    <<: *characters
-    desc: See other side for rules
+  back: *characters

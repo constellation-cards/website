@@ -1,24 +1,18 @@
 - template: &template
     tags:
       - condition
-- template: &conditions
+- front: &conditions
     name: Condition Cards
     tags:
       - core-rules
     img: heart.png
-  front:
-    <<: *conditions
     desc: Cards with this icon indicate an ongoing physical, mental, social, magical, etc. condition for a character.
     prompts:
       - "Get a hit by taking a condition"
       - "Get a hit by flipping a condition card to aggravate it"
       - "Topside: discard after spending a scene attending to condition"
       - "Flipside: discard by spending downtime doing so"
-    rule: Flip to not use Conditions
-  back:
-    <<: *conditions
-    desc: Condition cards have no effect
-    rule: Flip to use Conditions
+  back: *conditions
 - front:
     <<: *template
     name: Hurt
