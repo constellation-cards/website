@@ -5,7 +5,7 @@
     name: Condition Cards
     tags:
       - core-rules
-    img: heart.png
+    iconImg: condition
     desc: Cards with this icon indicate an ongoing physical, mental, social, magical, etc. condition for a character.
     prompts:
       - "Get a hit by taking a condition"

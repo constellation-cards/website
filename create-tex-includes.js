@@ -3,30 +3,17 @@ const fs = require('fs')
 
 const { isNil, map, prepend, propOr, reject } = require('ramda')
 
-const { getCardData } = require('./lib/card-data')
-
-const tagIconMapping = {
-  "front": "arrow-up-circle.png",
-  "back": "arrow-down-circle.png",
-  "character": "star.png",
-  "origin": "home.png",
-  "focus": "key.png",
-  "role": "user.png",
-  "condition": "heart.png",
-  "encounter": "alert-circle.png",
-  "modifier": "plus-circle.png",
-  // "demo": "",
-}
+const { getCardData, iconForTag } = require('./lib/card-data')
 
 const tagsToIcons = faceData => {
-  return reject(isNil, map(tag => tagIconMapping[tag], faceData.tags))
+  return reject(isNil, map(iconForTag, faceData.tags))
 }
 
 async function writeCardAsTex(face, extraFlag) {
-  const faceData = {
+    const faceData = {
     name: propOr('', 'name', face),
     tags: prepend(extraFlag, propOr([], 'tags', face)),
-    img: propOr('', 'img', face),
+    img: iconForTag(propOr('', 'iconImg', face)) || propOr('', 'img', face),
     desc: propOr('', 'desc', face),
     prompts: propOr([], 'prompts', face),
     rule: propOr('', 'rule', face)
