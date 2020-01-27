@@ -1,6 +1,9 @@
 % !TeX program = xelatex
 
-\documentclass{scrartcl}
+% Needed for Tikz to work under xelatex
+\def\pgfsysdriver{pgfsys-dvipdfm.def}
+
+\documentclass{article}
 \usepackage[paperwidth=3in, paperheight=5in, margin=3mm]{geometry} % Print on 3x5 cards
 
 %%% Fonts
@@ -22,6 +25,10 @@
 %%% Body
 \newfontfamily\cardbodyfont[Path = fonts/, SizeFeatures={Size=14}]{Lato-Regular}
 
+%%% Images
+\usepackage{graphicx}
+\usepackage{tikzpagenodes}
+
 %%% Prompts
 \newfontfamily\cardpromptfont[Path = fonts/, SizeFeatures={Size=12}]{Lato-Regular}
 \providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}} % Support for bulleted lists
@@ -33,5 +40,6 @@
 \begin{document}
 <% for (let card of cards) { %>
 <%- card %>
+\clearpage
 <% } %>
 \end{document}
