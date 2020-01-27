@@ -1,42 +1,11 @@
+const ejs = require('ejs')
 const fs = require('fs')
 
-const { join, map, prepend, propOr } = require('ramda')
+const { prepend, propOr } = require('ramda')
 
 const { getCardData } = require('./lib/card-data')
 
-function faceDataToTex(faceData) {
-  const text = []
-  if (faceData.name) {
-    text.push(`\\section{${faceData.name}}`)
-  }
-  if (faceData.desc) {
-    text.push(`{\\cardbodyfont`)
-    for (let line of faceData.desc.split('\n')) {
-      text.push(`${line.trim()}\\par`)
-    }
-    text.push(`}`)
-  }
-  if (faceData.prompts.length > 0) {
-    text.push(`{\\cardpromptfont`)
-    text.push('\\begin{itemize}')
-    text.push('\\tightlist')
-    for (let prompt of faceData.prompts) {
-      text.push(`\\item[-] ${prompt}`)
-    }
-    text.push('\\end{itemize}')
-    text.push(`}`)
-  }
-  if (faceData.rule) {
-    text.push('\\vspace*{\\fill}')
-    text.push('{\\cardrulefont\\center\\emph')
-    text.push(`${faceData.rule}\\par`)
-    text.push(`}`)
-  }
-  text.push(`\\clearpage`)
-  return join('', map(s => `${s}\n`, text))
-}
-
-function writeCardAsTex(face, extraFlag) {
+async function writeCardAsTex(face, extraFlag) {
   const faceData = {
     name: propOr('', 'name', face),
     tags: prepend(extraFlag, propOr([], 'tags', face)),
@@ -45,22 +14,26 @@ function writeCardAsTex(face, extraFlag) {
     prompts: propOr([], 'prompts', face),
     rule: propOr('', 'rule', face)
   }
-  const includeName = Math.random().toString(36).substring(2, 15)
-  fs.writeFileSync(`${includeName}.tex`, faceDataToTex(faceData))
-  return includeName
+  const tmpl = await ejs.renderFile('card-face.tex.ejs', faceData, {async: true})
+  return tmpl
 }
 
 async function outputCards(sourcedir) {
   const allCards = getCardData(sourcedir);
   let printedCards = [];
-  allCards.forEach(card => {
-    // printedCards.unshift(writeCardAsTex(card.back, 'back'));
-    printedCards.push(writeCardAsTex(card.front, 'front'));
-    // Comment this and uncomment unshift to get print order
-    printedCards.push(writeCardAsTex(card.back, 'back'));
-  });
-  fs.writeFileSync('allcards.tex', join('\n', map(includeName => `\\input{${includeName}}`, printedCards)))
-  fs.writeFileSync('cleanup-cards.sh', join('\n', map(includeName => `rm ${includeName}.tex`, printedCards)))
+  let webCards = [];
+  for (let card of allCards) {
+    const frontFace = await writeCardAsTex(card.front, 'front')
+    const backFace = await writeCardAsTex(card.back, 'back')
+    printedCards.unshift(backFace);
+    printedCards.push(frontFace);
+    webCards.push(frontFace);
+    webCards.push(backFace);
+  }
+  const printedCardsTmpl = await ejs.renderFile('cards.tex.ejs', {cards: printedCards}, {async: true})
+  const webCardsTmpl = await ejs.renderFile('cards.tex.ejs', {cards: webCards}, {async: true})
+  fs.writeFileSync('cards-print.tex', printedCardsTmpl)
+  fs.writeFileSync('cards.tex', webCardsTmpl)
 }
 
 outputCards('card-data').catch(console.error)

@@ -31,5 +31,7 @@
 
 % Document
 \begin{document}
-\input{allcards}
+<% for (let card of cards) { %>
+<%- card %>
+<% } %>
 \end{document}

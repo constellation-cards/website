@@ -1,0 +1,25 @@
+\section{<%- name %>}
+<% if (desc) { -%>
+{\cardbodyfont
+<% for (let line of desc.split('\n')) { -%>
+<%- line.trim() %>\par
+<% } -%>
+}
+<% } -%>
+<% if (prompts.length > 0) { -%>
+{\cardpromptfont
+\begin{itemize}
+\tightlist
+<% for (let prompt of prompts) { -%>
+\item[-] <%- prompt %>
+<% } -%>
+\end{itemize}
+}
+<% } -%>
+<% if (rule) { -%>
+\vspace*{\fill}
+{\cardrulefont\center\emph
+<%- rule %>\par
+}
+<% } -%>
+\clearpage

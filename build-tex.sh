@@ -3,9 +3,8 @@
 set -xueo pipefail
 
 node create-tex-includes.js
-xelatex -synctex=1 -interaction=nonstopmode cards.tex 
-sh ./cleanup-cards.sh
+xelatex -synctex=1 -interaction=nonstopmode -halt-on-error cards.tex 
 
-rm allcards.tex cards.{aux,log,synctex.gz}
+rm cards.{aux,log,synctex.gz}
 
 cp cards.pdf /mnt/c/Users/opens/Downloads

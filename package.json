@@ -54,6 +54,7 @@
     "slug": "^2.1.0"
   },
   "devDependencies": {
+    "ejs": "^3.0.1",
     "gh-pages": "^2.1.1",
     "prettier": "^1.19.1"
   }
