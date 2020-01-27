@@ -24,16 +24,15 @@ const CardFace = ({ side, brand, href }) => (
       <Card.Body>
         <strong><u><Link style={invisStyle} to={href}>{side.name} ({brand})</Link></u></strong>{` `}
         {multiBadge(side.tags)}
-        <p>{side.desc}</p>
+        <>{map(s => (<p>{s}</p>), (side.desc || '').split('\n'))}</>
         <ul>
           {(side.prompts || []).map(prompt => (
             <li>{prompt}</li>
           ))}
         </ul>
-        <em>{side.rule}</em>
+        <p style={{"text-align": "center"}}><em>{side.rule}</em></p>
       </Card.Body>
     </Card>
-
   </div>
 )
 
