@@ -1,20 +1,23 @@
 - template: &template
     tags:
       - condition
+- template: &tfront
+    <<: *template
+    rule: Flip to worsen the condition and get a hit. Discard by spending a scene attending to the condition.
+- template: &tback
+    <<: *template
+    rule: Discard by spending downtime attending to the condition.
 - front: &conditions
     name: Condition Cards
     tags:
       - core-rules
     iconImg: condition
     desc: |-
-      You've been affected by a temporary problem. Physical injury, mental disorder, social problems, magical curses, and so on are all conditions.
-      The condition is true within the fiction until cleared. If you have a condition card, and you narrate an action the condition would interfere with, you must meet the challenge of the condition.
-      You can take a condition to meet a challenge. Any player offering a challenge can suggest an appropriate condition.
-    prompts:
-      - "Take a new condition to get a hit"
-      - "Flip topside to flipside to worsen the condition and get a hit"
-      - "Topside: discard after spending a scene attending to the condition"
-      - "Flipside: discard by spending downtime attending to the condition"
+      You've been affected by a temporary problem. Injury, delirium, debts, magical curses, and so on are all conditions.
+      You can choose to take a condition to get a hit. Describe how. Any player offering a challenge can suggest an appropriate condition that meets that challenge.
+      The condition is true and limits your fictional actions. If you narrate an action the condition would interfere with, you must meet the challenge of the condition in addition to any other challenges.
+      You can flip a topside condition to worsen it and get another hit. Describe how.
+      Clearing conditions takes time. Use this time to drive drama or build the world by exploring how you clear the condition.
     rule: Flip to see examples
   back:
     name: Condition Examples
@@ -29,11 +32,11 @@
       - "The facilitator says you can take the long way around the danger, but you'll be Weakened."
       - "Another player suggests that messing with the idol will leave you Magicked."
       - "A cloud of darkness envelops you. If you want to stay in it, meet the challenge by taking Hindered (blind), otherwise you leave the cloud."
-      - "I spend a scene being healed by our cleric to discard Hurt. I wanted to talk to her anyway, about..."
-      - "I spend a week of downtime doing odd jobs to pay off Indebted. During that time, I listen for new adventure opportunities."
+      - "You spend a scene being healed by our cleric to discard Hurt. You wanted to talk to her anyway, about..."
+      - "You spend a week of downtime doing odd jobs to pay off Indebted. During that time, you listen for new adventure opportunities."
     rule: Flip to see rules
 - front:
-    <<: *template
+    <<: *tfront
     name: Hurt
     desc: You've been bloodied, bruised, stunned, or otherwise physically harmed.
     prompts:
@@ -41,7 +44,7 @@
       - Creatures' natural attacks
       - Natural disasters
   back:
-    <<: *template
+    <<: *tback
     name: Wounded
     desc: Your injuries are severe. You must get medical attention soon.
     prompts:
@@ -49,7 +52,7 @@
       - Broken or twisted limbs
       - Shock or disorientation
 - front:
-    <<: *template
+    <<: *tfront
     name: Weakened
     desc: You've exerted yourself, or been mildly hurt, and need time to rest.
     prompts:
@@ -57,7 +60,7 @@
       - Hunger or dehydration
       - Weather or temperature extremes
   back:
-    <<: *template
+    <<: *tback
     name: Exhausted
     desc: Every step is an effort. You need not just rest, but healing.
     prompts:
@@ -65,7 +68,7 @@
       - Disease or infection
       - Fever or delirium
 - front:
-    <<: *template
+    <<: *tfront
     name: Obliged
     desc: You've incurred an important responsibility.
     prompts:
@@ -73,7 +76,7 @@
       - Rivals or enemies interfere
       - Embarrassment if revealed
   back:
-    <<: *template
+    <<: *tback
     name: Indebted
     desc: You have significant debts that demand your time or attention.
     prompts:
@@ -81,7 +84,7 @@
       - Attention from powerful forces
       - Bad reputation
 - front:
-    <<: *template
+    <<: *tfront
     name: Wanted
     desc: Someone powerful or dangerous is interested in you.
     prompts:
@@ -89,7 +92,7 @@
       - Someone tailing you
       - Stalked by an animal
   back:
-    <<: *template
+    <<: *tback
     name: Pursued
     desc: You're being chased, by someone or something that wishes you ill.
     prompts:
@@ -97,7 +100,7 @@
       - Risk of imminent attacks
       - Threat to current goals
 - front:
-    <<: *template
+    <<: *tfront
     name: Magicked
     desc: A spell or other power is affecting you.
     prompts:
@@ -105,7 +108,7 @@
       - Taboos or limitations on action
       - Discomfort or distraction
   back:
-    <<: *template
+    <<: *tback
     name: Cursed
     desc: A powerful and baneful magic has you in its grip.
     prompts:
@@ -113,7 +116,7 @@
       - Unbreakable or complex taboos
       - Pain or great misfortune
 - front:
-    <<: *template
+    <<: *tfront
     name: Mutated
     desc: You've been physically changed by magic or an artifact.
     prompts:
@@ -121,7 +124,7 @@
       - Monstrous modifications
       - Partial petrification or zombification
   back:
-    <<: *template
+    <<: *tback
     name: Transformed
     desc: You've been physically remade into something new, but not forever.
     prompts:
@@ -129,7 +132,7 @@
       - Changed into a monster
       - Zombified
 - front:
-    <<: *template
+    <<: *tfront
     name: Disarmed
     desc: Vital gear you depend on has been damaged or taken
     prompts:
@@ -137,7 +140,7 @@
       - Damaged or partial armor
       - Malfunctioning magical tools
   back:
-    <<: *template
+    <<: *tback
     name: Broken
     desc: Vital gear you depend on is unavailable and must be replaced
     prompts:
@@ -145,7 +148,7 @@
       - Spellbook lost or unreadable
       - Magical tools disenchanted
 - front:
-    <<: *template
+    <<: *tfront
     name: Hindered
     desc: A sense or faculty you normally depend on has been weakened due to injury, magic, or stress.
     prompts:
@@ -153,7 +156,7 @@
       - Unable to speak clearly
       - Magical senses or powers unreliable
   back:
-    <<: *template
+    <<: *tback
     name: Impeded
     desc: A sense or faculty you normally depend on has been temporarily lost.
     prompts:
