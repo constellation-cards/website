@@ -1,8 +1,18 @@
+<%
+function formatDesc(line) {
+    const trimmed = line.trim()
+    if(trimmed.startsWith('//')) {
+        return '{\\emph{' + trimmed.substr(2) + '}}'
+    } else {
+        return trimmed
+    }
+}
+-%>
 \section{<%- name %>}
 <% if (desc) { -%>
 {\cardbodyfont
 <% for (let line of desc.split('\n')) { -%>
-<%- line.trim() %>\par
+<%- formatDesc(line) %>\par
 <% } -%>
 }
 <% } -%>
