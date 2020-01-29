@@ -104,3 +104,6 @@ public
 .tern-port
 
 static/cards.pdf
+cards-print.tex
+cards.tex
+cards.pdf
