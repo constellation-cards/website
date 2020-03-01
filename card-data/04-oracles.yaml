@@ -15,7 +15,7 @@
     rule: Discard and shuffle into related cards
 - front: *emotion-front
   back:
-    <<*: *emotion-back
+    <<: *emotion-back
     name: Ecstacy
     desc: |-
       Ecstacy, Joy, or Serenity.
@@ -23,7 +23,7 @@
       When mixed with Admiration, yields Love.
 - front: *emotion-front
   back:
-    <<*: *emotion-back
+    <<: *emotion-back
     name: Admiration
     desc: |-
       Admiration, Trust, or Acceptance.
@@ -31,7 +31,7 @@
       When mixed with Terror, yields Submission.
 - front: *emotion-front
   back:
-    <<*: *emotion-back
+    <<: *emotion-back
     name: Terror
     desc: |-
       Terror, Fear, or Apprehension.
@@ -39,7 +39,7 @@
       When mixed with Amazement, yields Awe.
 - front: *emotion-front
   back:
-    <<*: *emotion-back
+    <<: *emotion-back
     name: Amazement
     desc: |-
       Amazement, Surprise, or Distraction.
@@ -47,7 +47,7 @@
       When mixed with Grief, yields Disapproval.
 - front: *emotion-front
   back:
-    <<*: *emotion-back
+    <<: *emotion-back
     name: Grief
     desc: |-
       Grief, Sadness, or Pensiveness.
@@ -55,7 +55,7 @@
       When mixed with Loathing, yields Remorse.
 - front: *emotion-front
   back:
-    <<*: *emotion-back
+    <<: *emotion-back
     name: Loathing
     desc: |-
       Loathing, Disgust, or Boredom.
@@ -63,7 +63,7 @@
       When mixed with Rage, yields Contempt.
 - front: *emotion-front
   back:
-    <<*: *emotion-back
+    <<: *emotion-back
     name: Rage
     desc: |-
       Rage, Anger, or Annoyance.
@@ -71,7 +71,7 @@
       When mixed with Vigilance, yields Aggressiveness.
 - front: *emotion-front
   back:
-    <<*: *emotion-back
+    <<: *emotion-back
     name: Vigilance
     desc: |-
       Vigilance, Anticipation, or Interest.
