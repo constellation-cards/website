@@ -1,4 +1,12 @@
 Num,Icons,Name,Img,Desc,Prompts,Rule
+1,B,Vigilance,,"Vigilance, Anticipation, or Interest.<br><br>When mixed with Rage, yields Aggressiveness.<br><br>When mixed with Ecstacy, yields Optimism.",,
+1,B,Rage,,"Rage, Anger, or Annoyance.<br><br>When mixed with Loathing, yields Contempt.<br><br>When mixed with Vigilance, yields Aggressiveness.",,
+1,B,Loathing,,"Loathing, Disgust, or Boredom.<br><br>When mixed with Loathing, yields Remorse.<br><br>When mixed with Rage, yields Contempt.",,
+1,B,Grief,,"Grief, Sadness, or Pensiveness.<br><br>When mixed with Amazement, yields Disapproval.<br><br>When mixed with Loathing, yields Remorse.",,
+1,B,Amazement,,"Amazement, Surprise, or Distraction.<br><br>When mixed with Terror, yields Awe.<br><br>When mixed with Grief, yields Disapproval.",,
+1,B,Terror,,"Terror, Fear, or Apprehension.<br><br>When mixed with Admiration, yields Submission.<br><br>When mixed with Amazement, yields Awe.",,
+1,B,Admiration,,"Admiration, Trust, or Acceptance.<br><br>When mixed with Ecstacy, yields Love.<br><br>When mixed with Terror, yields Submission.",,
+1,B,Ecstacy,,"Ecstacy, Joy, or Serenity.<br><br>When mixed with Vigilance, yields Optimism.<br><br>When mixed with Admiration, yields Love.",,
 1,B,Zombie,,TBD,<li>TBD</li>,
 1,B,Weird,,The challenge is strange or magical in some fashion.,"<li>Magically enhanced, changed, or cursed</li><li>Can wield mystic power or spells</li><li>Confusing or seemingly impossible abilities</li>",
 1,B,Vicious,,TBD,<li>TBD</li>,
@@ -121,3 +129,11 @@ Num,Icons,Name,Img,Desc,Prompts,Rule
 1,A,Vicious,,TBD,<li>TBD</li>,
 1,A,Weird,,The challenge&#39;s nature may work against it after all.,<li>Find limitations of the curse or change</li><li>Challenge over-relies on its powers</li><li>Learn a vital lesson about magic</li>,
 1,A,Zombie,,TBD,<li>TBD</li>,
+1,AO,Emotion,help-circle.png,"Oracle cards can answer questions.<br><br>Use these cards to answer what someone is feeling, or what emotion a thing or event would spark.",,Flip to reveal an answer
+1,AO,Emotion,help-circle.png,"Oracle cards can answer questions.<br><br>Use these cards to answer what someone is feeling, or what emotion a thing or event would spark.",,Flip to reveal an answer
+1,AO,Emotion,help-circle.png,"Oracle cards can answer questions.<br><br>Use these cards to answer what someone is feeling, or what emotion a thing or event would spark.",,Flip to reveal an answer
+1,AO,Emotion,help-circle.png,"Oracle cards can answer questions.<br><br>Use these cards to answer what someone is feeling, or what emotion a thing or event would spark.",,Flip to reveal an answer
+1,AO,Emotion,help-circle.png,"Oracle cards can answer questions.<br><br>Use these cards to answer what someone is feeling, or what emotion a thing or event would spark.",,Flip to reveal an answer
+1,AO,Emotion,help-circle.png,"Oracle cards can answer questions.<br><br>Use these cards to answer what someone is feeling, or what emotion a thing or event would spark.",,Flip to reveal an answer
+1,AO,Emotion,help-circle.png,"Oracle cards can answer questions.<br><br>Use these cards to answer what someone is feeling, or what emotion a thing or event would spark.",,Flip to reveal an answer
+1,AO,Emotion,help-circle.png,"Oracle cards can answer questions.<br><br>Use these cards to answer what someone is feeling, or what emotion a thing or event would spark.",,Flip to reveal an answer
