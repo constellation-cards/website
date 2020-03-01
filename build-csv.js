@@ -12,6 +12,7 @@ const iconTagMap = {
   'origin': 'D',
   'role': 'E',
   'focus': 'F',
+  'oracle': 'O',
   'condition': 'X'
 }
 

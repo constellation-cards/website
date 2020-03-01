@@ -53,5 +53,6 @@ ICON = [all], C, smile.svg
 ICON = [all], D, home.svg
 ICON = [all], E, eye.svg
 ICON = [all], F, key.svg
+ICON = [all], O, heart-circle.svg
 ICON = [all], X, heart.svg
 ICONS = [all], [icons], 0%, 79%, 100%, 20%, 20%, 10%, 0, PN, left, bottom

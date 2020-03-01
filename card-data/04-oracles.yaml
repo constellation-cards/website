@@ -1,0 +1,79 @@
+- emotion-front-template: &emotion-front
+    name: Emotion
+    img: help-circle.png
+    tags:
+      - oracle
+      - emotion
+    desc: |-
+      Oracle cards can answer questions.
+      Use these cards to answer what someone is feeling, or what emotion a thing or event would spark.
+    rule: Flip to reveal an answer
+  emotion-back-template: &emotion-back
+    tags:
+      - oracle
+      - emotion
+    rule: Discard and shuffle into related cards
+- front: *emotion-front
+  back:
+    <<*: *emotion-back
+    name: Ecstacy
+    desc: |-
+      Ecstacy, Joy, or Serenity.
+      When mixed with Vigilance, yields Optimism.
+      When mixed with Admiration, yields Love.
+- front: *emotion-front
+  back:
+    <<*: *emotion-back
+    name: Admiration
+    desc: |-
+      Admiration, Trust, or Acceptance.
+      When mixed with Ecstacy, yields Love.
+      When mixed with Terror, yields Submission.
+- front: *emotion-front
+  back:
+    <<*: *emotion-back
+    name: Terror
+    desc: |-
+      Terror, Fear, or Apprehension.
+      When mixed with Admiration, yields Submission.
+      When mixed with Amazement, yields Awe.
+- front: *emotion-front
+  back:
+    <<*: *emotion-back
+    name: Amazement
+    desc: |-
+      Amazement, Surprise, or Distraction.
+      When mixed with Terror, yields Awe.
+      When mixed with Grief, yields Disapproval.
+- front: *emotion-front
+  back:
+    <<*: *emotion-back
+    name: Grief
+    desc: |-
+      Grief, Sadness, or Pensiveness.
+      When mixed with Amazement, yields Disapproval.
+      When mixed with Loathing, yields Remorse.
+- front: *emotion-front
+  back:
+    <<*: *emotion-back
+    name: Loathing
+    desc: |-
+      Loathing, Disgust, or Boredom.
+      When mixed with Loathing, yields Remorse.
+      When mixed with Rage, yields Contempt.
+- front: *emotion-front
+  back:
+    <<*: *emotion-back
+    name: Rage
+    desc: |-
+      Rage, Anger, or Annoyance.
+      When mixed with Loathing, yields Contempt.
+      When mixed with Vigilance, yields Aggressiveness.
+- front: *emotion-front
+  back:
+    <<*: *emotion-back
+    name: Vigilance
+    desc: |-
+      Vigilance, Anticipation, or Interest.
+      When mixed with Rage, yields Aggressiveness.
+      When mixed with Ecstacy, yields Optimism.
