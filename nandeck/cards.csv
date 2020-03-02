@@ -1,7 +1,7 @@
 Num,Icons,Name,Img,Desc,Prompts,Rule
 1,BO,Vigilance,,"Vigilance, Anticipation, or Interest.<br><br>With Rage: yields Aggressiveness.<br><br>With Ecstacy: yields Optimism.",,Discard and shuffle into related cards
 1,BO,Rage,,"Rage, Anger, or Annoyance.<br><br>With Loathing: yields Contempt.<br><br>With Vigilance: yields Aggressiveness.",,Discard and shuffle into related cards
-1,BO,Loathing,,"Loathing, Disgust, or Boredom.<br><br>With Loathing: yields Remorse.<br><br>With Rage: yields Contempt.",,Discard and shuffle into related cards
+1,BO,Loathing,,"Loathing, Disgust, or Boredom.<br><br>With Grief: yields Remorse.<br><br>With Rage: yields Contempt.",,Discard and shuffle into related cards
 1,BO,Grief,,"Grief, Sadness, or Pensiveness.<br><br>With Amazement: yields Disapproval.<br><br>With Loathing: yields Remorse.",,Discard and shuffle into related cards
 1,BO,Amazement,,"Amazement, Surprise, or Distraction.<br><br>With Terror: yields Awe.<br><br>With Grief: yields Disapproval.",,Discard and shuffle into related cards
 1,BO,Terror,,"Terror, Fear, or Apprehension.<br><br>With Admiration: yields Submission.<br><br>With Amazement: yields Awe.",,Discard and shuffle into related cards
