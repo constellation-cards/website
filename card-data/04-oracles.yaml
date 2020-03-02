@@ -60,7 +60,7 @@
     name: Loathing
     desc: |-
       Loathing, Disgust, or Boredom.
-      With Loathing: yields Remorse.
+      With Grief: yields Remorse.
       With Rage: yields Contempt.
 - front: *emotion-front
   back:
