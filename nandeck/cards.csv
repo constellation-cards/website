@@ -1,12 +1,12 @@
 Num,Icons,Name,Img,Desc,Prompts,Rule
-1,BO,Vigilance,,"Vigilance, Anticipation, or Interest.<br><br>When mixed with Rage, yields Aggressiveness.<br><br>When mixed with Ecstacy, yields Optimism.",,Discard and shuffle into related cards
-1,BO,Rage,,"Rage, Anger, or Annoyance.<br><br>When mixed with Loathing, yields Contempt.<br><br>When mixed with Vigilance, yields Aggressiveness.",,Discard and shuffle into related cards
-1,BO,Loathing,,"Loathing, Disgust, or Boredom.<br><br>When mixed with Loathing, yields Remorse.<br><br>When mixed with Rage, yields Contempt.",,Discard and shuffle into related cards
-1,BO,Grief,,"Grief, Sadness, or Pensiveness.<br><br>When mixed with Amazement, yields Disapproval.<br><br>When mixed with Loathing, yields Remorse.",,Discard and shuffle into related cards
-1,BO,Amazement,,"Amazement, Surprise, or Distraction.<br><br>When mixed with Terror, yields Awe.<br><br>When mixed with Grief, yields Disapproval.",,Discard and shuffle into related cards
-1,BO,Terror,,"Terror, Fear, or Apprehension.<br><br>When mixed with Admiration, yields Submission.<br><br>When mixed with Amazement, yields Awe.",,Discard and shuffle into related cards
-1,BO,Admiration,,"Admiration, Trust, or Acceptance.<br><br>When mixed with Ecstacy, yields Love.<br><br>When mixed with Terror, yields Submission.",,Discard and shuffle into related cards
-1,BO,Ecstacy,,"Ecstacy, Joy, or Serenity.<br><br>When mixed with Vigilance, yields Optimism.<br><br>When mixed with Admiration, yields Love.",,Discard and shuffle into related cards
+1,BO,Vigilance,,"Vigilance, Anticipation, or Interest.<br><br>With Rage: yields Aggressiveness.<br><br>With Ecstacy: yields Optimism.",,Discard and shuffle into related cards
+1,BO,Rage,,"Rage, Anger, or Annoyance.<br><br>With Loathing: yields Contempt.<br><br>With Vigilance: yields Aggressiveness.",,Discard and shuffle into related cards
+1,BO,Loathing,,"Loathing, Disgust, or Boredom.<br><br>With Loathing: yields Remorse.<br><br>With Rage: yields Contempt.",,Discard and shuffle into related cards
+1,BO,Grief,,"Grief, Sadness, or Pensiveness.<br><br>With Amazement: yields Disapproval.<br><br>With Loathing: yields Remorse.",,Discard and shuffle into related cards
+1,BO,Amazement,,"Amazement, Surprise, or Distraction.<br><br>With Terror: yields Awe.<br><br>With Grief: yields Disapproval.",,Discard and shuffle into related cards
+1,BO,Terror,,"Terror, Fear, or Apprehension.<br><br>With Admiration: yields Submission.<br><br>With Amazement: yields Awe.",,Discard and shuffle into related cards
+1,BO,Admiration,,"Admiration, Trust, or Acceptance.<br><br>With Ecstacy: yields Love.<br><br>With Terror: yields Submission.",,Discard and shuffle into related cards
+1,BO,Ecstacy,,"Ecstacy, Joy, or Serenity.<br><br>With Vigilance: yields Optimism.<br><br>With Admiration: yields Love.",,Discard and shuffle into related cards
 1,B,Zombie,,TBD,<li>TBD</li>,
 1,B,Weird,,The challenge is strange or magical in some fashion.,"<li>Magically enhanced, changed, or cursed</li><li>Can wield mystic power or spells</li><li>Confusing or seemingly impossible abilities</li>",
 1,B,Vicious,,TBD,<li>TBD</li>,
@@ -129,11 +129,11 @@ Num,Icons,Name,Img,Desc,Prompts,Rule
 1,A,Vicious,,TBD,<li>TBD</li>,
 1,A,Weird,,The challenge&#39;s nature may work against it after all.,<li>Find limitations of the curse or change</li><li>Challenge over-relies on its powers</li><li>Learn a vital lesson about magic</li>,
 1,A,Zombie,,TBD,<li>TBD</li>,
-1,AO,Emotion,help-circle.png,"Oracle cards can answer questions.<br><br>Use these cards to answer what someone is feeling, or what emotion a thing or event would spark.",,Flip to reveal an answer
-1,AO,Emotion,help-circle.png,"Oracle cards can answer questions.<br><br>Use these cards to answer what someone is feeling, or what emotion a thing or event would spark.",,Flip to reveal an answer
-1,AO,Emotion,help-circle.png,"Oracle cards can answer questions.<br><br>Use these cards to answer what someone is feeling, or what emotion a thing or event would spark.",,Flip to reveal an answer
-1,AO,Emotion,help-circle.png,"Oracle cards can answer questions.<br><br>Use these cards to answer what someone is feeling, or what emotion a thing or event would spark.",,Flip to reveal an answer
-1,AO,Emotion,help-circle.png,"Oracle cards can answer questions.<br><br>Use these cards to answer what someone is feeling, or what emotion a thing or event would spark.",,Flip to reveal an answer
-1,AO,Emotion,help-circle.png,"Oracle cards can answer questions.<br><br>Use these cards to answer what someone is feeling, or what emotion a thing or event would spark.",,Flip to reveal an answer
-1,AO,Emotion,help-circle.png,"Oracle cards can answer questions.<br><br>Use these cards to answer what someone is feeling, or what emotion a thing or event would spark.",,Flip to reveal an answer
-1,AO,Emotion,help-circle.png,"Oracle cards can answer questions.<br><br>Use these cards to answer what someone is feeling, or what emotion a thing or event would spark.",,Flip to reveal an answer
+1,AO,Emotion,help-circle.png,"Oracle cards can answer questions. Draw one card for a simple answer, or two cards for a complex one.<br><br>Use these cards to answer what someone is feeling, or what emotion a thing or event would spark.<br><br>Each emotion has two neighbors. You can use the emotion itself, or choose to mix it with a neighbor.",,Flip to reveal an answer
+1,AO,Emotion,help-circle.png,"Oracle cards can answer questions. Draw one card for a simple answer, or two cards for a complex one.<br><br>Use these cards to answer what someone is feeling, or what emotion a thing or event would spark.<br><br>Each emotion has two neighbors. You can use the emotion itself, or choose to mix it with a neighbor.",,Flip to reveal an answer
+1,AO,Emotion,help-circle.png,"Oracle cards can answer questions. Draw one card for a simple answer, or two cards for a complex one.<br><br>Use these cards to answer what someone is feeling, or what emotion a thing or event would spark.<br><br>Each emotion has two neighbors. You can use the emotion itself, or choose to mix it with a neighbor.",,Flip to reveal an answer
+1,AO,Emotion,help-circle.png,"Oracle cards can answer questions. Draw one card for a simple answer, or two cards for a complex one.<br><br>Use these cards to answer what someone is feeling, or what emotion a thing or event would spark.<br><br>Each emotion has two neighbors. You can use the emotion itself, or choose to mix it with a neighbor.",,Flip to reveal an answer
+1,AO,Emotion,help-circle.png,"Oracle cards can answer questions. Draw one card for a simple answer, or two cards for a complex one.<br><br>Use these cards to answer what someone is feeling, or what emotion a thing or event would spark.<br><br>Each emotion has two neighbors. You can use the emotion itself, or choose to mix it with a neighbor.",,Flip to reveal an answer
+1,AO,Emotion,help-circle.png,"Oracle cards can answer questions. Draw one card for a simple answer, or two cards for a complex one.<br><br>Use these cards to answer what someone is feeling, or what emotion a thing or event would spark.<br><br>Each emotion has two neighbors. You can use the emotion itself, or choose to mix it with a neighbor.",,Flip to reveal an answer
+1,AO,Emotion,help-circle.png,"Oracle cards can answer questions. Draw one card for a simple answer, or two cards for a complex one.<br><br>Use these cards to answer what someone is feeling, or what emotion a thing or event would spark.<br><br>Each emotion has two neighbors. You can use the emotion itself, or choose to mix it with a neighbor.",,Flip to reveal an answer
+1,AO,Emotion,help-circle.png,"Oracle cards can answer questions. Draw one card for a simple answer, or two cards for a complex one.<br><br>Use these cards to answer what someone is feeling, or what emotion a thing or event would spark.<br><br>Each emotion has two neighbors. You can use the emotion itself, or choose to mix it with a neighbor.",,Flip to reveal an answer
