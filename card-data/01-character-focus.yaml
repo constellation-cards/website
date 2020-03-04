@@ -32,7 +32,10 @@
 - front: &Charm
     <<: *tfront
     name: Charm
-    desc: TBD
+    desc: |-
+      //""
+      The essence of charm is creating a bond with someone. Make them feel interesting, or appreciated, or just part of something cool.
+      Charm lets you awe, wow, surprise, or comfort people. It gets you through tough situations with style and panache, making people move aside for you or get behind you through force of personality.
     prompts:
       - TBD
       - TBD
