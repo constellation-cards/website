@@ -12,7 +12,7 @@
     <<: *tfront
     name: Courage
     desc: |-
-      //"It doesn't matter if I win. It matters if I don't try" -- Emory
+      //"It doesn't matter if I win. It matters if I don't try." -- Emory
       Courage is strength in the face of grief or pain. It's not just a willingness to do something, but to do it when there's every reason to hold back.
       Courage lets you fight when afraid, speak when being shouted down, stand up when you're injured, or take an unpopular stand.
     prompts:
@@ -23,7 +23,7 @@
     <<: *tback
     name: Courage
     desc: |-
-      //"Emory! Fall back! We need you alive!" -- Tana
+      //"Emory! Fall back! This isn't our fight!" -- Tana
       Not every risk has to be taken, nor is every reward worthwhile. Sometimes, you do things it would have been better not to do.
     prompts:
       - Expose yourself to unnecessary danger
@@ -33,34 +33,38 @@
     <<: *tfront
     name: Charm
     desc: |-
-      //""
+      //"I only come to this tavern to see you!" -- Basler
       The essence of charm is creating a bond with someone. Make them feel interesting, or appreciated, or just part of something cool.
       Charm lets you awe, wow, surprise, or comfort people. It gets you through tough situations with style and panache, making people move aside for you or get behind you through force of personality.
     prompts:
-      - TBD
-      - TBD
-      - TBD
+      - Perform with grace and elegance
+      - Get by on audacity
+      - Gain someone's confidence
   back:
     <<: *tback
     name: Charm
-    desc: TBD
+    desc: |-
+      //"Listen, city boy. Stop talking or I'll cut your tongue out." -- Woody
+      Some people can become enraptured by their own ability to impress and influence. They buy into the story they're selling, until reality intrudes.
     prompts:
-      - TBD
-      - TBD
-      - TBD
+      - Show off needlessly
+      - Push things for the sake of pushing
+      - Take advantage of someone's emotions
 - template: &Chi
     <<: *template
     name: Chi
   front:
     <<: *Chi
-    desc: TBD
+    desc: |-
+      //""
     prompts:
       - TBD
       - TBD
       - TBD
   back:
     <<: *Chi
-    desc: TBD
+    desc: |-
+      //""
     prompts:
       - TBD
       - TBD
@@ -87,11 +91,14 @@
     name: Magic
   front:
     <<: *Magic
-    desc: TBD
+    desc: |-
+      //"I don't know, I just felt ... something ... flow through me!" -- Tana
+      The mystical, the eldritch, the arcane. The Power has many names. When called, it always comes. That doesn't mean you can always command it.
+      Magic lets you achieve a variety of supernatural outcomes, with costs and consequences that sometimes don't make rational sense.
     prompts:
-      - TBD
-      - TBD
-      - TBD
+      - Place the impossible within reach
+      - Mingle the material and the symbolic
+      - Infuse the ordinary with awe and mystery
   back:
     <<: *Magic
     desc: TBD
