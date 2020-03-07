@@ -28,13 +28,14 @@
   front:
     <<: *facilitator
     desc: |-
-      You move the spotlight from player to player in the fairest and funnest ways. Any player can call for the spotlight to move, but you have the final say when it does.
-      Players who have the spotlight get to narrate for their character. When they do something decisive or dramatic, resolve it and move the spotlight.
+      Your goal is to move the spotlight from player to player in fun and fair ways. Any player can call for the spotlight to move, but you have the final say when it does.
+      Players who have the spotlight get to narrate for their character.
       Move the spotlight:
     prompts:
       - toward a PC who's placed at risk or in danger
       - toward a player who hasn't acted recently
       - toward a player who has an interesting idea for how to move things forward
+      - away from a player who just resolved a dramatic or decisive action
       - away from a cliffhanger or moment of tension
       - away from any player who's had it too long
   back:
@@ -47,13 +48,15 @@
   front:
     <<: *loremaster
     desc: |-
-      Your goal is to establish the history, setting, and canon of the world in which the game happens. Any player can suggest an answer, but you have the final say on what's true.
+      Your goal is to establish the history, setting, and canon of the world in which the game happens.
       When someone asks, "what do our characters know about X?" and it's not a question for an Ensemble Character (EC) to decide, you get to answer.
+      Any player can suggest an answer, but you have the final say on what's true. If a specific PC's heritage, origin, or interests concern the question, consider deferring to them.
     prompts:
-      - What languages can I start the game speaking?
-      - What happened to the dragons?
-      - What's the capital city of the Empire?
+      - Who was the greatest Hairfoot Paladin in history?
+      - What languages might my character learn to speak?
+      - When did the dragons disappear?
       - How does magic work, anyway?
+      - Why are orcs monotheistic?
   back:
     <<: *gmcard
     <<: *loremaster
@@ -81,8 +84,8 @@
     <<: *storyteller
     desc: |-
       The Principal Characters (PCs) are the focus of the game. The game also has Ensemble Characters (ECs), sometimes called Non-Player Characters (NPCs).
+      Your goal is to narrate the ECs' actions and reactions. Decide on their agendas, then enact them in interesting ways.
       ECs are allies, antagonists, or anyone else involved in the story but not at the heart of it.
-      Your job is to narrate the ECs' actions and reactions. Decide on their agendas, then enact them in interesting ways.
     prompts:
       - Give ECs a name and identity
       - Find the essential humanity of every EC
