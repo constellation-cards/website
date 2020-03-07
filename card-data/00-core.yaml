@@ -1,6 +1,12 @@
 - template: &template
     tags:
       - core-rules
+- template: &gmcard
+    desc: |-
+      Several core rules are roles assigned to a single player.
+      These roles can be assigned individually to several people, or all given to a single player ("the Game Master" or "the GM").
+      The roles can change hands during the game. You cannot take a role away from someone else, but you can ask someone else to give up a role.
+      If you've been assigned a role, you are bound by the Principles.
 - front: &thegame
     <<: *template
     name: The Game
@@ -9,22 +15,82 @@
       To add a rule, write a card.
       Follow every rule on the cards on the table.
   back: *thegame
+- front: &principles
+    <<: *template
+    name: The Principles
+    desc: |-
+      This is a placeholder. Individual settings will introduce their own Principles.
+  back: *principles
 - template: &facilitator
     <<: *template
     name: The Facilitator
+    rule: Whoever plays this card is the facilitator. Flip for additional rules.
   front:
     <<: *facilitator
     desc: |-
-      This game has no Facilitator (GM, MC, referee).
-      Resolve player disputes collectively.
-    rule: Flip to become the Facilitator
+      You move the spotlight from player to player in the fairest and funnest ways. Any player can call for the spotlight to move, but you have the final say when it does.
+      Players who have the spotlight get to narrate for their character. When they do something decisive or dramatic, resolve it and move the spotlight.
+      Move the spotlight:
+    prompts:
+      - toward a PC who's placed at risk or in danger
+      - toward a player who hasn't acted recently
+      - toward a player who has an interesting idea for how to move things forward
+      - away from a cliffhanger or moment of tension
+      - away from any player who's had it too long
   back:
+    <<: *gmcard
     <<: *facilitator
+- template: &loremaster
+    <<: *template
+    name: The Loremaster
+    rule: Whoever plays this card is the loremaster. Flip for additional rules.
+  front:
+    <<: *loremaster
     desc: |-
-      The game has a Facilitator (GM, MC, referee).
-      Facilitators have final authority over rules questions.
-      Whoever laid this card face up is the facilitator.
-    rule: Flip to play cooperatively
+      Your goal is to establish the history, setting, and canon of the world in which the game happens. Any player can suggest an answer, but you have the final say on what's true.
+      When someone asks, "what do our characters know about X?" and it's not a question for an Ensemble Character (EC) to decide, you get to answer.
+    prompts:
+      - What languages can I start the game speaking?
+      - What happened to the dragons?
+      - What's the capital city of the Empire?
+      - How does magic work, anyway?
+  back:
+    <<: *gmcard
+    <<: *loremaster
+- template: &referee
+    <<: *template
+    name: The Referee
+    rule: Whoever plays this card is the referee. Flip for additional rules.
+  front:
+    <<: *referee
+    desc: |-
+      Your goal is to adjudicate questions about the rules of the game, and to make changes to the rules with the group's consent. Any player can suggest how to handle a rule, but you have the final say.
+      Example rulings:
+    prompts:
+      - Is a given card applicable to this fictional situation?
+      - How should a given card's text be interpreted?
+      - Is it time to create a new card?
+  back:
+    <<: *gmcard
+    <<: *referee
+- template: &storyteller
+    <<: *template
+    name: The Storyteller
+    rule: Whoever plays this card is the storyteller. Flip for additional rules.
+  front:
+    <<: *storyteller
+    desc: |-
+      The Principal Characters (PCs) are the focus of the game. The game also has Ensemble Characters (ECs), sometimes called Non-Player Characters (NPCs).
+      ECs are allies, antagonists, or anyone else involved in the story but not at the heart of it.
+      Your job is to narrate the ECs' actions and reactions. Decide on their agendas, then enact them in interesting ways.
+    prompts:
+      - Give ECs a name and identity
+      - Find the essential humanity of every EC
+      - Don't steal agency or spotlight from the PCs
+      - Initiate actions that prompt a PC response
+  back:
+    <<: *gmcard
+    <<: *storyteller
 - template: &challenges
     <<: *template
     name: Challenges
