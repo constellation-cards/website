@@ -114,18 +114,23 @@
     name: Secrets
   front:
     <<: *Secrets
-    desc: TBD
+    desc: |-
+      //"Basler, where did you get that knife from?" -- Tana
+      You deal in concealment, stealth, and subterfuge. Your tools are things people don't want known, or weren't expecting.
+      You could use hidden weapons, court gossip, cloak-and-dagger skulduggery, or the secrets of the heart.
     prompts:
-      - TBD
-      - TBD
-      - TBD
+      - Acquire something from someone else without their knowledge
+      - Reveal something you've been concealing
+      - Avoid detection or culpability
   back:
     <<: *Secrets
-    desc: TBD
+    desc: |-
+      //"You don't wanna know" -- Basler
+      The problem with secrets is that keeping them means keeping track of them.
     prompts:
-      - TBD
-      - TBD
-      - TBD
+      - Endure distrust from those around you
+      - Reveal the wrong thing to the wrong person
+      - Give yourself away at an inopportune moment
 - template: &Tech
     <<: *template
     name: Tech
