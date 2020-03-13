@@ -93,19 +93,22 @@
     <<: *Magic
     desc: |-
       //"I don't know, I just felt ... something ... flow through me!" -- Tana
-      The mystical, the eldritch, the arcane. The Power has many names. When called, it always comes. That doesn't mean you can always command it.
-      Magic lets you achieve a variety of supernatural outcomes, with costs and consequences that sometimes don't make rational sense.
+      The mystical, the eldritch, the arcane. The Power has many names. What do you call it?
+      You can achieve a variety of supernatural outcomes with magic, such as healing, curses, enchantments, and more.
     prompts:
       - Place the impossible within reach
       - Mingle the material and the symbolic
       - Infuse the ordinary with awe and mystery
   back:
     <<: *Magic
-    desc: TBD
+    desc: |-
+      //"The Power is much like the ocean. You can sail in it, or drown in it." -- Tana
+      When called, the Power always comes. That doesn't mean you can always command it.
+      The costs and consequences of using magic can be anything, even for a familiar spell.
     prompts:
-      - TBD
-      - TBD
-      - TBD
+      - Face a cost you can't easily or immediately pay
+      - Supply a rare material component or perform a ritual at specific place and time
+      - Fall prey to a side effect or curse
 - template: &Secrets
     <<: *template
     name: Secrets
@@ -128,18 +131,24 @@
     name: Tech
   front:
     <<: *Tech
-    desc: TBD
+    desc: |-
+      //"Y'see, this gizmo here can automatically pick any lock in the kingdom!" -- Basler
+      You focus on science, technology, or artifice to get things done.
+      This could include familiar inventions like handguns or balloons, or magitek such as glowing crystal fire-rods, or products of magic such as alchemical potions.
+      You can use, repair, or replace your toolkit of inventions.
     prompts:
-      - TBD
-      - TBD
-      - TBD
+      - Fight using advanced weapons or protective gear
+      - Overcome obstacles by deploying a gadget
+      - Gain surprise or advantage against those unfamiliar with your tech
   back:
     <<: *Tech
-    desc: TBD
+    desc: |-
+      //"The gizmo broke and I gotta fix it. Well, at least I have my tools." -- Basler
+      Nothing works perfectly, especially new inventions that have seen more use than testing.
     prompts:
-      - TBD
-      - TBD
-      - TBD
+      - The gadget has unexpected side effects or fails to work at a key moment
+      - A gadget malfunctions or breaks in interesting ways
+      - People distrust or avoid your strange science
 - template: &Wits
     <<: *template
     name: Wits
