@@ -79,6 +79,7 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
     component: path.resolve('src/components/card.js'),
     context: {
       title: `All Cards`,
+      description: 'A full listing of all cards',
       cards
     }
   })
@@ -90,6 +91,7 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
       component: path.resolve('src/components/card.js'),
       context: {
         title: `All ${tag} cards`,
+        description: 'A full listing of cards under this tag',
         cards: allCardsWithTag(tag, cards)
       }
     })
@@ -102,7 +104,7 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
       component: path.resolve('src/components/card.js'),
       context: {
         title: card.name,
-        card: card,
+        description: card.front.desc,
         cards: [card]
       }
     })

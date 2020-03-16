@@ -11,16 +11,16 @@ import SEO from "../components/seo"
 
 import CardFace from "./card-face"
 
-const CardPage = ({ pageContext: { title, cards } }) => (
+const CardPage = ({ pageContext: { title, description, cards } }) => (
   <Layout>
-    <SEO title={title} />
+    <SEO title={title} description={description} />
     <Container>
       {map(card => (
         <Row>
-          <Col sm={6}>
+          <Col>
             <CardFace side={card.front} href={`/cards/${slug(card.name).toLowerCase()}`} brand="Front" />
           </Col>
-          <Col sm={6}>
+          <Col>
             <CardFace side={card.back} href={`/cards/${slug(card.name).toLowerCase()}`} brand="Back" />
           </Col>
         </Row>
