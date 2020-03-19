@@ -100,13 +100,15 @@
   front:
     <<: *challenges
     desc: |-
-      If any player thinks the outcome of your narration is uncertain, you've been challenged.
+      If any player thinks the outcome of your narration is uncertain, they can challange you.
       Meet the challenge by getting a hit via some other rule.
-      If you don't, whoever posed the challenge narrates the outcome instead.
+      If you don't, whoever the challenger narrates the outcome instead.
     rule: Flip to resolve via narration
   back:
     <<: *challenges
-    desc: Resolve challenges strictly via narration.
+    desc: |-
+      Resolve challenges according to the logic of the setting and the unfolding story.
+      If you're using GM role cards, use their guidance to help.
     rule: Flip to rely on hits
 - template: &simpledice
     name: Simple Dice
