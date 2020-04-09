@@ -17,10 +17,10 @@ const CardPage = ({ pageContext: { title, description, cards } }) => (
     <Container>
       {map(card => (
         <Row>
-          <Col>
+          <Col xs={12} md={6}>
             <CardFace side={card.front} href={`/cards/${slug(card.name).toLowerCase()}`} brand="Front" />
           </Col>
-          <Col>
+          <Col xs={12} md={6}>
             <CardFace side={card.back} href={`/cards/${slug(card.name).toLowerCase()}`} brand="Back" />
           </Col>
         </Row>
