@@ -38,6 +38,7 @@
       - "You spend a scene being healed by a priestess to discard Hurt. You wanted to talk to her anyway, about..."
       - "You spend a week of downtime doing odd jobs to pay off Indebted. During that time, you listen for new adventure opportunities."
     rule: Flip to see rules
+  qty: 6
 - front:
     <<: *tfront
     name: Hurt
@@ -65,6 +66,7 @@
       - You have broken or twisted limbs
       - You were pierced by arrows, spears, or claws
       - You reopened your wounds while fighting
+  qty: 6
 - front:
     <<: *tfront
     name: Weakened
@@ -94,6 +96,7 @@
       - Serious illness or poison
       - Delerium or hallucinations
       - Burns or frostbite
+  qty: 6
 - front:
     <<: *tfront
     name: Obliged
@@ -121,6 +124,7 @@
       - Deal with several complex problems
       - Obtain something illegal or dangerous
       - Work with a person or group that is hated or feared
+  qty: 6
 - front:
     <<: *tfront
     name: Wanted
@@ -147,6 +151,7 @@
       - Wanted posters or official notices
       - Guards raised an alarm
       - You're in enemy territory or surrounded
+  qty: 6
 - front:
     <<: *tfront
     name: Magicked
@@ -173,6 +178,7 @@
       - Ill fortune or calamity follows you
       - A taboo against doing some common thing
       - Love potions, gibberish speech, or other maledictions
+  qty: 6
 - front:
     <<: *tfront
     name: Altered
@@ -199,6 +205,7 @@
       - Polymorphed into an animal
       - Changed into a monster
       - Zombified
+  qty: 6
 - front:
     <<: *tfront
     name: Undergeared
@@ -225,6 +232,7 @@
       - Stripped of weapons by enemies
       - Magical tools disenchanted
       - Completely without rations or shelter
+  qty: 6
 - front:
     <<: *tfront
     name: Hindered
@@ -252,3 +260,4 @@
       - Unable to cast spells or use other special abilities
       - Suffering a breakdown or phobia
       - Driven by unstoppable fury or sorrow
+  qty: 6
