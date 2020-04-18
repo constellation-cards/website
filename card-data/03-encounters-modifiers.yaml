@@ -72,7 +72,7 @@
       - Individuals singled out for something
   back:
     <<: *Gang
-    desc: The challenge is a group of individuals.
+    desc: The encounter is a group of individuals.
     prompts:
       - Strength in numbers
       - Surrounded or cut off
@@ -98,7 +98,7 @@
       - Easier to hit
   back:
     <<: *Large
-    desc: The challenge is enormous in size!
+    desc: The encounter is enormous in size!
     prompts:
       - Resistant to normal scale effects
       - Can reach or hit whole areas at once
@@ -209,14 +209,14 @@
 - front: &Weird
     <<: *modifier
     name: Weird
-    desc: The challenge's nature may work against it after all.
+    desc: The encounter's nature may work against it after all.
     prompts:
       - Find limitations of the curse or change
-      - Challenge over-relies on its powers
+      - Encounter over-relies on its powers
       - Learn a vital lesson about magic
   back:
     <<: *Weird
-    desc: The challenge is strange or magical in some fashion.
+    desc: The encounter is strange or magical in some fashion.
     prompts:
       - Magically enhanced, changed, or cursed
       - Can wield mystic power or spells
