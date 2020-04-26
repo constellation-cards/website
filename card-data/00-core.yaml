@@ -31,14 +31,14 @@
   front:
     <<: *principal
     desc: |-
-      You get to create and play a Principal Character (PC), one of the focal characters of the story.
-      Your goal is to narrate that PC's actions and reactions. Decide on their agendas, then enact them in interesting ways.
-      When someone asks "what does PC X do, say, or think?", you get to answer.
+      You get to create and play a Principal Character (PC), one of the protagonists of the story.
+      Your job is to narrate your character's actions and reactions. Decide on their agendas, then enact them in interesting ways.
+      When someone asks "what does your character do, say, or think?", you get to answer.
     prompts:
       - Stay true to your character
       - Share ways for other players to help you have fun
-      - Look for opportunities to advance your PC's story
-      - Support other PCs' stories
+      - Look for opportunities to advance your story
+      - Support other players' stories
   back:
     <<: *gmcard
     <<: *principal
@@ -50,8 +50,8 @@
   front:
     <<: *facilitator
     desc: |-
-      Players who have spotlight get to narrate for their character(s).
-      Your goal is to move the spotlight from player to player in fun and fair ways. Any player can call for the spotlight to move, but you have the final say when it does.
+      Players in the spotlight are the focus of narration. We're asking them for an action that pushes the scene forward, and shining the spotlight until they make one.
+      Your job is to move the spotlight from player to player in fun and fair ways. Any player can call for the spotlight to move, but you have the final say when it does.
       Move the spotlight:
     prompts:
       - toward a PC who's placed at risk or in danger
@@ -70,7 +70,7 @@
   front:
     <<: *loremaster
     desc: |-
-      Your goal is to establish the history, setting, and canon of the world in which the game happens.
+      Your job is to establish the history, setting, and canon of the world in which the game happens.
       When someone asks, "what do our characters know about X?" and it's not a question for an Ensemble Character (EC) to decide, you get to answer.
       Any player can suggest an answer, but you have the final say on what's true. If a specific PC's heritage, origin, or interests concern the question, consider deferring to them.
     prompts:
@@ -89,7 +89,7 @@
   front:
     <<: *referee
     desc: |-
-      Your goal is to adjudicate questions about the rules of the game, and to make changes to the rules with the group's consent. Any player can suggest how to handle a rule, but you have the final say.
+      Your job is to adjudicate questions about the rules of the game, and to make changes to the rules with the group's consent. Any player can suggest how to handle a rule, but you have the final say.
       Example rulings:
     prompts:
       - Is a given card applicable to this fictional situation?
@@ -106,7 +106,7 @@
     <<: *storyteller
     desc: |-
       The Principal Characters (PCs) are the focus of the game. The game also has Ensemble Characters (ECs), sometimes called Non-Player Characters (NPCs).
-      Your goal is to narrate the ECs' actions and reactions. Decide on their agendas, then enact them in interesting ways.
+      Your job is to narrate the ECs' actions and reactions. Decide on their agendas, then enact them in interesting ways.
       ECs are allies, antagonists, or anyone else involved in the story but not at the heart of it.
     prompts:
       - Give ECs a name and identity
