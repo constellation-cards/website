@@ -114,7 +114,7 @@
   back:
     <<: *challenges
     desc: |-
-      Challenges are the principle of "say yes or roll the dice".
+      Challenges follow the principle of "say yes or roll the dice".
       Use challenges to increase or decrease the difficulty of a situation. For example, a risky combat scene might pose several challenges in succession. A simple social encounter might pose only one challenge.
       The player posing the challenge should give an idea of what failure looks like. That player, or the Storyteller, might narrate the specifics of failure.
       The same action should not be challenged multiple times unless there are both distinct and interesting ways for it to fail. For example, a demonstration of new magic might go awry by itself, but might also anger a jealous wizard who observes it.
