@@ -5,23 +5,31 @@
     tags:
       - core-rules
       - player
-    desc: |-
+    desc: >
       Several core rules are roles assigned to a single player.
-      These roles can be assigned individually to several people, or all given to a single player ("the Game Master" or "the GM").
-      The roles can change hands during the game. You cannot take a role away from someone else, but you can ask someone else to give up a role.
+
+      These roles can be assigned individually to several people,
+      or all given to a single player ("the Game Master" or "the GM").
+
+      The roles can change hands during the game.
+      You cannot take a role away from someone else,
+      but you can ask someone else to give up a role.
+
       If you've been assigned a role, you are bound by the Principles.
 - front: &thegame
     <<: *template
     name: The Game
-    desc: |-
+    desc: >
       This is a game whose rules are on cards.
+
       To add a rule, write a card.
+
       Follow every rule on the cards on the table.
   back: *thegame
 - front: &principles
     <<: *template
     name: The Principles
-    desc: |-
+    desc: >
       This is a placeholder. Individual settings will introduce their own Principles.
   back: *principles
 - template: &principal
@@ -30,10 +38,15 @@
     rule: Whoever plays this card is a principal. Flip for additional rules.
   front:
     <<: *principal
-    desc: |-
-      You get to create and play a Principal Character (PC), one of the protagonists of the story.
-      Your job is to narrate your character's actions and reactions. Decide on their agendas, then enact them in interesting ways.
-      When someone asks "what does your character do, say, or think?", you get to answer.
+    desc: >
+      You get to create and play a Principal Character (PC),
+      one of the protagonists of the story.
+
+      Your job is to narrate your character's actions and reactions.
+      Decide on their agendas, then enact them in interesting ways.
+
+      When someone asks "what does your character do, say, or think?",
+      you get to answer.
     prompts:
       - Stay true to your character
       - Share ways for other players to help you have fun
@@ -49,9 +62,14 @@
     rule: Whoever plays this card is the facilitator. Flip for additional rules.
   front:
     <<: *facilitator
-    desc: |-
-      Players in the spotlight are the focus of narration. We're asking them for an action that pushes the scene forward, and shining the spotlight until they make one.
-      Your job is to move the spotlight from player to player in fun and fair ways. Any player can call for the spotlight to move, but you have the final say when it does.
+    desc: >
+      Players in the spotlight are the focus of narration.
+      We're asking them for an action that pushes the scene forward,
+      and shining the spotlight until they make one.
+
+      Your job is to move the spotlight from player to player in fun and fair ways.
+      Any player can call for the spotlight to move, but you have the final say when it does.
+
       Move the spotlight:
     prompts:
       - toward a PC who's placed at risk or in danger
@@ -69,10 +87,16 @@
     rule: Whoever plays this card is the loremaster. Flip for additional rules.
   front:
     <<: *loremaster
-    desc: |-
-      Your job is to establish the history, setting, and canon of the world in which the game happens.
-      When someone asks, "what do our characters know about X?" and it's not a question for an Ensemble Character (EC) to decide, you get to answer.
-      Any player can suggest an answer, but you have the final say on what's true. If a specific PC's heritage, origin, or interests concern the question, consider deferring to them.
+    desc: >
+      Your job is to establish the history, setting,
+      and canon of the world in which the game happens.
+
+      When someone asks, "what do our characters know about X?"
+      and it's not a question for an Ensemble Character (EC) to decide,
+      you get to answer.
+
+      Any player can suggest an answer, but you have the final say on what's true.
+      If a specific PC's heritage, origin, or interests concern the question, consider deferring to them.
     prompts:
       - Who was the greatest Paladin in history?
       - What languages might my character learn to speak?
@@ -88,8 +112,11 @@
     rule: Whoever plays this card is the referee. Flip for additional rules.
   front:
     <<: *referee
-    desc: |-
-      Your job is to adjudicate questions about the rules of the game, and to make changes to the rules with the group's consent. Any player can suggest how to handle a rule, but you have the final say.
+    desc: >
+      Your job is to adjudicate questions about the rules of the game,
+      and to make changes to the rules with the group's consent.
+      Any player can suggest how to handle a rule, but you have the final say.
+
       Example rulings:
     prompts:
       - Is a given card applicable to this fictional situation?
@@ -104,10 +131,16 @@
     rule: Whoever plays this card is the storyteller. Flip for additional rules.
   front:
     <<: *storyteller
-    desc: |-
-      The Principal Characters (PCs) are the focus of the game. The game also has Ensemble Characters (ECs), sometimes called Non-Player Characters (NPCs).
-      Your job is to narrate the ECs' actions and reactions. Decide on their agendas, then enact them in interesting ways.
-      ECs are allies, antagonists, or anyone else involved in the story but not at the heart of it.
+    desc: >
+      The Principal Characters (PCs) are the focus of the game.
+      The game also has Ensemble Characters (ECs),
+      sometimes called Non-Player Characters (NPCs).
+
+      Your job is to narrate the ECs' actions and reactions.
+      Decide on their agendas, then enact them in interesting ways.
+
+      ECs are allies, antagonists, or anyone else involved
+      in the story but not at the heart of it.
     prompts:
       - Give ECs a name and identity
       - Find the essential humanity of every EC
@@ -122,11 +155,19 @@
     rule: Flip for additional rules.
   front:
     <<: *challenges
-    desc: |-
-      Any player may challenge a PC's action if failure is likely and success or failure are both interesting for the story.
-      When your PC is challenged, you must generate a hit in order to succeed. Other rules provide ways to generate hits.
-      If you fail to meet a challenge, your PC's intentions are thwarted, or complications arise.
-      If failure suggests no interesting fallout or complications, your action should not be challenged.
+    desc: >
+      Any player may challenge a PC's action if failure is likely
+      and success or failure are both interesting for the story.
+
+      When your PC is challenged,
+      you must generate a hit in order to succeed.
+      Other rules provide ways to generate hits.
+
+      If you fail to meet a challenge,
+      your PC's intentions are thwarted, or complications arise.
+
+      If failure suggests no interesting fallout or complications,
+      your action should not be challenged.
     prompts:
       - You're navigating rough terrain, and might fall or lose equipment
       - You're in a tense conversation and might offend someone
@@ -135,11 +176,20 @@
       - You're confronting an emotionally fraught situation, and might lose self control
   back:
     <<: *challenges
-    desc: |-
+    desc: >
       Challenges follow the principle of "say yes or roll the dice".
-      Use challenges to increase or decrease the difficulty of a situation. For example, a risky combat scene might pose several challenges in succession. A simple social encounter might pose only one challenge.
-      The player posing the challenge should give an idea of what failure looks like. That player, or the Storyteller, might narrate the specifics of failure.
-      The same action should not be challenged multiple times unless there are both distinct and interesting ways for it to fail. For example, a demonstration of new magic might go awry by itself, but might also anger a jealous wizard who observes it.
+
+      Use challenges to increase or decrease the difficulty of a situation.
+      For example, a risky combat scene might pose several challenges in succession.
+      A simple social encounter might pose only one challenge.
+
+      The player posing the challenge should give an idea of what failure looks like.
+      That player, or the Storyteller, might narrate the specifics of failure.
+
+      The same action should not be challenged multiple times
+      unless there are both distinct and interesting ways for it to fail.
+      For example, a demonstration of new magic might go awry by itself,
+      but might also anger a jealous wizard who observes it.
 - template: &simpledice
     name: Simple Dice
     tags:
@@ -151,7 +201,7 @@
     rule: Flip to use Simple Dice
   back:
     <<: *simpledice
-    desc: |-
+    desc: >
       If you need to meet a challenge and have no other way to do so,
       or if the outcome ought to be random, you can roll 1d6.
     prompts:
@@ -162,9 +212,20 @@
     <<: *template
     name: X-Card
     img: x.png
-    desc: |-
+    desc: >
       Start the game by reading this text aloud:
-      "I'd like your help. Your help to make this game fun for everyone. If anything makes anyone uncomfortable in any way, just lift this card up, or simply tap it. You don't have to explain why. It doesn't matter why. When we lift or tap this card, we simply edit out anything X-Carded."
-      "And if there is ever an issue, anyone can call for a break and we can talk privately. I know it sounds funny but it will help us play amazing games together and usually I'm the one who uses the X card to protect myself from all of you! Please help make this game fun for everyone. Thank you!"
+
+      "I'd like your help. Your help to make this game fun for everyone.
+      If anything makes anyone uncomfortable in any way,
+      just lift this card up, or simply tap it. You don't have to explain why.
+      It doesn't matter why.
+      When we lift or tap this card, we simply edit out anything X-Carded."
+
+      "And if there is ever an issue,
+      anyone can call for a break and we can talk privately.
+      I know it sounds funny but it will help us play amazing games together
+      and usually I'm the one who uses the X card to protect myself
+      from all of you! Please help make this game fun for everyone.
+      Thank you!"
     rule: Lay this card at the center of the play area
   back: *xcard

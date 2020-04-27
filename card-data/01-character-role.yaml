@@ -2,137 +2,135 @@
     tags:
       - character
       - role
-- template: &Dreamer
+- template: &tfront
     <<: *template
+    rule: Flip to get a hit.
+- template: &tback
+    <<: *template
+    rule: Flip when a prompt is narrated by anyone.
+- front: &Dreamer
+    <<: *tfront
     name: Dreamer
-  front:
-    <<: *Dreamer
     desc: "Tomorrow beckons, if you can fix today. You can't change the world alone. But you aren't, are you?"
     prompts:
       - Remind someone of their best self
       - Light a candle to spite the darkness
       - Defy what's possible with what's necessary
   back:
-    <<: *Dreamer
+    <<: *tback
+    name: Dreamer
     desc: "When the gulf between is and ought becomes too much, which will you choose?"
     prompts:
       - Reject the real, denounce the realist
       - Forget that you have friends
       - Lose sight of your dream for a time
-- template: &Guardian
-    <<: *template
+- front: &Guardian
+    <<: *tfront
     name: Guardian
-  front:
-    <<: *Guardian
     desc: You feel responsible for something or someone else. Their need propels you.
     prompts:
       - Keep your charge safe from something
       - Identify and monitor a threat
       - Endure the unimaginable
   back:
-    <<: *Guardian
+    <<: *tback
+    name: Guardian
     desc: You control that which depends on you, and sometimes the weight grows too much.
     prompts:
       - Assert your authority
       - Cast suspicion too widely
       - Shut down your feelings or shut out your charge
-- template: &Monster
-    <<: *template
+- front: &Monster
+    <<: *tfront
     name: Monster
-  front:
-    <<: *Monster
     desc: Your looks, reputation, or nature cause common folk to fear or reject you.
     prompts:
       - "Take advantage of others' fears"
       - Exploit the source of your monstrousness
       - Make common cause with other monsters
   back:
-    <<: *Monster
+    <<: *tback
+    name: Monster
     desc: To be the thing they say you are. How easy to do it accidentally. How tempting to choose it.
     prompts:
       - Make everything worse for yourself or an ally
       - Fall prey to your darkness
       - Spark conflict or dissent
-- template: &Opportunist
-    <<: *template
+- front: &Opportunist
+    <<: *tfront
     name: Opportunist
-  front:
-    <<: *Opportunist
     desc: Life is unpredictable. When an opening comes, seize it. When a chance comes, take it.
     prompts:
       - Exploit or create a weakness
       - Employ misdirection or deception
       - Take a risk nobody else would
   back:
-    <<: *Opportunist
+    <<: *tback
+    name: Opportunist
     desc: There's only so much good luck to go around. Will you run out of yours, or take someone else's away?
     prompts:
       - Kick someone when they're down
       - Betray a trust
       - Let someone else pay the price
-- template: &Performer
-    <<: *template
+- front: &Performer
+    <<: *tfront
     name: Performer
-  front:
-    <<: *Performer
     desc: Through actions and words, you entertain, persuade, or transform people around you.
     prompts:
       - Embody grace, confidence, or poise
       - Influence people to action
       - Spark or manipulate emotion
   back:
-    <<: *Performer
+    <<: *tback
+    name: Performer
     desc: When anything you say matters, will you say the wrong thing, or for the wrong reasons?
     prompts:
       - Show up or embarrass someone important
       - Draw unwanted attention
       - Provoke an unintended reaction
-- template: &Quester
-    <<: *template
+- front: &Quester
+    <<: *tfront
     name: Quester
-  front:
-    <<: *Quester
     desc: A vow, an ideal, a promise, a vision, a mission. Something drives you unstoppably onward.
     prompts:
       - Live the life your resolve demands
       - Rally others to your cause
       - Find a way forward despite everything
   back:
-    <<: *Quester
+    <<: *tback
+    name: Quester
     desc: That which is greater than you can also crush you beneath it.
     prompts:
       - Waver in your dedication to your quest
       - Shut others out of assisting you
       - Put your quest before more mundane matters
-- template: &Soldier
-    <<: *template
+- front: &Soldier
+    <<: *tfront
     name: Soldier
-  front:
-    <<: *Soldier
     desc: "Life is struggle. Everyone has to fight, all the time. What do you fight for?"
     prompts:
       - Test your fate against an opponent
       - Make a sacrifice to support a hope
       - Stand up when everything says to stay down
   back:
-    <<: *Soldier
+    <<: *tback
+    name: Soldier
     desc: "Life is pain. There's no reward for this, only the next battle. When will you fall?"
     prompts:
       - Lash out at an easy target
       - Use your power selfishly
       - Dismiss the peaceful alternative
-- template: &Synthesist
-    <<: *template
+- front: &Synthesist
+    <<: *tfront
     name: Synthesist
-  front:
-    <<: *Synthesist
     desc: You create, fix, and remix.
     prompts:
       - Make something new out of what's available
       - Repair or recreate something
       - Bring creativity to bear against a problem
   back:
-    <<: *Synthesist
+    <<: *tback
+    name: Synthesist
     desc: What or who will you unmake, in your goal of making something new?
     prompts:
       - Tear down something valuable or important

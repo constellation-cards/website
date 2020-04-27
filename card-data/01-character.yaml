@@ -3,10 +3,18 @@
     tags:
       - core-rules
     iconImg: character
-    desc: |-
+    desc: >
       Cards with this icon are character cards.
-      To create a new PC, pick three cards from three different categories, e.g. Focus, Role, and Upbringing. You can choose cards at random, or select them yourself.
-      These cards describe a PC's most important traits, or the traits that you want to see in the spotlight during the game. Just because someone else has the Courage card doesn't mean your character isn't courageous, only that it's not going to be the quality we see most often or most plainly.
+
+      To create a new PC, pick three cards from three different categories,
+      e.g. Focus, Role, and Origin.
+      You can choose cards at random, or select them yourself.
+
+      These cards describe a PC's most important traits,
+      or the traits that you want to see in the spotlight during the game.
+      Just because someone else has the Courage card
+      doesn't mean your character isn't courageous,
+      only that it's not going to be the quality we see most often or most plainly.
     prompts:
       - "Topside: get a hit by flipping the card"
       - "Flipside: flip when a prompt is narrated by anyone"
