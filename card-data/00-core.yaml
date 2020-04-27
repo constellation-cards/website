@@ -119,19 +119,27 @@
 - template: &challenges
     <<: *template
     name: Challenges
+    rule: Flip for additional rules.
   front:
     <<: *challenges
     desc: |-
-      If any player thinks the outcome of your narration is uncertain, they can challange you.
-      Meet the challenge by getting a hit via some other rule.
-      If you don't, whoever the challenger narrates the outcome instead.
-    rule: Flip to resolve via narration
+      Any player may challenge a PC's action if failure is likely and success or failure are both interesting for the story.
+      When your PC is challenged, you must generate a hit in order to succeed. Other rules provide ways to generate hits.
+      If you fail to meet a challenge, your PC's intentions are thwarted, or complications arise.
+      If failure suggests no interesting fallout or complications, your action should not be challenged.
+    prompts:
+      - You're navigating rough terrain, and might fall or lose equipment
+      - You're in a tense conversation and might offend someone
+      - You're fighting or fleeing a dangerous monster, and might get hurt
+      - You're working with complex magic or technology, and it might malfunction
+      - You're confronting an emotionally fraught situation, and might lose self control
   back:
     <<: *challenges
     desc: |-
-      Resolve challenges according to the logic of the setting and the unfolding story.
-      If you're using GM role cards, use their guidance to help.
-    rule: Flip to rely on hits
+      Challenges follow the principle of "say yes or roll the dice".
+      Use challenges to increase or decrease the difficulty of a situation. For example, a risky combat scene might pose several challenges in succession. A simple social encounter might pose only one challenge.
+      The player posing the challenge should give an idea of what failure looks like. That player, or the Storyteller, might narrate the specifics of failure.
+      The same action should not be challenged multiple times unless there are both distinct and interesting ways for it to fail. For example, a demonstration of new magic might go awry by itself, but might also anger a jealous wizard who observes it.
 - template: &simpledice
     name: Simple Dice
     tags:
