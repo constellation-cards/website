@@ -101,10 +101,10 @@
   front:
     <<: *challenges
     desc: |-
-      If any player thinks a PC's action could fail, and what's at stake if so, they may pose a challenge.
-      The PC's player meets the challenge by getting a hit. Other rules provide ways to get a hit.
-      If the challenge is not met, the proposed obstacle interferes or the outcome is otherwise bad for the PC.
-      "You fail and nothing else happens" is not an acceptable stake
+      Any player may challenge a PC's action if failure is likely and success or failure are both interesting for the story.
+      When your PC is challenged, you must generate a hit in order to succeed. Other rules provide ways to generate hits.
+      If you fail to meet a challenge, your PC's intentions are thwarted, or complications arise.
+      If failure suggests no interesting fallout or complications, your action should not be challenged.
     prompts:
       - You're navigating rough terrain, and might fall or lose equipment
       - You're in a tense conversation and might offend someone
@@ -115,9 +115,9 @@
     <<: *challenges
     desc: |-
       Challenges follow the principle of "say yes or roll the dice".
-      Some situations can be solved with a single challenge, while others are complicated and require multiple challenges in succession to overcome. For example, a tense duel might be decided by several challenges in succession as combatants struggle to get an edge, while getting past the guards and into the castle might pose only one challenge.
-      When you pose a challenge, give an idea of what success and failure might look like, and whether you think your challenge is likely to decide the whole situation. When the challenge is resolved, work together to narrate the outcome, guided by the Storyteller, if needed.
-      Don't challenge the same action multiple times unless the situation is substantially different. For example, if a PC successfully sneaks into the castle, don't challenge her stealth again unless something major changes about the security of the place (perhaps as a result of another PC failing a different challenge).
+      Use challenges to increase or decrease the difficulty of a situation. For example, a risky combat scene might pose several challenges in succession. A simple social encounter might pose only one challenge.
+      The player posing the challenge should give an idea of what failure looks like. That player, or the Storyteller, might narrate the specifics of failure.
+      The same action should not be challenged multiple times unless there are both distinct and interesting ways for it to fail. For example, a demonstration of new magic might go awry by itself, but might also anger a jealous wizard who observes it.
 - template: &simpledice
     name: Simple Dice
     tags:
