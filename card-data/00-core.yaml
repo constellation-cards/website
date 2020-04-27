@@ -67,8 +67,7 @@
       We're asking them for an action that pushes the scene forward,
       and shining the spotlight until they make one.
 
-      Your job is to move the spotlight from player to player in fun and fair ways.
-      Any player can call for the spotlight to move, but you have the final say when it does.
+      Your job is to oversee moving the spotlight from player to player in fun and fair ways.
 
       Move the spotlight:
     prompts:
@@ -165,9 +164,7 @@
 
       If you fail to meet a challenge,
       your PC's intentions are thwarted, or complications arise.
-
-      If failure suggests no interesting fallout or complications,
-      your action should not be challenged.
+      There's no challenge if this can't happen.
     prompts:
       - You're navigating rough terrain, and might fall or lose equipment
       - You're in a tense conversation and might offend someone
