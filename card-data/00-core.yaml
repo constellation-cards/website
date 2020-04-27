@@ -115,9 +115,9 @@
     <<: *challenges
     desc: |-
       Challenges follow the principle of "say yes or roll the dice".
-      Use challenges to increase or decrease the difficulty of a situation. For example, a risky combat scene might pose several challenges in succession. A simple social encounter might pose only one challenge.
-      The player posing the challenge should give an idea of what failure looks like. That player, or the Storyteller, might narrate the specifics of failure.
-      The same action should not be challenged multiple times unless there are both distinct and interesting ways for it to fail. For example, a demonstration of new magic might go awry by itself, but might also anger a jealous wizard who observes it.
+      Some situations can be solved with a single challenge, while others are complicated and require multiple challenges in succession to overcome. For example, a tense duel might be decided by several challenges in succession as combatants struggle to get an edge, while getting past the guards and into the castle might pose only one challenge.
+      When you pose a challenge, give an idea of what success and failure might look like, and whether you think your challenge is likely to decide the whole situation. When the challenge is resolved, work together to narrate the outcome, guided by the Storyteller, if needed.
+      Don't challenge the same action multiple times unless the situation is substantially different. For example, if a PC successfully sneaks into the castle, don't challenge her stealth again unless something major changes about the security of the place (perhaps as a result of another PC failing a different challenge).
 - template: &simpledice
     name: Simple Dice
     tags:
