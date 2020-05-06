@@ -1,0 +1,49 @@
+% !TEX engine = xelatex
+
+% Documentation: http://texdoc.net/texmf-dist/doc/latex/memoir/memman.pdf
+\documentclass[statementpaper, oneside]{memoir}
+
+\setlength{\headheight}{0pt}
+\setlength{\headsep}{0pt}
+\setlength{\footskip}{0pt}
+\setlrmarginsandblock{0.5cm}{0.5cm}{*}
+\setulmarginsandblock{0.5cm}{0.5cm}{*}
+\checkandfixthelayout 
+
+%%% Required by Pandoc
+\usepackage{hyperref}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+
+%%% page formatting
+% basic page numbers = plain, no page numbers = empty
+\pagestyle{empty}
+
+%%% Memoir section styling
+% remove numbering from section titles, as we'll use our sections as dividers between rules chunks
+\setsecnumformat{}
+
+% now reduce spacing around section tags
+\setaftersecskip{1mm}
+\setbeforesecskip{3mm}
+
+%%% paragraph formatting
+\usepackage{parskip}
+\setlength{\parindent}{0em}
+\setlength{\parskip}{1.2em}
+
+% render lists in more compact form
+\usepackage{enumitem}
+\setlist[enumerate]{noitemsep, topsep=-2pt}
+\setlist[itemize]{noitemsep, topsep=-2pt}
+
+\begin{document}
+\title{$title$}
+
+Playtest Draft: $git_branch$ $current_date$
+
+$body$
+
+\end{document}
