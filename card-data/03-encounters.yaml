@@ -13,18 +13,22 @@
     desc: >
       //"My daggers bounced off that plate mail! What now?" -- Basler
       
-      The being has some kind of thick or protective armor defending it.
+      This encounter includes something important that is heavily defended.
       
-      This could be physical armor of metal or leather,
-      a protective aura of magic, a rocky skin,
-      or anything else that blocks most attacks.
+      The defense could be literal armor-- a crafted barrier of metal, stone, leather, wood, or the like.
       
-      Attacking this being without the armor stopping it may pose a challenge.
+      It could also be a protective aura of magic, a divine blessing, or a natural body or structure made of
+      something tough.
       
-      Armored beings may:
+      No matter what form it takes, the armor defends against specific kinds of damage.
+      
+      When you play this card describe the defenses and what they affect. 
+      You may be challenged if you try to penetrate or circumvent the armor to get to what's inside.
+      
+      Something armored may:
     prompts:
       - Ignore harm from typical weapons or other sources of harm
-      - Plow through weak barriers
+      - Destroy weaker things that strike it or are struck by it
       - Protect unarmored allies
   back:
     <<: *tback
@@ -32,38 +36,39 @@
     desc: >
       //"You know what metal does? Heats up. Fireball!" -- Tana
       
-      The being's armor must come at some kind of cost.
+      Armor must have a weakness or some kind of cost.
       
-      This might be the material it's made from,
-      or the fact that it's heavy and cumbersome,
-      or that it comes at some cost to use.
+      Armoring something often reduces some other characteristic, such as nimbleness or speed.
+      Some armor is particularly weak to something, or has a specific weak spot.
+      Other armor requires effort or resources to maintain.
       
-      Being Armored does not present a challenge
+      You can confront an Armored obstacle without a challenge
       if you can find and exploit one of these weaknesses.
       
-      Armored beings may:
+      Something armored may:
     prompts:
-      - Lose track of nimble or evasive opponents
+      - Have limited senses that can be exploited by nimble, stealthy, or evasive opponents
       - Be forced to shed the armor if it's heated, if they sink, etc.
-      - Fail to evade area-effect or magical attacks
+      - Be susceptible to area-effect attacks or those of a particular type (magic, psychic, electric, etc.)
 - front: &Base
     <<: *tfront
     name: Base
     desc: >
       //"Aheheh.. We come in peace?" -- Basler
       
-      The encounter is a place, and people are staying there.
+      The encounter includes a place where creatures stay for a common purpose.
       
       A Base is a temporary encampment, an outpost,
       a secret headquarters, a wild animal's den, or something like it.
       
-      Navigating or escaping a hostile base, or fighting its occupants, poses a challenge.
+      You may be challenged if you try to find something specific in the base, find your way out or through,
+      or confront its occupants and their preparations.
       
-      A Base's occupants may:
+      A Base may:
     prompts:
-      - Overwhelm with numerical superiority
-      - Set traps or surprises in the group's path
-      - Cut off escape routes or give chase
+      - Bristle with defenders
+      - Defy intrusion with traps, labyrinthine structure, or other clever preparations
+      - Enable its defenders to cut off escape routes or easily give chase
   back:
     <<: *tback
     name: Base
@@ -77,11 +82,11 @@
       and many other things can help a character even the odds.
       Camps have a lot of supplies that can be looted or bargained for.
       
-      A Base's occupants may:
+      A Base may:
     prompts:
-      - Let you find something you need to acquire
-      - Fall to chaos when supplies or shelter are knocked over
-      - Tell you more about the plans and activities of the base's occupants
+      - House something you're looking for, or something unexpected that can help you
+      - Rely on infrastructure that can be destroyed or disrupted
+      - Give up secrets about the plans and activities of its occupants
 - front: &Diabolical
     <<: *tfront
     name: Diabolical
@@ -92,7 +97,8 @@
       An actual summoned demon, a possessed victim,
       or a dark and malevolent force are all Diabolic.
 
-      Engaging with the Diabolical without proper protections may pose a challenge.
+      You may be challenged if you engage with the Diabolical without proper protections or if you unknowingly
+      encounter its influence.
       
       A Diabolical encounter may:
     prompts:
@@ -109,12 +115,12 @@
       Powers from beyond are bound by their own rules too,
       and can be defeated accordingly.
 
-      Being Diabolical does not pose a challenge if the characters
-      are lore-wise or somehow sanctified.
+      Characters who arm themselves with occult lore or divine blessing may circumvent or neutralize
+      a Diabolical power.
       
       A Diabolical encounter may:
     prompts:
-      - Be affected by folk incantations or rituals
+      - Be susceptible to folk incantations or rituals
       - Recoil affrightedly from the pure of heart
       - Flee to fight another day
 - front: &Elemental
