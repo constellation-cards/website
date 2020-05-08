@@ -15,7 +15,7 @@
 \providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
 \usepackage{graphicx}
-\graphicspath{ {./images/} }
+\graphicspath{ {./} }
 
 %%% page formatting
 % basic page numbers = plain, no page numbers = empty
