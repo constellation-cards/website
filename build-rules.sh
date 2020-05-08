@@ -13,8 +13,7 @@ fi
 # Usage: runPandoc input-file priority template
 function runPandoc() {
     local INPUT=${1}
-    local OUTPUT_BASE=${INPUT##*/}
-    local OUTPUT=$2/${OUTPUT_BASE%.mdx}.pdf
+    local OUTPUT=${2}
     local TEMPLATE=${3:-default}
     $PANDOC "$INPUT"                                        \
         -o "$OUTPUT"                                        \
@@ -28,4 +27,11 @@ function runPandoc() {
         # 
 }
 
-runPandoc src/pages/rules.mdx static default
+rm -rfv build
+mkdir build
+cp -r src/pages/rules/* pandoc filters build/
+pushd build
+runPandoc index.mdx rules.pdf default
+popd
+cp build/rules.pdf static/
+rm -rfv build
