@@ -30,12 +30,14 @@
     desc: >
       //"Emory! Fall back! This isn't our fight!" -- Tana
 
-      Not every risk has to be taken, nor is every reward worthwhile.
-      Sometimes, you do things it would have been better not to do.
+      Courage can twist into cowardice or cockiness.
+      Not everyone knows the right time to run from a battle, or
+      when a battle really needs to be fought.
+      And not everyone is prepared to fight every battle they face.
     prompts:
-      - Expose yourself to unnecessary danger
+      - Compromise a principle for safety or expedience
+      - Run away to avoid getting hurt, physically or emotionally
       - Seek glory or self-aggrandizement
-      - Take chances for the thrill of it
 - front: &Charm
     <<: *tfront
     name: Charm
