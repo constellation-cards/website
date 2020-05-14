@@ -1,0 +1,122 @@
+- template: &template
+    tags:
+      - character
+      - upbringing
+- template: &tfront
+    <<: *template
+    rule: Flip to get a hit.
+- template: &tback
+    <<: *template
+    rule: Flip when a prompt is narrated by anyone.
+- front: &Aristocrat
+    <<: *tfront
+    name: Aristocrat
+    desc: >
+      (high society, noblesse oblige)
+    prompts:
+      - TBD
+  back:
+    <<: *tback
+    name: Aristocrat
+    desc: >
+      DESC
+    prompts:
+      - TBD
+- front: &City
+    <<: *tfront
+    name: City
+    desc: >
+      (mercantile society, greater good)
+    prompts:
+      - TBD
+  back:
+    <<: *tback
+    name: City
+    desc: >
+      DESC
+    prompts:
+      - TBD
+- front: &Country
+    <<: *tfront
+    name: Country
+    desc: >
+      (farming, ranching, etc., neighbors)
+    prompts:
+      - TBD
+  back:
+    <<: *tback
+    name: Country
+    desc: >
+      DESC
+    prompts:
+      - TBD
+- front: &Frontier
+    <<: *tfront
+    name: Frontier
+    desc: >
+      (wilderness, desert, survival)
+    prompts:
+      - TBD
+  back:
+    <<: *tback
+    name: Frontier
+    desc: >
+      DESC
+    prompts:
+      - TBD
+- front: &Insular
+    <<: *tfront
+    name: Insular
+    desc: >
+      (monks, isolated villages, seeing new things)
+    prompts:
+      - TBD
+  back:
+    <<: *tback
+    name: Insular
+    desc: >
+      DESC
+    prompts:
+      - TBD
+- front: &Loner
+    <<: *tfront
+    name: Loner
+    desc: >
+      (wanderers, anyone else with attachment issues or introverted tendencies)
+    prompts:
+      - TBD
+  back:
+    <<: *tback
+    name: Loner
+    desc: >
+      DESC
+    prompts:
+      - TBD
+- front: &Nomadic
+    <<: *tfront
+    name: Nomadic
+    desc: >
+      (travelers, itinerants, connecting people together)
+    prompts:
+      - TBD
+  back:
+    <<: *tback
+    name: Nomadic
+    desc: >
+      DESC
+    prompts:
+      - TBD
+- front: &Underclass
+    <<: *tfront
+    name: Underclass
+    desc: >
+      (lowborn or criminal, looking out for each other)
+    prompts:
+      - TBD
+  back:
+    <<: *tback
+    name: Underclass
+    desc: >
+      DESC
+    prompts:
+      - TBD
