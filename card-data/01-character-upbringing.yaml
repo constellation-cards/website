@@ -8,38 +8,43 @@
 - template: &tback
     <<: *template
     rule: Flip when a prompt is narrated by anyone.
-- front: &Aristocrat
-    <<: *tfront
-    name: Aristocrat
-    desc: >
-      (high society, noblesse oblige)
-    prompts:
-      - TBD
-  back:
-    <<: *tback
-    name: Aristocrat
-    desc: >
-      DESC
-    prompts:
-      - TBD
 - front: &City
     <<: *tfront
     name: City
     desc: >
-      (mercantile society, greater good)
+      //"Welcome to the Labri Market! You can find anything here." -- Basler
+
+      You grew up in a highly populated center of trade and culture.
+      People with needs offered what they had, or sometimes more,
+      and you did it too.
+
+      You can engage with a situation via negotiation.
+      You can compromise, dissemble, stall for time, or press for results.
+      You know how to backtrack and try other approaches if one fails.
     prompts:
-      - TBD
+      - Engage in diplomacy or mercantile haggling
+      - Navigate a physical or social labyrinth
+      - Gauge someone's wants or needs
   back:
     <<: *tback
     name: City
     desc: >
-      DESC
+      //"...For the right price." -- Basler
+
+      Not everything can be reduced to a commercial transaction,
+      but city dwellers sometimes try anyway.
+      Some of what you've seen has made you numb.
+      Other times, you've decided rightly or wrongly
+      that you can't help, and have moved on anyway.
     prompts:
-      - TBD
+      - Trade principles or ideals for material gain
+      - Overcomplicate a plan or solution
+      - Look past pain or hurt rather than soothe it
 - front: &Country
     <<: *tfront
     name: Country
     desc: >
+      POV Character: Tana
       (farming, ranching, etc., neighbors)
     prompts:
       - TBD
@@ -54,6 +59,7 @@
     <<: *tfront
     name: Frontier
     desc: >
+      Touchstone: Grizzly Adams
       (wilderness, desert, survival)
     prompts:
       - TBD
@@ -82,6 +88,7 @@
     <<: *tfront
     name: Loner
     desc: >
+      Touchstones: Cloud Strife
       (wanderers, anyone else with attachment issues or introverted tendencies)
     prompts:
       - TBD
@@ -92,10 +99,26 @@
       DESC
     prompts:
       - TBD
+- front: &Noble
+    <<: *tfront
+    name: Noble
+    desc: >
+      Touchstones: Sir Emory, the noble knight
+      (high society, noblesse oblige)
+    prompts:
+      - TBD
+  back:
+    <<: *tback
+    name: Noble
+    desc: >
+      DESC
+    prompts:
+      - TBD
 - front: &Nomadic
     <<: *tfront
     name: Nomadic
     desc: >
+      Touchstones: gypsies?
       (travelers, itinerants, connecting people together)
     prompts:
       - TBD
@@ -110,6 +133,7 @@
     <<: *tfront
     name: Underclass
     desc: >
+      Touchstone: ???
       (lowborn or criminal, looking out for each other)
     prompts:
       - TBD
