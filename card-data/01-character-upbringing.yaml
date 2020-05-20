@@ -37,7 +37,7 @@
       Other times, you've decided rightly or wrongly
       that you can't help, and have moved on anyway.
     prompts:
-      - Trade principles or ideals for material gain
+      - Compromise a principle or ideal for expedience
       - Overcomplicate a plan or solution
       - Look past pain or hurt rather than soothe it
 - front: &Country
@@ -133,14 +133,25 @@
     <<: *tfront
     name: Underclass
     desc: >
-      Touchstone: ???
-      (lowborn or criminal, looking out for each other)
+      //"Nobody fights for people like us. So we fight for ourselves." -- Basler
+      
+      You grew up among people who were neglected or rejected
+      by a surrounding society.
+      Your family or neighbors could have been criminals, migrants,
+      members of a disliked minority, or even a different species.
+
+      You can engage with a situation via pride.
+      You can stand for yourself and those like you,
+      push back against those who dismiss you,
+      and rally those who question themselves.
     prompts:
       - TBD
   back:
     <<: *tback
     name: Underclass
     desc: >
-      DESC
+      //"When everyone hates you, it's hard not to hate them back." -- Basler
+
+      x
     prompts:
       - TBD
