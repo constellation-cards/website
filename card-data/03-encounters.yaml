@@ -104,7 +104,7 @@
     prompts:
       - Seek to corrupt or influence the vulnerable
       - Exploit moral weaknesses or dark secrets
-      - Reveal hellish powers
+      - Expose its true nature and hellish powers
   back:
     <<: *tback
     name: Diabolical
@@ -140,11 +140,13 @@
       You may be challenged by the raw power of an Elemental threat, or it
       can cause environmental dangers or obstacles.
       
-      Elemental beings may:
+      An Elemental power may:
     prompts:
-      - Create, move, or manipulate their element in useful or dangerous ways
-      - Embody the qualities of the element, such as flowing like water or burning like fire
-      - Draw strength from sources of the element
+      - Create, animate, or manipulate its element in useful or dangerous ways
+      - Change the environment with aspects of its element, such as making rivers
+         of fire or barriers of wind
+      - Control or manipulate its element, even inside complex or living things, like the metal in electronics or the 
+         water in blood
   back:
     <<: *tback
     name: Elemental
@@ -247,9 +249,9 @@
       
       A Gang may:
     prompts:
-      - Have mixed sympathies or agendas
+      - Have competing impulses or mixed sympathies or agendas
       - Fall apart if a leader is weakened or shamed
-      - Rally around a new cause if forcefully presented
+      - Follow a new leader or impulse that better matches its agenda
 - front: &Hybrid
     <<: *tfront
     name: Hybrid
