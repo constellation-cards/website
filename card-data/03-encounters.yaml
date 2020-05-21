@@ -6,7 +6,7 @@
     rule: Flip to see ways to meet the encounter's challenges.
 - template: &tback
     <<: *template
-    rule: Flip to see ways the encounter poses challenges.
+    rule: Flip to see ways the encounter challenges the PCs.
 - front: &Armored
     <<: *tfront
     name: Armored
@@ -15,7 +15,7 @@
       
       This encounter includes something important that is heavily defended.
       
-      The defense could be literal armor-- a crafted barrier of metal, stone, leather, wood, or the like.
+      The defense could be literal armor, like a hardened barrier of metal, stone, leather, wood, or the like.
       
       It could also be a protective aura of magic, a divine blessing, or a natural body or structure made of
       something tough.
@@ -27,7 +27,7 @@
       
       Something armored may:
     prompts:
-      - Ignore harm from typical weapons or other sources of harm
+      - Ignore harm from typical weapons or other sources of damage
       - Destroy weaker things that strike it or are struck by it
       - Protect unarmored allies
   back:
@@ -58,8 +58,8 @@
       
       The encounter includes a place where creatures stay for a common purpose.
       
-      A Base is a temporary encampment, an outpost,
-      a secret headquarters, a wild animal's den, or something like it.
+      A Base can be a temporary encampment, an outpost,
+      a secret headquarters, a wild animal's den, or some other protected space.
       
       You may be challenged if you try to find something specific in the base, find your way out or through,
       or confront its occupants and their preparations.
@@ -115,13 +115,14 @@
       Powers from beyond are bound by their own rules too,
       and can be defeated accordingly.
 
-      Characters who arm themselves with occult lore or divine blessing may circumvent or neutralize
+      Characters who arm themselves with occult lore or
+      divine blessings may circumvent or neutralize
       a Diabolical power.
       
       A Diabolical encounter may:
     prompts:
       - Be susceptible to folk incantations or rituals
-      - Recoil affrightedly from the pure of heart
+      - Recoil from the pure of heart
       - Flee to fight another day
 - front: &Elemental
     <<: *tfront
@@ -129,14 +130,15 @@
     desc: >
       //"Earth sprites. They have the ore we seek." -- Tana
       
-      The being is composed of, infused with,
-      or can manipulate a common element.
+      This encounter involves powerful elemental forces.
+      It might be a being of elemental force, or a dangerous source of elemental
+      power, like a volcano or a violent storm.
       
-      The classical elements are Air (or Wind), Earth, Fire, or Water (or Ice).
-      Lightning, Darkness, Holy (or Light), and others, might also be included.
+      The classical elements are Air, Earth, Fire, and Water.
+      Some traditions include others, such as Lightning, Darkness, or Holy.
       
-      Confronting an Elemental being may pose a challenge,
-      especially when close to its native element.
+      You may be challenged by the raw power of an Elemental threat, or it
+      can cause environmental dangers or obstacles.
       
       Elemental beings may:
     prompts:
@@ -166,14 +168,16 @@
     desc: >
       //"Did something just swoop overhead?" -- Emory
       
-      The being can fly through the air.
+      This encounter includes an important aspect that can fly
+      or is otherwise airborne.
       
-      Winged creatures, masters of the element of air,
-      or skilled magicians could all fly.
-      Since most people cannot,
-      this gives them a great advantage over those trapped on the ground.
+      Winged creatures, skilled magicians, and others can fly.
+      Floating platforms, mischievous winds, and more can
+      keep important assets or dangers aloft.
       
-      Reaching this being while in the air may pose a challenge.
+      You may be challenged when a flying threat holds your
+      object out of reach, or when you try to affect something
+      in the sky.
       
       Flying beings may:
     prompts:
@@ -188,10 +192,13 @@
       
       Flight often comes with drawbacks or complications of its own.
       
-      Winged beings often require more energy to sustain flight,
-      and cannot carry much weight.
-      Magical or elemental sources of flight can be counterspelled or negated.
-      And a target that can fly but does not is not safe.
+      Wings require lots of energy to sustain flight, and are often fragile.
+      Magical or elemental sources of flight can be counter-spelled or negated.
+      Turbulent air can thwart flyers, forcing them to ground, where they might
+      be vulnerable.
+      
+      You may avoid the challenge of a flyer by disturbing its source of flight
+      or forcing it into situations where its flight won't help.
       
       Flying beings may:
     prompts:
@@ -204,11 +211,15 @@
     desc: >
       //"They outnumber us 5 to 1, folks!" -- Basler
       
-      A Gang is made up of several similar individuals.
+      This encounter includes a group of people or creatures bound
+      together in common purpose.
       
-      Gangs can be encountered while traveling, guarding territory, or just being social together.
-
-      A Gang may pose a challenge if confronted as a group.
+      Gangs can be organized, like criminal gangs or military units, or
+      they can be informal groups, like angry mobs or startled herds
+      of animals.
+      
+      You may be challenged by a Gang's numerical advantage, or by
+      its planning and influence.
       
       A Gang may:
     prompts:
@@ -287,10 +298,13 @@
     desc: >
       //"Just as long as it doesn't fall on us." -- Basler
       
-      A regular group can have trouble engaging with a Large encounter
+      You may have trouble engaging with a Large encounter
       due to the size difference, but that trouble goes both ways.
-      A Large encounter may not pose a challenge if characters
-      exploit their respective sizes somehow.
+      It can be hard for Large things to perceive or target smaller
+      foes.
+      
+      You may counter the challenge of a Large encounter by 
+      exploiting your respective sizes somehow.
       
       A Large encounter may:
     prompts:
@@ -332,26 +346,30 @@
       that would cause any ordinary specimen to retreat
       when things become too dangerous, and will press an attack unto death.
       
-      Monstrous beings can:
+      Monstrous threats may:
     prompts:
       - Lose themselves in their own ferocity
-      - Fall back before an unyielding defense or determined counterattack
+      - Fall into traps when skillfully goaded
+      - Misunderstand those not driven by similar instincts
 - front: &Notorious
     <<: *tfront
     name: Notorious
     desc: >
       //"That's Gretamaw, the Beaked Butcher!" -- Basler
       
-      Notorious beings are well known for something, whether true deeds or exaggerated stories.
+      This encounter includes someone or something that bards sing about.
       
-      A Notorious monster might be a man-hunter,
-      given a name by fearful villagers, or just something with a unique trait.
-      Notorious people may deserve their reputation,
-      or been given one they don't necessarily live up to.
+      A Notorious monster whispered of by fearful villagers. A place of power
+      that most folks avoid. An artifact of legend, replete with arcane power.
+      A person known for great or terrible deeds.
       
-      Notorious beings always have names. What is the name of this one?
+      Name this notorious thing, and tell us the legends about it.
       
-      Notorious beings may:
+      You may be challenged by the weight of Notorious reputation, by
+      those who follow or worship it, or by the very power that made it
+      famous.
+      
+      Notorious things may:
     prompts:
       - Impress or intimidate you with their presence
       - Live up to the legend in a big way
@@ -363,23 +381,29 @@
       //"Save the beak. We need it to claim the reward!" -- Basler
       
       Fame has its price.
+      
       If the stories that have gotten around are accurate,
       you might know how to take on this encounter - maybe.
-      Other people might show up too, some who want to help you,
-      or perhaps rival hunters or fortune-seekers.
       
-      Notorious beings may:
+      Sometimes tales are false, and notorious things prove
+      to be very different than you expect.
+      
+      You may avoid the challenge of a Notorious threat when
+      you correctly leverage its lore, or when you look at it with
+      fresh eyes and discover the truth behind the stories. 
+      
+      Notorious threats may:
     prompts:
-      - Act in predictable or expected ways
+      - Behave or react just as the legends say
       - Draw unwanted attention to themselves in the region
-      - Alter the reputation of those who interact with them
-- front: &Ominous
+      - Hold a deeper, unsung truth 
+- front: &Portentous
     <<: *tfront
-    name: Ominous
+    name: Portentous
     desc: >
       //"Where are all those crows going?" -- Tana
 
-      The encounter portends something else.
+      This encounter foreshadows something important.
       It can be a mystical experience, laden with dreams and prophecy,
       or just a mundane glimpse into a momentous reality beyond.
 
@@ -387,24 +411,24 @@
       but confront a character with a question:
       are you ready for what comes next?
 
-      Ominous encounters may:
+      Portentous encounters may:
     prompts:
       - Give a taste of things to come
       - Force people into hard moral or personal choices
-      - Subtly mingle the mundane and the dreamlike
+      - Subtly mingle the mundane and the symbolic or dreamlike
   back:
     <<: *tback
-    name: Ominous
+    name: Portentous
     desc: >
       //"They're going the same way we are. Come on." -- Woody
       
-      The Ominous is the first step on a larger road.
+      The Portentous is the first step on a larger road.
       It both surprises characters, and prepares them for what is next.
 
-      Ominous encounters may not pose a challenge
-      when the characters accept what is to come.
+      You may avoid the challenge of Portentous encounters by
+      meeting the future they suggest with your eyes open.
       
-      Ominous encounters may:
+      Portentous encounters may:
     prompts:
       - Reveal an important clue or suggest a strategy
       - Unlock a hidden strength or personal conviction
@@ -414,20 +438,20 @@
     desc: >
       //"My arrows go right through it." -- Woody
 
-      A Spectral encounter is ghostly,
-      whether an actual ghost or something removed from regular reality.
+      This encounter includes something ghostly or purely spiritual.
+      
+      Ghosts or entities from other dimensions have obligations or
+      passions that manifest them or keep them in the mortal world.
+      
+      A Spectral threat might want to stay here or be released to its
+      natural place. It may be frightened, angry, or confused.
 
-      A ghost or astral projection has
-      obligations or passions holding it to the real world.
-      Other spectres, such as living beings under a curse,
-      might wish to be material again and may
-      bargain or threaten to achieve that.
-
-      A Spectral encounter may pose a challenge
-      if people have no way of interacting with it.
+      You may be challenged by a Spectral threat if you can't interact
+      with it, or if its otherworldly nature has dangerous effects.
+      A Spectral threat may:
     prompts:
       - Pass selectively through solid matter or people
-      - Wield morbid magics like chilling touches or possession
+      - Wield morbid magics like chilling touch or possession
       - Ravenously pursue something the living have that it wants
   back:
     <<: *tback
@@ -443,8 +467,9 @@
 
       Spectral encounter may not pose a challenge if
       their objective is obtained, threatened, or destroyed.
+      A Spectral threat may:
     prompts:
-      - Disappear back into the other world
+      - Be forced back into the other world by applying arcane lore
       - Be weakened or repulsed by warding rituals
       - Make a compromise to achieve its objective
 - front: &Tense
@@ -453,112 +478,129 @@
     desc: >
       //"Deep breaths. Stay calm. Show them we're friends." -- Tana
 
-      A Tense being is one who is willing to interact peacefully,
-      but is ready to fight or flee.
+      The encounter includes a highly charged situation that affects
+      some or all of the beings present.
+      
+      Maybe someone expects something momentous to happen at
+      any moment. Maybe two or more parties are on the verge of
+      taking drastic action. Whatever it is, it's got the situation on
+      edge and ready to explode.
+      
+      A Tense situation isn't decided yet. Maybe you can reason with
+      those feeling the pressure, but they're on the alert and could be
+      ready to lash out or run away.
 
-      Tense people can be negotiated with, but carefully.
-      They're on alert for a reason. What is it?
-      Other kinds of creatures can be approached,
-      maybe offered something they want like food, but they will be wary.
+      You may be challenged to navigate a Tense situation without
+      triggering a bad outcome, or losing an important opportunity. 
 
-      Keeping a Tense being from bolting or attacking may pose a challenge.
-
-      Tense beings may:
+      Beings in a Tense situation may:
     prompts:
-      - Demonstrate fear, anger, or mistrust
-      - Compel a concession or compromise from the group
-      - Distract someone from an impending danger
+      - Lash out with ill-considered action
+      - Make bad assessments or assume the worst
+      - Heedlessly run away, often making things worse
   back:
     <<: *tback
     name: Tense
     desc: >
       //"You mean the real villain all this time was...?!" -- Emory
       
-      Tension is resolved in good or bad ways.
-      Either way, it's possible to glimpse the reason for the tension.
+      If you discover the reason for a Tense situation, you
+      can often find ways to diffuse things.
       
-      Perhaps a mother dragon was guarding her nest.
-      Perhaps the strange peddler was the King's spy.
-      Whatever is really going on,
-      you might never have learned about it if not for this encounter.
+      If you don't get caught up in the tension, maybe you
+      can talk the others down, or pacify them.
       
-      Tense beings may:
+      You may avoid the challenge of a Tense situation by
+      getting all the facts and making careful choices in
+      your approach.
+      
+      Beings in a Tense situation may:
     prompts:
-      - Reveal a deceit or misunderstanding
-      - Build or break trust
-- front: &Venomous
+      - Hold the key to a secret or a misunderstanding
+      - Exchange their trust for support
+      - Overlook past beliefs and opinions in the stress of the moment
+- front: &Toxic
     <<: *tfront
-    name: Venomous
+    name: Toxic
     desc: >
       //"Don't let it touch you! Your skin will rot away!" -- Woody
 
-      The being has a toxic quality that makes it dangerous to engage with.
+      This encounter includes something that can poison you.
 
-      Frogs and toads, insects, spiders, snakes, scorpions,
-      and beings based on them, may all be naturally deadly.
-      Dishonorable fighters such as assassins might make use of poisons,
-      usually on bladed weapons.
+      Venomous creatures, assassins with poisoned blades, 
+      swamp gasses, and many other things can afflict you
+      with sickness. Poisons can be fast acting and deadly, or
+      gradually debilitating. 
 
-      Avoiding harm while fighting a Venomous being may pose a challenge.
+      You may be challenged to engage the toxic things
+      without getting infected.
 
-      Venomous beings may:
+      A Toxic threat may:
     prompts:
       - Sicken anyone in contact with them
       - Fend off an attack with the threat of toxin
       - Deliberately attack with the poison
   back:
     <<: *tback
-    name: Venomous
+    name: Toxic
     desc: >
       //"My arrows can fly farther than its spit." -- Woody
 
       Poison is not selective. It will harm anyone, friend or foe.
 
-      Some poisons have antidotes, or may not penetrate some kinds of defense.
+      Some toxins have antidotes, or may not penetrate some
+      kinds of defense.
       For example, a snake's fangs might be deflected by armor.
 
-      Being Venomous does not pose a challenge
-      if the source or effectiveness of the poison is negated.
+      You may avoid the challenge of a Toxic threat if you discover
+      its secrets or thwart its method of delivery.
 
-      Venomous beings may:
+      A Toxic threat may:
     prompts:
       - Inadvertently harm allies, or themselves if they are not immune
-      - Lose the harmful quality if it's concentrated in fangs, weapons, etc. that are lost
+      - Be unable to deliver its poison if you find adequate protection
       - Fail to harm something or someone with a natural or acquired immunity
-- front: &Zombie
+- front: &Undead
     <<: *tfront
-    name: Zombie
+    name: Undead
     desc: >
       //"This unholy abomination will fall!" -- Emory
 
-      The being is undead, or one of the living dead.
+      This encounter includes the animated dead.
 
       Necromancy, curses, or strange phenomena
       can bring a deceased creature back to a false life.
-      The being is not sustained by biology, but magic.
-      Some zombies are mindless, while others are disturbingly cunning.
-      Either way, they are inherently frightening as reminders of mortality.
+      The being is sustained by magic; the rules of biology no longer apply.
+      Some undead are mindless, while others are disturbingly cunning.
+      They are frightening reminders of mortality and are often endowed
+      with dread powers.
 
-      Zombies may pose a challenge by being horrifying, grotesque, or unnaturally durable.
+      You may be challenged when you confront the undead using the 
+      same tactics you would use against mortal foes.
 
-      Zombified beings may:
+      An Undead threat may:
     prompts:
-      - Ignore attacks or effects that only affect the living
+      - Ignore attacks or effects that target life force
       - Sustain more damage than normal before being defeated
       - Infect those they harm with a plague or sickness
   back:
     <<: *tback
-    name: Zombie
+    name: Undead
     desc: >
       //"Not so much fell as fell apart..." -- Basler
 
       Being sustained by dark magic, the undead are equally vulnerable to it.
 
-      Many zombies cannot abide holy objects, places, or effects.
+      Many cannot abide holy objects, places, or effects.
       Others are bound by orders to only guard a certain place,
       or do a certain thing.
+      
+      You can avoid the challenge of an Undead threat if you learn what
+      raised them and why, and use that knowledge to outsmart or
+      dispel them.
 
-      Zombified beings may:
+      An Undead threat may:
     prompts:
-      - Weaken or expire in the presence of the sacred
+      - Weaken or expire in the presence of the sacred or the pure
       - Fall prey to tricks or traps a thinking being could avoid
+      - Have limitations its creator didn't anticipate
