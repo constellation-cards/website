@@ -151,14 +151,18 @@
     desc: >
       //"They had some nice gemstones too!" -- Basler
       
-      Being tied to an element means being bound to it too.
+      The elements represent a complex system with rules
+      that can be exploited.
       
-      An Elemental being is often subject to extra restrictions,
-      whether magical or based on the element,
-      like a fire spirit being weak to water.
-      Being Elemental does not pose a challenge if so bound.
+      Each element is usually weak to another element, such
+      as fire being weak to water. Elements are also bound to
+      their natures. Fire needs some sort of fuel to persist, for
+      example.     
+
+      You can weaken or neutralize an Elemental threat by
+      exploiting its vulnerabilities or using its nature against it.
       
-      Elemental beings may:
+      Elemental threats may:
     prompts:
       - Be vulnerable to their element's normal vulnerabilities or rules
       - Require a nearby source of the element to control, or just to survive
@@ -179,10 +183,10 @@
       object out of reach, or when you try to affect something
       in the sky.
       
-      Flying beings may:
+      Flying threats may:
     prompts:
       - Strike targets on the ground without risking counterattacks
-      - Move faster than ground-based beings, or reach places they can't
+      - Move faster than those trapped on the ground, or reach places they can't
       - See greater distances or from better angles
   back:
     <<: *tback
@@ -200,7 +204,7 @@
       You may avoid the challenge of a flyer by disturbing its source of flight
       or forcing it into situations where its flight won't help.
       
-      Flying beings may:
+      Flying threats may:
     prompts:
       - Become entangled, trapped, or confined in ways that negate flight
       - Be unable to lift heavy loads or fly under difficult conditions
@@ -232,10 +236,14 @@
     desc: >
       //"Sounds like fair odds to me. Have at you!" -- Emory
       
-      A gang is powerful because it's made up of many people.
-      But people are still individuals.
-      If they change their minds or feel confusion,
-      the Gang may not pose a challenge.
+      The strength of a gang is in its numbers. Dealing with individual members
+      can be very different from confronting the gang as a whole.
+      
+      While an assembled gang acts instinctively, individuals can be made to
+      consider actions more carefully.
+      
+      You may avoid or circumvent the challenge of a gang by disrupting the
+      group, or by addressing individual members.
       
       A Gang may:
     prompts:
@@ -282,16 +290,18 @@
     desc: >
       //"The bigger they are, the harder they fall!" -- Tana
       
-      The encounter is enormous in size.
+      This encounter includes something of enormous size.
       It might be naturally large, like a dragon or a giant,
-      or have been ensorcelled or otherwise altered.
+      or have been enlarged by magic or other forces.
 
-      A Large encounter may pose a challenge if the difference in scale is not overcome.
+      You may be challenged if you can't overcome your
+      diminutive size relative to a Large threat.
       
-      A Large encounter may:
+      A Large threat may:
     prompts:
       - Resist human-scale attacks or effects
       - Reach or hit an entire area at once
+      - Deal devastating damage to smaller creatures and objects
   back:
     <<: *tback
     name: Large
@@ -306,7 +316,7 @@
       You may counter the challenge of a Large encounter by 
       exploiting your respective sizes somehow.
       
-      A Large encounter may:
+      A Large threat may:
     prompts:
       - Lose track of small details or targets
       - Be easily targeted due to its size
@@ -317,20 +327,22 @@
     desc: >
       //"That ain't no ordinary wolf, folks.." -- Basler
       
-      Monstrous beings are altered somehow.
-      They are fiercer, more feral, physically or mentally unnatural.
+      This encounter includes something twisted and malign.
       
-      A Monstrous creature can be stronger or tougher,
-      or might have other features.
-      Beasts might have longer talons, scales or thicker hide,
-      an extra-large jaw, and so on.
+      Monstrous treats are altered forms of the familiar.
+      They are fiercer, more feral, or disturbingly unnatural.
       
-      A Monstrous being poses a challenge
-      when you aren't familiar with its adaptions or uniqueness.
+      The characteristics of a mundane thing become exaggerated
+      and gruesome. Muscles knot and bulge. Jaws elongate and
+      bristle with vicious fangs. Hide thickens and goes patchy. All
+      is as seen through the lens of nightmare.
+     
+      You may be challenged by a Monstrous threat's adaptations,
+      or by it's relentless aggression.
       
-      Monstrous beings can:
+      Monstrous threats can:
     prompts:
-      - Lash out savagely at threats
+      - Lash out savagely
       - Use their adaptions to overwhelm the unprepared
       - Terrify onlookers with their awful nature
   back:
@@ -339,12 +351,14 @@
     desc: >
       //"Whoever corrupted this creature will pay. Let's press on." -- Woody
       
-      A Monstrous creature's own nature can be its undoing,
-      but such stories never end well.
+      A Monstrous threat is powered by its rage or aggression, but
+      those can be its downfall as well.
       
-      Monstrous creatures often lack a sense of self-preservation
-      that would cause any ordinary specimen to retreat
-      when things become too dangerous, and will press an attack unto death.
+      Monstrous creatures often lack a sense of self-preservation,
+      fighting relentlessly when others would retreat.
+      
+      You may avoid the challenge of a Monstrous threat by taking
+      advantage of its twisted, feral nature.
       
       Monstrous threats may:
     prompts:
