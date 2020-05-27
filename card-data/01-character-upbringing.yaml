@@ -18,11 +18,13 @@
       People with needs offered what they had, or sometimes more,
       and you did it too.
 
-      You can engage with a situation via negotiation.
-      You can compromise, dissemble, stall for time, or press for results.
-      You know how to backtrack and try other approaches if one fails.
+      You're familiar with art, commerce, and political power.
+      You've seen people from all over, and have heard
+      or can even speak multiple languages.
+
+      You often approach situations via negotiation.
     prompts:
-      - Engage in diplomacy or mercantile haggling
+      - Make a deal or haggle over details
       - Navigate a physical or social labyrinth
       - Gauge someone's wants or needs
   back:
@@ -140,12 +142,11 @@
       Your family or neighbors could have been criminals, migrants,
       members of a disliked minority, or even a different species.
 
-      You can engage with a situation via pride.
-      You can stand for yourself and those like you,
-      push back against those who dismiss you,
-      and rally those who question themselves.
+      You often approach situations via pride.
     prompts:
-      - TBD
+      - Stand up for yourself and those like you
+      - Rally those who question themselves
+      - Obtain your needs through a social network
   back:
     <<: *tback
     name: Underclass
@@ -154,4 +155,5 @@
 
       x
     prompts:
+      - Run afoul of those in authority
       - TBD
