@@ -1,4 +1,4 @@
-import { Link, withPrefix } from "gatsby"
+import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import AppBar from "@material-ui/core/AppBar"
@@ -37,7 +37,7 @@ const IconLink = ({ title, to, children }) => (
       color="inherit"
       aria-label="allcards"
       component={Link}
-      to={withPrefix(to)}
+      to={to}
     >
       {children}
     </IconButton>
@@ -51,7 +51,7 @@ const Header = ({ siteTitle }) => (
       <IconLink title={'Home'} to={`/`}>
         <HomeIcon />
       </IconLink>
-      <IconLink title={'Rules'} to={`/rules`}>
+      <IconLink title={'Rules'} to={`/rules/`}>
         <MenuBookIcon />
       </IconLink>
       <IconLink title={'All Cards'} to={`/all-cards`}>
