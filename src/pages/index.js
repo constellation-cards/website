@@ -1,11 +1,7 @@
 import React from "react"
 import { graphql, Link } from 'gatsby'
-
-import Container from "react-bootstrap/Container"
-import Row from "react-bootstrap/Row"
-import Col from "react-bootstrap/Col"
-
 import slug from 'slug'
+import Grid from '@material-ui/core/Grid';
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -67,24 +63,22 @@ const groupCardsByTag = data => {
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
-    <Container>
-      <Row>
-        <Col sm={6}>
-          {groupCardsByTag(data)}
-        </Col>
-        <Col sm={6}>
-          <h3>Articles and Background</h3>
-          <ul>
-            {map(node => (
-              <li>
-                <Link to={node.path}>{node.context.frontmatter.title}</Link>
-              </li>
-            ), data.allSitePage.nodes
-            )}
-          </ul>
-        </Col>
-      </Row>
-    </Container>
+    <Grid container spacing={3}>
+      <Grid item md={6}>
+        {groupCardsByTag(data)}
+      </Grid>
+      <Grid md={6}>
+        <h3>Articles and Background</h3>
+        <ul>
+          {map(node => (
+            <li>
+              <Link to={node.path}>{node.context.frontmatter.title}</Link>
+            </li>
+          ), data.allSitePage.nodes
+          )}
+        </ul>
+      </Grid>
+    </Grid>
   </Layout>
 )
 
