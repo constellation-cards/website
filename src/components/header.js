@@ -1,4 +1,4 @@
-import { Link } from "gatsby"
+import { Link, withPrefix } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import AppBar from "@material-ui/core/AppBar"
@@ -57,12 +57,12 @@ const Header = ({ siteTitle }) => (
       <IconLink title={'All Cards'} to={`/all-cards`}>
         <ViewAgendaIcon />
       </IconLink>
-      <IconLink title={'PDF (Web)'} to={`/cards.pdf`}>
+      <IconExternalLink title={'PDF (Web)'} href={withPrefix(`/cards.pdf`)}>
         <PictureAsPdfIcon />
-      </IconLink>
-      <IconLink title={'PDF (Print)'} to={`/cards-print.pdf`}>
+      </IconExternalLink>
+      <IconExternalLink title={'PDF (Print)'} href={withPrefix(`/cards-print.pdf`)}>
         <PrintIcon />
-      </IconLink>
+      </IconExternalLink>
       <IconExternalLink title={'Github'} href={`https://github.com/astralfrontier/flip-a-card`}>
         <GitHubIcon />
       </IconExternalLink>
