@@ -113,19 +113,6 @@ const IndexPage = ({ data }) => (
     <SEO title="Home" />
     <Grid container spacing={3}>
       {groupCardsByTag(data)}
-      <Grid item md={6}>
-        <h3>Articles and Background</h3>
-        <ul>
-          {map(
-            node => (
-              <li>
-                <Link to={node.path}>{node.context.frontmatter.title}</Link>
-              </li>
-            ),
-            data.allSitePage.nodes
-          )}
-        </ul>
-      </Grid>
     </Grid>
   </Layout>
 )
@@ -142,21 +129,6 @@ export const query = graphql`
         }
         back {
           tags
-        }
-      }
-    }
-    allSitePage(
-      filter: {
-        context: { frontmatter: { draft: { ne: true }, title: { glob: "*" } } }
-      }
-      sort: { fields: context___frontmatter___title, order: ASC }
-    ) {
-      nodes {
-        path
-        context {
-          frontmatter {
-            title
-          }
         }
       }
     }
