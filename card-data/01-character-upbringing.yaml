@@ -157,7 +157,7 @@
       You grew up among people who were neglected or rejected
       by a surrounding society.
       Your family or neighbors could have been criminals, migrants,
-      members of a disliked minority, or even a different species.
+      members of a disliked minority or species, or anything else.
 
       You often approach situations via pride.
     prompts:
@@ -170,7 +170,10 @@
     desc: >
       //"When everyone hates you, it's hard not to hate them back." -- Basler
 
-      x
+      Sometimes, circumstances push people to a breaking point.
+      Other times, doing the right thing becomes impossible,
+      and you're left with doing the necessary thing.
     prompts:
-      - Run afoul of those in authority
-      - TBD
+      - Lash out at threats to your ego
+      - Build yourself up in the eyes of the impressionable
+      - Run afoul of those in power
