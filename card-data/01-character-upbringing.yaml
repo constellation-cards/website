@@ -46,17 +46,34 @@
     <<: *tfront
     name: Country
     desc: >
-      POV Character: Tana
-      (farming, ranching, etc., neighbors)
+      //"Take a deep breath of that country air!" -- Tana
+
+      You grew up among farmers, ranchers, or other folk who lived
+      off the land. You might have lived in a tight-knit community,
+      or been miles away from the nearest neighbor.
+
+      You're familiar with the plants or animals of your region.
+      You're used to putting in an honest day's work.
+
+      You often approach situations via effort.
     prompts:
-      - TBD
+      - Endure wearying labor, physical or emotional
+      - Devise practical solutions to hard problems
+      - Understand someone's unspoken hardships
   back:
     <<: *tback
     name: Country
     desc: >
-      DESC
+      //"Smells like cow breakfast" -- Basler
+
+      Not everyone appreciates the necessity of hard work.
+      But sometimes, just plowing through isn't the right answer either.
+      You're used to getting down in the mud,
+      but it's important to reach for the stars as well.
     prompts:
-      - TBD
+      - Condemn someone for shunning hard work
+      - Balk at complex explanations or solutions
+      - Conceal a weakness or feeling
 - front: &Frontier
     <<: *tfront
     name: Frontier
