@@ -36,12 +36,22 @@ module.exports = {
         },
         gatsbyRemarkPlugins: [
           `gatsby-remark-copy-linked-files`,
+          `gatsby-remark-autolink-headers`,
           {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 1200,
             },
           },
+          {
+            resolve: `gatsby-remark-table-of-contents`,
+            options: {
+              exclude: "Table of Contents",
+              tight: false,
+              fromHeading: 1,
+              toHeading: 6
+            },
+          }
         ],
       },
     },

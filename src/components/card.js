@@ -2,9 +2,9 @@ import React from "react"
 import { map } from 'ramda'
 import slug from 'slug'
 
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
+import Grid from '@material-ui/core/Grid'
+
+// TODO: redo as two-column container
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -14,18 +14,18 @@ import CardFace from "./card-face"
 const CardPage = ({ pageContext: { title, description, cards } }) => (
   <Layout>
     <SEO title={title} description={description} />
-    <Container>
+    <Grid container spacing={3}>
       {map(card => (
-        <Row>
-          <Col xs={12} md={6}>
+        <>
+          <Grid item xs={12} md={6}>
             <CardFace side={card.front} href={`/cards/${slug(card.name).toLowerCase()}`} brand="Front" />
-          </Col>
-          <Col xs={12} md={6}>
+          </Grid>
+          <Grid item xs={12} md={6}>
             <CardFace side={card.back} href={`/cards/${slug(card.name).toLowerCase()}`} brand="Back" />
-          </Col>
-        </Row>
+          </Grid>
+        </>
       ), cards)}
-    </Container>
+    </Grid>
   </Layout>
 )
 

@@ -8,10 +8,11 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import CssBaseline from '@material-ui/core/CssBaseline';
 
 import Header from "./header"
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'typeface-roboto';
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -26,6 +27,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <CssBaseline />
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
