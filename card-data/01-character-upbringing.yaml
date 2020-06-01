@@ -73,7 +73,7 @@
     prompts:
       - Condemn someone for shunning hard work
       - Balk at complex explanations or solutions
-      - Conceal a weakness or feeling
+      - Sacrifice tomorrow's hopes for today's needs
 - front: &Frontier
     <<: *tfront
     name: Frontier
