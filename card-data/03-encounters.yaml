@@ -14,15 +14,12 @@
       //"My daggers bounced off that plate mail! What now?" -- Basler
       
       This encounter includes something important that is heavily defended.
-      
-      The defense could be literal armor, like a hardened barrier of metal, stone, leather, wood, or the like.
-      
-      It could also be a protective aura of magic, a divine blessing, or a natural body or structure made of
-      something tough.
-      
-      No matter what form it takes, the armor defends against specific kinds of damage.
-      
-      When you play this card describe the defenses and what they affect. 
+
+      This could mean body armor of leather or metal,
+      hardened barriers of stone, or wood,
+      a protective aura of magic, a divine blessing,
+      or something else.
+
       You may be challenged if you try to penetrate or circumvent the armor to get to what's inside.
       
       Something armored may:
@@ -36,11 +33,10 @@
     desc: >
       //"You know what metal does? Heats up. Fireball!" -- Tana
       
-      Armor must have a weakness or some kind of cost.
-      
-      Armoring something often reduces some other characteristic, such as nimbleness or speed.
-      Some armor is particularly weak to something, or has a specific weak spot.
-      Other armor requires effort or resources to maintain.
+      Every armor has a weakness or comes at a cost,
+      like making someone slower or something heavier.
+      Some armor has weak spots or is vulnerable to a specific attack.
+      Armor can also suffer if not regularly maintained.
       
       You can confront an Armored obstacle without a challenge
       if you can find and exploit one of these weaknesses.
@@ -131,12 +127,9 @@
       //"Earth sprites. They have the ore we seek." -- Tana
       
       This encounter involves powerful elemental forces.
-      It might be a being of elemental force, or a dangerous source of elemental
-      power, like a volcano or a violent storm.
-      
-      The classical elements are Air, Earth, Fire, and Water.
-      Some traditions include others, such as Lightning, Darkness, or Holy.
-      
+      This can mean creatures made of such forces, or dangerous sources
+      like a volcano or a violent storm.
+    
       You may be challenged by the raw power of an Elemental threat, or it
       can cause environmental dangers or obstacles.
       
@@ -195,9 +188,7 @@
     name: Flying
     desc: >
       //"Meet my best girl, Annette! A net, get it?" -- Basler
-      
-      Flight often comes with drawbacks or complications of its own.
-      
+     
       Wings require lots of energy to sustain flight, and are often fragile.
       Magical or elemental sources of flight can be counter-spelled or negated.
       Turbulent air can thwart flyers, forcing them to ground, where they might
@@ -329,9 +320,7 @@
     desc: >
       //"That ain't no ordinary wolf, folks.." -- Basler
       
-      This encounter includes something twisted and malign.
-      
-      Monstrous treats are altered forms of the familiar.
+      Monstrous threats are altered forms of the familiar.
       They are fiercer, more feral, or disturbingly unnatural.
       
       The characteristics of a mundane thing become exaggerated
@@ -340,7 +329,7 @@
       is as seen through the lens of nightmare.
      
       You may be challenged by a Monstrous threat's adaptations,
-      or by it's relentless aggression.
+      or by its relentless aggression.
       
       Monstrous threats can:
     prompts:
@@ -378,9 +367,7 @@
       A Notorious monster whispered of by fearful villagers. A place of power
       that most folks avoid. An artifact of legend, replete with arcane power.
       A person known for great or terrible deeds.
-      
-      Name this notorious thing, and tell us the legends about it.
-      
+     
       You may be challenged by the weight of Notorious reputation, by
       those who follow or worship it, or by the very power that made it
       famous.
@@ -456,17 +443,17 @@
 
       This encounter includes something ghostly or purely spiritual.
       
-      Ghosts or entities from other dimensions have obligations or
-      passions that manifest them or keep them in the mortal world.
-      
-      A Spectral threat might want to stay here or be released to its
-      natural place. It may be frightened, angry, or confused.
+      Spectral entities might have obligations or passions
+      binding them to the mortal world.
+      They may be frightened, angry, or confused.
+      They might wish to go - or stay.
 
       You may be challenged by a Spectral threat if you can't interact
       with it, or if its otherworldly nature has dangerous effects.
+
       A Spectral threat may:
     prompts:
-      - Pass selectively through solid matter or people
+      - Pass through solid matter or people
       - Wield morbid magics like chilling touch or possession
       - Ravenously pursue something the living have that it wants
   back:
@@ -499,15 +486,10 @@
       
       Maybe someone expects something momentous to happen at
       any moment. Maybe two or more parties are on the verge of
-      taking drastic action. Whatever it is, it's got the situation on
-      edge and ready to explode.
-      
-      A Tense situation isn't decided yet. Maybe you can reason with
-      those feeling the pressure, but they're on the alert and could be
-      ready to lash out or run away.
+      taking drastic action.
 
       You may be challenged to navigate a Tense situation without
-      triggering a bad outcome, or losing an important opportunity. 
+      making it blow up, or losing an important opportunity. 
 
       Beings in a Tense situation may:
     prompts:
@@ -582,13 +564,11 @@
     desc: >
       //"This unholy abomination will fall!" -- Emory
 
-      This encounter includes the animated dead.
-
       Necromancy, curses, or strange phenomena
       can bring a deceased creature back to a false life.
-      The being is sustained by magic; the rules of biology no longer apply.
-      Some undead are mindless, while others are disturbingly cunning.
-      They are frightening reminders of mortality and are often endowed
+      The being is sustained by magic, not biology.
+      Some undead are mindless; others are disturbingly cunning.
+      They are frightening reminders of mortality, often endowed
       with dread powers.
 
       You may be challenged when you confront the undead using the 
