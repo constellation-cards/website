@@ -78,17 +78,22 @@
     <<: *tfront
     name: Frontier
     desc: >
-      Touchstone: Grizzly Adams
-      (wilderness, desert, survival)
+      //"The forest demands self-sufficiency" -- Woody
+
+      You often approach situations through resourcefulness.
     prompts:
-      - TBD
+      - Come well-prepard for difficulties
+      - Persist in the face of doubt
+      - Change assumptions about what's possible
   back:
     <<: *tback
     name: Frontier
     desc: >
-      DESC
+      //"Well the forest sounds pretty demanding" -- Basler
     prompts:
-      - TBD
+      - Take something others need later for what you need now
+      - Cross a line in pursuit of your goals
+      - Violate expectations of what's permitted
 - front: &Insular
     <<: *tfront
     name: Insular
