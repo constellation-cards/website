@@ -22,7 +22,7 @@
       You've seen people from all over, and have heard
       or can even speak multiple languages.
 
-      You often approach situations via negotiation.
+      You've learned to approach situations via negotiation.
     prompts:
       - Make a deal or haggle over details
       - Navigate a physical or social labyrinth
@@ -55,7 +55,7 @@
       You're familiar with the plants or animals of your region.
       You're used to putting in an honest day's work.
 
-      You often approach situations via effort.
+      You've learned to approach situations via effort.
     prompts:
       - Endure wearying labor, physical or emotional
       - Devise practical solutions to hard problems
@@ -88,7 +88,7 @@
       You can hunt, trap, or otherwise obtain your basic necessities.
       Your life is a careful balance of trust and caution.
 
-      You often approach situations through resourcefulness.
+      You've learned to approach situations through resourcefulness.
     prompts:
       - Come well-prepard for difficulties
       - Persist in the face of doubt
@@ -155,9 +155,14 @@
     <<: *tfront
     name: Solitary
     desc: >
-      //"Leave me alone" -- Woody
+      //"I got this, leave me alone" -- Woody
 
-      You often approach situations through isolation.
+      For much of your life, you've been on your own.
+      You might have been orphaned or abandoned or kidnapped.
+      You might have run away from home,
+      or home might no longer exist.
+
+      You've learned to approach situations through isolation.
     prompts:
       - Shut out distractions
       - Present a reassuring facade
@@ -167,6 +172,11 @@
     name: Solitary
     desc: >
       //"You've left yourself alone too long" -- Tana
+
+      Without experiencing what other people in your life
+      can do, you may fear what you need most from them:
+      an outlet.
+      When you act distant, others will reciprocate.
     prompts:
       - Accumulate emotional debt
       - Keep your reservations unspoken
@@ -182,7 +192,7 @@
       Your family or neighbors could have been criminals, migrants,
       members of a disliked minority or species, or anything else.
 
-      You often approach situations via pride.
+      You've learned to approach situations via pride.
     prompts:
       - Stand up for yourself and those like you
       - Rally those who question themselves
