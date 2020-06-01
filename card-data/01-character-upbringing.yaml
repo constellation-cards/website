@@ -140,17 +140,34 @@
     <<: *tfront
     name: Nomadic
     desc: >
-      Touchstones: gypsies?
-      (travelers, itinerants, connecting people together)
+      //"The clear skies, the lure of the open road, it's perfect!" -- Tana
+
+      You grew up traveling, whether with family or other companions.
+      You've visited many communities, seen many interesting sights,
+      and heard many fascinating tales.
+      These experiences let you understand and embrace difference.
+
+      You've learned to approach situations through openness.
     prompts:
-      - TBD
+      - Apply a useful or relevant memory to a problem
+      - Bring a fresh perspective to a situation
+      - Forge a path to acceptance or compromise
   back:
     <<: *tback
     name: Nomadic
     desc: >
-      DESC
+      //"Do these wagon wheels fall off often?" -- Emory
+
+      Life on the road is never easy.
+      It can be tempting to avoid responsibility
+      or relationships through an early departure.
+      It's also easy to mistake your breadth of
+      experience for depth, and fail to listen
+      to those who know a problem better than you.
     prompts:
-      - TBD
+      - Overestimate your own wisdom or experiences
+      - Leave a half-solved problem behind and move on
+      - Settle for superficial connection with people
 - front: &Solitary
     <<: *tfront
     name: Solitary
