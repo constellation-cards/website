@@ -90,9 +90,9 @@
 
       You've learned to approach situations through resourcefulness.
     prompts:
-      - Come well-prepard for difficulties
-      - Persist in the face of doubt
-      - Change assumptions about what's possible
+      - Come well-prepared for harsh conditions
+      - Spot what you need in the environment
+      - Anticipate danger
   back:
     <<: *tback
     name: Frontier
@@ -106,23 +106,38 @@
     prompts:
       - Take something others need later for what you need now
       - Cross a line in pursuit of your goals
-      - Violate expectations of what's permitted
+      - Imagine a threat in every shadow
 - front: &Insular
     <<: *tfront
     name: Insular
     desc: >
-      //"" -- Emory
+      //"This is all very different from the cloister" -- Emory
 
-      You've learned to approach situations through TBD
+      You grew up secluded from the rest of the world.
+      Whether you lived on a lonely mountain village,
+      a religious retreat, or in an enclave within a
+      city, the ways of the outside world are a mystery.
+
+      You've learned to approach situations through curiosity.
     prompts:
-      - TBD
+      - Solve a problem using your peoples' ways
+      - Ask illuminating questions
+      - Reveal hidden knowledge or exclusive experience
   back:
     <<: *tback
     name: Insular
     desc: >
-      DESC
+      //"Everything's different out here. That's why it's called a cloister" -- Basler
+
+      Your early life didn't prepare you for the sheer
+      variey of people and things the world has to offer.
+      You might make a basic blunder, or ask a troubling question.
+      When in doubt, there might be someone you rely on for answers,
+      or you may rely on your upbringing's incomplete picture of things.
     prompts:
-      - TBD
+      - Violate unspoken rules or cultural taboos
+      - Cause conflict through misunderstanding
+      - Fall back on a trusted authority
 - front: &Noble
     <<: *tfront
     name: Noble
