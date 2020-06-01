@@ -111,7 +111,9 @@
     <<: *tfront
     name: Insular
     desc: >
-      (monks, isolated villages, seeing new things)
+      //"" -- Emory
+
+      You've learned to approach situations through TBD
     prompts:
       - TBD
   back:
@@ -125,17 +127,35 @@
     <<: *tfront
     name: Noble
     desc: >
-      Touchstones: Sir Emory, the noble knight
-      (high society, noblesse oblige)
+      //"Knights should be glorious champions of honor!" -- Emory
+
+      Your family might be Old Money,
+      or the most valuable thing you have is an old name.
+      Things are done just so, with elegance and refinement.
+      You hold a high station, and expectations of you
+      are equally high.
+      Otherwise, what is the point of you?
+
+      You've learned to approach situations through protocol.
     prompts:
-      - TBD
+      - Do what is right and proper, no matter what
+      - Hold others to a high standard
+      - Leverage your power and authority
   back:
     <<: *tback
     name: Noble
     desc: >
-      DESC
+      //"As opposed to ironclad thugs lording it over the peasants?" -- Basler
+
+      Not everyone benefits from, or approves of,
+      a system of aristocracy or nobility.
+      People might assume you look down on them,
+      or that you'll abuse the power you hold.
+      And all too often, they'll be right.
     prompts:
-      - TBD
+      - Mire a situation in pomp and etiquette
+      - Demand sacrifices you haven't made
+      - Lord it over your perceived lessers
 - front: &Nomadic
     <<: *tfront
     name: Nomadic
