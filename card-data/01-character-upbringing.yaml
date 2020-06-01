@@ -121,21 +121,6 @@
       DESC
     prompts:
       - TBD
-- front: &Loner
-    <<: *tfront
-    name: Loner
-    desc: >
-      Touchstones: Cloud Strife
-      (wanderers, anyone else with attachment issues or introverted tendencies)
-    prompts:
-      - TBD
-  back:
-    <<: *tback
-    name: Loner
-    desc: >
-      DESC
-    prompts:
-      - TBD
 - front: &Noble
     <<: *tfront
     name: Noble
@@ -166,6 +151,26 @@
       DESC
     prompts:
       - TBD
+- front: &Solitary
+    <<: *tfront
+    name: Solitary
+    desc: >
+      //"Leave me alone" -- Woody
+
+      You often approach situations through isolation.
+    prompts:
+      - Shut out distractions
+      - Present a reassuring facade
+      - Keep moving even when hope is lost
+  back:
+    <<: *tback
+    name: Solitary
+    desc: >
+      //"You've left yourself alone too long" -- Tana
+    prompts:
+      - Accumulate emotional debt
+      - Keep your reservations unspoken
+      - Leave others behind to fend for themselves
 - front: &Underclass
     <<: *tfront
     name: Underclass
