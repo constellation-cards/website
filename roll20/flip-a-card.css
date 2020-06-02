@@ -17,6 +17,10 @@ textarea.sheet-flipacard-text-input {
   width: 97%;
 }
 
+.prelike {
+  white-space: pre-wrap;
+}
+
 /* Toggle between show and edit */
 
 input.sheet-card-edit:checked ~ div.sheet-flipacard-show {
