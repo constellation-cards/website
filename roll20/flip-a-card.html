@@ -9,9 +9,12 @@
             <input type="checkbox" name="attr_card_edit" class="sheet-card-edit" />
             <div class="flipacard-show">
               <h4 class="flipacard-card-header">
-                <button type='action' name='act_flip' class="flip-button"><span style="font-family: 'Pictos'">0</span></button>
+                <button type='action' name='act_flip' class="flip-button"><span
+                    style="font-family: 'Pictos'">0</span></button>
                 <button type='action' name='act_edit'><span style="font-family: 'Pictos'">y</span></button>
-                <button type='roll' name='quote_front' value='&{template:default} {{name=@{front_name}}} {{side=Front}} {{desc=@{front_desc}}}'>Quote</button>
+                <button type='roll' class='blank-roll-button' name='quote_front'
+                  value='&{template:cardface} {{name=@{front_name}}} {{side=Front}} {{desc=@{front_desc}}}'><span
+                    style="font-family: 'Pictos'">w</span></button>
                 &nbsp;
                 <span name="attr_front_name"></span>
               </h4>
@@ -32,9 +35,12 @@
             <input type="checkbox" name="attr_card_edit" class="sheet-card-edit" />
             <div class="flipacard-show">
               <h4 class="flipacard-card-header">
-                <button type='action' name='act_flip' class="flip-button"><span style="font-family: 'Pictos'">0</span></button>
+                <button type='action' name='act_flip' class="flip-button"><span
+                    style="font-family: 'Pictos'">0</span></button>
                 <button type='action' name='act_edit'><span style="font-family: 'Pictos'">y</span></button>
-                <button type='roll' name='quote_front' value='&{template:default} {{name=@{back_name}}} {{side=Back}} {{desc=@{back_desc}}}'>Quote</button>
+                <button type='roll' class='blank-roll-button' name='quote_back'
+                  value='&{template:cardface} {{name=@{back_name}}} {{side=Back}} {{desc=@{back_desc}}}'><span
+                    style="font-family: 'Pictos'">w</span></button>
                 &nbsp;
                 <span name="attr_back_name"></span>
               </h4>
@@ -52,6 +58,16 @@
   </fieldset>
 </div>
 </div>
+
+<rolltemplate class="sheet-rolltemplate-cardface">
+  <div class="sheet-flipacard-card-border">
+    <h4 class="sheet-flipacard-card-header">
+      {{name}} ({{side}})
+    </h4>
+    <p>{{desc}}</p>
+  </div>
+</rolltemplate>
+
 
 <script type="text/worker">
   on("clicked:repeating_cards:flip", (eventinfo) => {
