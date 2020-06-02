@@ -9,6 +9,24 @@
   text-decoration: underline;
 }
 
-.sheet-flipacard-text-input {
+input.sheet-flipacard-text-input {
   width: 100%;
+}
+
+textarea.sheet-flipacard-text-input {
+  width: 97%;
+}
+
+/* Show/hide front or back */
+
+.sheet-card-flipped {
+  display: none;
+}
+
+input.sheet-card-flipped:checked ~ div.sheet-card-front {
+  display: none;
+}
+
+input.sheet-card-flipped:not(:checked) ~ div.sheet-card-back {
+  display: none;
 }
