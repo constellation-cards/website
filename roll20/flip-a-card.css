@@ -6,7 +6,7 @@
 }
 
 .sheet-flipacard-card-header {
-  text-decoration: underline;
+  border-bottom: thin solid black;
 }
 
 input.sheet-flipacard-text-input {
@@ -17,16 +17,29 @@ textarea.sheet-flipacard-text-input {
   width: 97%;
 }
 
-/* Show/hide front or back */
+/* Toggle between show and edit */
 
-.sheet-card-flipped {
+input.sheet-card-edit:checked ~ div.sheet-flipacard-show {
   display: none;
 }
 
-input.sheet-card-flipped:checked ~ div.sheet-card-front {
+input.sheet-card-edit:not(:checked) ~ div.sheet-flipacard-edit {
   display: none;
+}
+
+/* Show/hide front or back */
+
+/* Hide the checkboxes */
+input.sheet-card-flipped,
+input.sheet-card-edit {
+  display: none;
+}
+
+/* Gray out the face that's down */
+input.sheet-card-flipped:checked ~ div.sheet-card-front {
+  opacity: 50%;
 }
 
 input.sheet-card-flipped:not(:checked) ~ div.sheet-card-back {
-  display: none;
+  opacity: 50%;
 }

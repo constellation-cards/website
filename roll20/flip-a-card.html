@@ -1,36 +1,58 @@
 <div class="charsheet">
   <fieldset class="repeating_cards">
-
-    <!-- Each card is a 2 column row -->
-    <div class="1colrow">
+    <div class="2colrow">
       <input type="checkbox" name="attr_card_flipped" class="sheet-card-flipped" />
-
       <div class="col sheet-card-front">
         <!-- Front -->
-        <div class="flipacard-card ">
+        <div class="flipacard-card">
           <div class="flipacard-card-border">
-            <input type="text" class="flipacard-text-input" name="attr_front_name" placeholder="Card Name (front)" />
-            <textarea class="flipacard-text-input" name="attr_front_desc"></textarea>
+            <input type="checkbox" name="attr_card_edit" class="sheet-card-edit" />
+            <div class="flipacard-show">
+              <h4 class="flipacard-card-header">
+                <button type='action' name='act_flip' class="flip-button"><span style="font-family: 'Pictos'">0</span></button>
+                <button type='action' name='act_edit'><span style="font-family: 'Pictos'">y</span></button>
+                &nbsp;
+                <span name="attr_front_name"></span>
+              </h4>
+              <pre>
+                <span name="attr_front_desc"></span>
+              </pre>
+            </div>
+            <div class="flipacard-edit">
+              <input type="text" class="flipacard-text-input" name="attr_front_name" placeholder="Card Name (front)" />
+              <textarea class="flipacard-text-input" name="attr_front_desc"></textarea>
+              <button type='action' name='act_edit'>Done</button>
+            </div>
           </div>
         </div> <!-- End front -->
-
-        <button type='action' name='act_flip'>Flip</button>
       </div>
-
       <div class="col sheet-card-back">
         <!-- Back -->
         <div class="flipacard-card">
           <div class="flipacard-card-border">
-            <input type="text" class="flipacard-text-input" name="attr_back_name" placeholder="Card Name (front)" />
-            <textarea class="flipacard-text-input" name="attr_back_desc"></textarea>
+            <input type="checkbox" name="attr_card_edit" class="sheet-card-edit" />
+            <div class="flipacard-show">
+              <h4 class="flipacard-card-header">
+                <button type='action' name='act_flip' class="flip-button"><span style="font-family: 'Pictos'">0</span></button>
+                <button type='action' name='act_edit'><span style="font-family: 'Pictos'">y</span></button>
+                &nbsp;
+                <span name="attr_back_name"></span>
+              </h4>
+              <pre>
+                <span name="attr_back_desc"></span>
+              </pre>
+            </div>
+            <div class="flipacard-edit">
+              <input type="text" class="flipacard-text-input" name="attr_back_name" placeholder="Card Name (back)" />
+              <textarea class="flipacard-text-input" name="attr_back_desc"></textarea>
+              <button type='action' name='act_edit'>Done</button>
+            </div>
           </div>
         </div> <!-- End back -->
-
-        <button type='action' name='act_flip'>Flip</button>
       </div>
-
     </div>
   </fieldset>
+</div>
 </div>
 
 <script type="text/worker">
@@ -39,6 +61,15 @@
     getAttrs([`${source}_card_flipped`], (v) => {
       setAttrs({
         [`${source}_card_flipped`]: (v[`${source}_card_flipped`] === "on") ? "0" : "on"
+      });
+    });
+  });
+
+  on("clicked:repeating_cards:edit", (eventinfo) => {
+    const source = (eventinfo.sourceAttribute).slice(0, -5);
+    getAttrs([`${source}_card_edit`], (v) => {
+      setAttrs({
+        [`${source}_card_edit`]: (v[`${source}_card_edit`] === "on") ? "0" : "on"
       });
     });
   });
