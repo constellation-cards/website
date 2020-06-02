@@ -1,15 +1,40 @@
 <div class="charsheet">
-    <fieldset class="repeating_cards">
-      <div class="2colrow">
-        <div class="col">
-          <label>Front:</label><input type="text" name="attr_front_name" />
-          <textarea name="attr_front_desc"></textarea>
-          <input type="checkbox" name="attr_card_flipped" /> Flipped
-        </div>
-        <div class="col">
-          <label>Back:</label><input type="text" name="attr_back_name" />
-          <textarea name="attr_back_desc"></textarea>
-        </div>
+  <fieldset class="repeating_cards">
+
+    <!-- Each card is a 2 column row -->
+    <div class="2colrow">
+      <div class="col">
+        <!-- Front -->
+        <div class="flipacard-card">
+          <div class="flipacard-card-border">
+            <input type="text" class="flipacard-text-input" name="attr_front_name" placeholder="Card Name (front)" />
+            <textarea class="flipacard-text-input" name="attr_front_desc"></textarea>
+            <input type="checkbox" name="attr_card_flipped" /> Flipped
+            <button type='action' name='act_flip'>Flip</button>
+          </div>
+        </div> <!-- End front -->
       </div>
-    </fieldset>
-  </div>
+      <div class="col">
+        <!-- Back -->
+        <div class="flipacard-card">
+          <div class="flipacard-card-border">
+            <input type="text" class="flipacard-text-input" name="attr_back_name" placeholder="Card Name (front)" />
+            <textarea class="flipacard-text-input" name="attr_back_desc"></textarea>
+          </div>
+        </div> <!-- End back -->
+      </div>
+    </div>
+  </fieldset>
+</div>
+
+<script type="text/worker">
+  on("clicked:repeating_cards:flip", (eventinfo) => {
+    const source = (eventinfo.sourceAttribute).slice(0, -5);
+		getAttrs([`${source}_card_flipped`], (v) => {
+      console.log(v);
+			setAttrs({
+				[`${source}_card_flipped`]: (v[`${source}_card_flipped`] === "on") ? "0" : "on"
+			});
+		});
+	}); 
+</script>

@@ -1,1 +1,14 @@
-/* TODO */
+.sheet-flipacard-card-border {
+  border-radius: 25px;
+  border: 2px solid #000;
+  padding: 20px;
+  margin-bottom: 1em;
+}
+
+.sheet-flipacard-card-header {
+  text-decoration: underline;
+}
+
+.sheet-flipacard-text-input {
+  width: 100%;
+}
