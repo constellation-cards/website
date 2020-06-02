@@ -27,11 +27,11 @@ button[type=roll].sheet-blank-roll-button::before { content: ''; }
 
 /* Toggle between show and edit */
 
-input.sheet-card-edit:checked ~ div.sheet-flipacard-show {
+input.sheet-card-edit:checked ~ div.sheet-flipacard-edit {
   display: none;
 }
 
-input.sheet-card-edit:not(:checked) ~ div.sheet-flipacard-edit {
+input.sheet-card-edit:not(:checked) ~ div.sheet-flipacard-show {
   display: none;
 }
 
