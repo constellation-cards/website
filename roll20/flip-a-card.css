@@ -19,7 +19,8 @@ textarea.sheet-flipacard-text-input {
   width: 97%;
 }
 
-.prelike {
+.prelike,
+.sheet-prelike {
   white-space: pre-wrap;
 }
 
