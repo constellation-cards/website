@@ -12,6 +12,7 @@ const {
   filter,
   includes,
   isNil,
+  join,
   map,
   prepend,
   propOr,
@@ -54,11 +55,20 @@ function filterCards(options, allCards) {
   }
 }
 
+function simplifyCardFace(face) {
+  const prompts = map(prompt => `- ${prompt}\n`, face.prompts || [])
+  return {
+    name: face.name,
+    desc: `${face.desc}\n${join('', prompts)}\n${face.rule}`
+  }
+}
+
 async function outputCards(options) {
   const allCards = getCardData(options.sourceDir)
   let printedCards = []
   let webCards = []
-  for (let card of filterCards(options, allCards)) {
+  const filteredCards = filterCards(options, allCards)
+  for (let card of filteredCards) {
     const frontFace = await writeCardAsTex(card.front, "front")
     const backFace = await writeCardAsTex(card.back, "back")
     for(let i = 0; i < (card.qty || 1); i++) {
@@ -80,6 +90,12 @@ async function outputCards(options) {
   )
   fs.writeFileSync("cards-print.tex", printedCardsTmpl)
   fs.writeFileSync("cards.tex", webCardsTmpl)
+
+  const simplifiedCards = map(card => (JSON.stringify({
+    front: simplifyCardFace(card.front),
+    back: simplifyCardFace(card.back)
+  })), filteredCards)
+  fs.writeFileSync("cards.json", `[\n${join('\n,', simplifiedCards)}\n]`)
 }
 
 outputCards(program).catch(console.error)
