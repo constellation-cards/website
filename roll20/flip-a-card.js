@@ -82,10 +82,14 @@
     }
     try {
       const cardData = JSON.parse(jsonBlob);
-      const card = _.defaults(cardData, {front: {name: "No Name", desc: "No description"}, back: {name: "No Name", desc: "No description"}});
+      const defaultValues = {name: "No Name", desc: "No description"}
+      const card = {
+        front: _.defaults(cardData.front || {}, defaultValues),
+        back: _.defaults(cardData.back || {}, defaultValues)
+      };
       const cardName = (card.front.name == card.back.name) ? card.front.name : `${card.front.name} / ${card.back.name}`;
       flipACard.addCardAsRow(candidate, card);
-      flipACard.reply(`Adding ${cardName}/ to ${candidate.get('name')}`);
+      flipACard.reply(`Adding ${cardName} to ${candidate.get('name')}`);
     } catch (e) {
       flipACard.reply(`Error parsing JSON: ${e.message}`);
     }
