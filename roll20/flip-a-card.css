@@ -1,0 +1,53 @@
+.sheet-flipacard-card-border,
+.sheet-rolltemplate-cardface .sheet-flipacard-card-border {
+  border-radius: 25px;
+  border: 2px solid #000;
+  padding: 20px;
+  margin-bottom: 1em;
+}
+
+.sheet-flipacard-card-header,
+.sheet-rolltemplate-cardface .sheet-flipacard-card-header {
+  border-bottom: thin solid black;
+}
+
+input.sheet-flipacard-text-input {
+  width: 100%;
+}
+
+textarea.sheet-flipacard-text-input {
+  width: 97%;
+}
+
+.prelike {
+  white-space: pre-wrap;
+}
+
+button[type=roll].sheet-blank-roll-button::before { content: ''; }
+
+/* Toggle between show and edit */
+
+input.sheet-card-edit:checked ~ div.sheet-flipacard-edit {
+  display: none;
+}
+
+input.sheet-card-edit:not(:checked) ~ div.sheet-flipacard-show {
+  display: none;
+}
+
+/* Show/hide front or back */
+
+/* Hide the checkboxes */
+input.sheet-card-flipped,
+input.sheet-card-edit {
+  display: none;
+}
+
+/* Gray out the face that's down */
+input.sheet-card-flipped:checked ~ div.sheet-card-front {
+  opacity: 50%;
+}
+
+input.sheet-card-flipped:not(:checked) ~ div.sheet-card-back {
+  opacity: 50%;
+}
