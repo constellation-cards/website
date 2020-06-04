@@ -1,0 +1,90 @@
+<div class="charsheet">
+  <fieldset class="repeating_cards">
+    <div class="2colrow">
+      <input type="checkbox" name="attr_card_flipped" class="sheet-card-flipped" />
+      <div class="col sheet-card-front">
+        <!-- Front -->
+        <div class="flipacard-card">
+          <div class="flipacard-card-border">
+            <input type="checkbox" name="attr_card_edit" class="sheet-card-edit" />
+            <div class="flipacard-show">
+              <h4 class="flipacard-card-header">
+                <button type='action' name='act_flip' class="flip-button"><span
+                    style="font-family: 'Pictos'">0</span></button>
+                <button type='action' name='act_edit'><span style="font-family: 'Pictos'">y</span></button>
+                <button type='roll' class='blank-roll-button' name='quote_front'
+                  value='&{template:cardface} {{name=@{front_name}}} {{side=Front}} {{desc=@{front_desc}}}'><span
+                    style="font-family: 'Pictos'">w</span></button>
+                &nbsp;
+                <span name="attr_front_name"></span>
+              </h4>
+              <p class="prelike"><span name="attr_front_desc"></span></p>
+            </div>
+            <div class="flipacard-edit">
+              <input type="text" class="flipacard-text-input" name="attr_front_name" placeholder="Card Name (front)" />
+              <textarea class="flipacard-text-input" name="attr_front_desc"></textarea>
+              <button type='action' name='act_edit'>Done</button>
+            </div>
+          </div>
+        </div> <!-- End front -->
+      </div>
+      <div class="col sheet-card-back">
+        <!-- Back -->
+        <div class="flipacard-card">
+          <div class="flipacard-card-border">
+            <input type="checkbox" name="attr_card_edit" class="sheet-card-edit" />
+            <div class="flipacard-show">
+              <h4 class="flipacard-card-header">
+                <button type='action' name='act_flip' class="flip-button"><span
+                    style="font-family: 'Pictos'">0</span></button>
+                <button type='action' name='act_edit'><span style="font-family: 'Pictos'">y</span></button>
+                <button type='roll' class='blank-roll-button' name='quote_back'
+                  value='&{template:cardface} {{name=@{back_name}}} {{side=Back}} {{desc=@{back_desc}}}'><span
+                    style="font-family: 'Pictos'">w</span></button>
+                &nbsp;
+                <span name="attr_back_name"></span>
+              </h4>
+              <p class="prelike"><span name="attr_back_desc"></span></p>
+            </div>
+            <div class="flipacard-edit">
+              <input type="text" class="flipacard-text-input" name="attr_back_name" placeholder="Card Name (back)" />
+              <textarea class="flipacard-text-input" name="attr_back_desc"></textarea>
+              <button type='action' name='act_edit'>Done</button>
+            </div>
+          </div>
+        </div> <!-- End back -->
+      </div>
+    </div>
+  </fieldset>
+</div>
+</div>
+
+<rolltemplate class="sheet-rolltemplate-cardface">
+  <div class="sheet-flipacard-card-border">
+    <h4 class="sheet-flipacard-card-header">
+      {{name}} ({{side}})
+    </h4>
+    <p>{{desc}}</p>
+  </div>
+</rolltemplate>
+
+
+<script type="text/worker">
+  on("clicked:repeating_cards:flip", (eventinfo) => {
+    const source = (eventinfo.sourceAttribute).slice(0, -5);
+    getAttrs([`${source}_card_flipped`], (v) => {
+      setAttrs({
+        [`${source}_card_flipped`]: (v[`${source}_card_flipped`] === "on") ? "0" : "on"
+      });
+    });
+  });
+
+  on("clicked:repeating_cards:edit", (eventinfo) => {
+    const source = (eventinfo.sourceAttribute).slice(0, -5);
+    getAttrs([`${source}_card_edit`], (v) => {
+      setAttrs({
+        [`${source}_card_edit`]: (v[`${source}_card_edit`] === "on") ? "0" : "on"
+      });
+    });
+  });
+</script>
