@@ -33,11 +33,11 @@
     desc: >
       //"...For the right price." -- Basler
 
-      Not everything can be reduced to a commercial transaction,
+      Not everything can be reduced to a simple transaction,
       but city dwellers sometimes try anyway.
       Some of what you've seen has made you numb.
-      Other times, you've decided rightly or wrongly
-      that you can't help, and have moved on anyway.
+      The city eats people whole, so much so that you can be
+      blind to suffering.
     prompts:
       - Compromise a principle or ideal for expedience
       - Overcomplicate a plan or solution
@@ -80,18 +80,18 @@
     desc: >
       //"The forest demands self-sufficiency" -- Woody
 
-      You grew up at the edges of civilization, whether a harsh
+      You grew up at the edge of civilization, whether a harsh
       desert, a lonely mountain, a deep forest, or somewhere
       equally remote. You learned to fend for yourself from
       a young age.
 
-      You can hunt, trap, or otherwise obtain your basic necessities.
+      You can hunt, trap, or otherwise live off the land.
       Your life is a careful balance of trust and caution.
 
       You've learned to approach situations through resourcefulness.
     prompts:
       - Come well-prepared for harsh conditions
-      - Spot what you need in the environment
+      - Find what you need in the environment
       - Anticipate danger
   back:
     <<: *tback
@@ -104,8 +104,8 @@
       others' wants.
       Carefulness and selfishness are matters of degree.
     prompts:
-      - Take something others need later for what you need now
-      - Cross a line in pursuit of your goals
+      - Prioritize your immediate needs over the plans or stores of others
+      - Disregard the scruples and niceties of civilized folk
       - Imagine a threat in every shadow
 - front: &Insular
     <<: *tfront
@@ -121,7 +121,7 @@
       You've learned to approach situations through curiosity.
     prompts:
       - Solve a problem using your peoples' ways
-      - Ask illuminating questions
+      - Ask naive but insightful questions
       - Reveal hidden knowledge or exclusive experience
   back:
     <<: *tback
@@ -184,7 +184,7 @@
 
       You've learned to approach situations through openness.
     prompts:
-      - Apply a useful or relevant memory to a problem
+      - Recall a story that will bring people together or solutions to light
       - Bring a fresh perspective to a situation
       - Forge a path to acceptance or compromise
   back:
@@ -197,12 +197,12 @@
       It can be tempting to avoid responsibility
       or relationships through an early departure.
       It's also easy to mistake your breadth of
-      experience for depth, and fail to listen
-      to those who know a problem better than you.
+      experience for depth, and fail to hear
+      wiser voices.
     prompts:
       - Overestimate your own wisdom or experiences
       - Leave a half-solved problem behind and move on
-      - Settle for superficial connection with people
+      - See people as faces in the crowd, not individuals
 - front: &Solitary
     <<: *tfront
     name: Solitary
