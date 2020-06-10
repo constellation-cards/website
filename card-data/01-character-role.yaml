@@ -78,7 +78,7 @@
     desc: Through actions and words, you entertain, persuade, or transform people around you.
     prompts:
       - Embody grace, confidence, or poise
-      - Inspire people to act
+      - Inspire or incite people to act
       - Spark or manipulate emotion
   back:
     <<: *tback
