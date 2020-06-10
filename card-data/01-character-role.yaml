@@ -46,7 +46,7 @@
     desc: Your looks, reputation, or nature cause common folk to fear or reject you.
     prompts:
       - "Use others' fears to your advantage"
-      - Exploit the source of your monstrousness
+      - Exploit your "monstrous" qualities to get something done
       - Make common cause with other monsters
   back:
     <<: *tback
