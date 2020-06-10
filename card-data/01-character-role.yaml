@@ -45,7 +45,7 @@
     name: Monster
     desc: Your looks, reputation, or nature cause common folk to fear or reject you.
     prompts:
-      - "Take advantage of others' fears"
+      - "Use others' fears to your advantage"
       - Exploit the source of your monstrousness
       - Make common cause with other monsters
   back:
@@ -78,14 +78,14 @@
     desc: Through actions and words, you entertain, persuade, or transform people around you.
     prompts:
       - Embody grace, confidence, or poise
-      - Influence people to action
+      - Inspire people to act
       - Spark or manipulate emotion
   back:
     <<: *tback
     name: Performer
     desc: When anything you say matters, will you say the wrong thing, or for the wrong reasons?
     prompts:
-      - Show up or embarrass someone important
+      - Outshine or embarrass someone important
       - Draw unwanted attention
       - Provoke an unintended reaction
 - front: &Quester
@@ -93,7 +93,7 @@
     name: Quester
     desc: A vow, an ideal, a promise, a vision, a mission. Something drives you unstoppably onward.
     prompts:
-      - Live the life your resolve demands
+      - Make the hard choices your resolve demands
       - Rally others to your cause
       - Find a way forward despite everything
   back:
@@ -103,14 +103,14 @@
     prompts:
       - Waver in your dedication to your quest
       - Shut others out of assisting you
-      - Put your quest before more mundane matters
+      - Ignore mundane needs to focus on your quest
 - front: &Soldier
     <<: *tfront
     name: Soldier
     desc: "Life is struggle. Everyone has to fight, all the time. What do you fight for?"
     prompts:
       - Test your fate against an opponent
-      - Make a sacrifice to support a hope
+      - Make a sacrifice to turn the tide
       - Stand up when everything says to stay down
   back:
     <<: *tback
