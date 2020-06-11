@@ -124,6 +124,7 @@ export const query = graphql`
     allCardFace {
       nodes {
         name
+        qty
         front {
           tags
         }

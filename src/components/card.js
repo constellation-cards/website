@@ -3,8 +3,7 @@ import { map } from 'ramda'
 import slug from 'slug'
 
 import Grid from '@material-ui/core/Grid'
-
-// TODO: redo as two-column container
+import Paper from '@material-ui/core/Paper'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -23,6 +22,13 @@ const CardPage = ({ pageContext: { title, description, cards } }) => (
           <Grid item xs={12} md={6}>
             <CardFace side={card.back} href={`/cards/${slug(card.name).toLowerCase()}`} brand="Back" />
           </Grid>
+          {card.qty > 1 && (
+            <Grid item xs={12}>
+              <Paper style={{textAlign: 'center', background: '#eee'}}>
+                {`${card.qty} copies of this card are included`}
+              </Paper>
+            </Grid>
+          )}
         </>
       ), cards)}
     </Grid>
