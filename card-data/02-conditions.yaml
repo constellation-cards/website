@@ -16,22 +16,18 @@
       - core-rules
     iconImg: condition
     desc: >
-      You've been affected by a temporary problem.
-      Injury, delirium, debts, magical curses, and so on are all conditions.
-
-      You can choose to take a condition to get a hit. Describe how.
-      Players who challenge you can suggest conditions to meet it.
+      Conditions are temporary problems for your character, like injury,
+      delirium, debts, or magical curses.
+                  
+      Take a condition OR flip a topside condition to get a hit.
       
-      The condition is fictionally true and limits your actions.
-      If you narrate an action the condition would interfere with,
-      you must meet the challenge of the condition in addition to any other challenges.
+      Always decsribe how you got the condition, how it bought you success,
+      and how it limits you. Meet a new challenge when you push those limits.
       
-      You can flip a topside condition to worsen it and get a hit. Describe how.
-      
-      Clearing conditions takes time. Use this time to drive drama,
-      build the world, or explore how you clear the condition.
-      
-      Discard any conditions that no longer apply in the fiction.
+      Attend to a condition, in a scene or downtime, to remove it.
+      When you do, try to build tension, the setting, or character development.
+            
+      Also take or remove conditions when the story demands it.
     rule: Flip to see examples
   back:
     name: Condition Examples
