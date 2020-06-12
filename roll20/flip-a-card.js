@@ -1,4 +1,4 @@
-;(function() {
+(function() {
   "use strict"
 
   var flipACard = flipACard || {}
@@ -231,18 +231,44 @@
     })
   }
 
+  flipACard.addCardsByTag = function(recipient, tagname, limit) {
+    flipACard.getCardsJson(function(cardData) {
+      const matchingCards = _.filter(cardData, function(card){
+        return _.contains(card.front.tags, tagname) || _.contains(card.back.tags, tagname);
+      });
+      if (matchingCards) {
+        for(let card of _.sample(matchingCards, _.min([limit, matchingCards.length]))) {
+          flipACard.addCardFromJson(recipient, card);
+        }
+      } else {
+        flipACard.reply(`No cards tagged '${cardName}'`);
+      }
+    })
+
+  }
+
   flipACard.parseChatMessage = function(msg) {
     if (msg.type === 'api') {
       const output = flipACard.parseCommand(msg.content);
       switch (output[0]) {
         case '!deal':
-          flipACard.reply(`Player name: [${output[1]}] card name: [${output[2]}]`)
           flipACard.addCardByName(output[1], output[2]);
           break;
-        case '!debug':
-          flipACard.getCardsJson(function(cardData) {
-            log(cardData);
-          })
+        case '!dealone':
+          flipACard.addCardsByTag(output[1], output[2], 1);
+          break;
+        case '!dealall':
+          flipACard.addCardsByTag(output[1], output[2], 9999);
+          break;  
+        case '!clearcardcache':
+          flipACard.cardData = null;
+          flipACard.reply("Card cache cleared");
+          break;
+        case '!help':
+          flipACard.reply('Usage: !deal <player name> <card name>');
+          flipACard.reply('Usage: !dealone <player name> <card tag>');
+          flipACard.reply('Usage: !dealall <player name> <card tag>');
+          flipACard.reply('Player, card, and tag names must be exact, but are not case sensitive');
         default:
           break;
       }
