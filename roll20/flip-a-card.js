@@ -105,7 +105,12 @@
    * @param characterName the character to find
    */
   flipACard.findCharacter = function(characterName) {
-    var candidates = findObjs(
+    // Allow characters to be found by ID
+    let candidate = getObj("character", characterName);
+    if (candidate) {
+      return candidate;
+    }
+    let candidates = findObjs(
       {
         _type: "character",
         name: characterName,
@@ -200,7 +205,6 @@
         ? card.front.name
         : `${card.front.name} / ${card.back.name}`
     flipACard.addCardAsRow(candidate, card)
-    flipACard.reply(`Adding ${cardName} to ${candidate.get("name")}`)
   }
 
   flipACard.addCardFromRaw = function(recipient, jsonBlob) {
@@ -259,7 +263,16 @@
           break;
         case '!dealall':
           flipACard.addCardsByTag(output[1], output[2], 9999);
-          break;  
+          break;
+        case '!dealcharacter':
+          flipACard.addCardsByTag(output[1], "upbringing", 1);
+          flipACard.addCardsByTag(output[1], "role", 1);
+          flipACard.addCardsByTag(output[1], "focus", 1);
+          break;
+        case '!dealencounter':
+          flipACard.addCardsByTag(output[1], "encounter", 2);
+          flipACard.addCardsByTag(output[1], "emotion", 1);
+          break;
         case '!clearcardcache':
           flipACard.cardData = null;
           flipACard.reply("Card cache cleared");
