@@ -59,7 +59,8 @@ function simplifyCardFace(face) {
   const prompts = map(prompt => `- ${prompt}\n`, face.prompts || [])
   return {
     name: face.name,
-    desc: `${face.desc}\n${join('', prompts)}\n${face.rule}`
+    tags: face.tags || [],
+    desc: `${face.desc || ''}\n${join('', prompts)}\n${face.rule || ''}`
   }
 }
 
@@ -91,11 +92,11 @@ async function outputCards(options) {
   fs.writeFileSync("cards-print.tex", printedCardsTmpl)
   fs.writeFileSync("cards.tex", webCardsTmpl)
 
-  const simplifiedCards = map(card => (JSON.stringify({
+  const simplifiedCards = map(card => ({
     front: simplifyCardFace(card.front),
     back: simplifyCardFace(card.back)
-  })), filteredCards)
-  fs.writeFileSync("cards.json", `[\n${join('\n,', simplifiedCards)}\n]`)
+  }), filteredCards)
+  fs.writeFileSync("cards.json", JSON.stringify(simplifiedCards));
 }
 
 outputCards(program).catch(console.error)

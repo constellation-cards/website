@@ -106,5 +106,6 @@ public
 static/cards.pdf
 build/
 cards-print.tex
-cards.tex
+cards.json
 cards.pdf
+cards.tex
