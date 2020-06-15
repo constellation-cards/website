@@ -8,14 +8,14 @@
 - template: &tback
     <<: *template
     rule: Flip when a prompt is narrated by anyone.
-- front: &City
+- front: &Mercantile
     <<: *tfront
-    name: City
+    name: Mercantile
     desc: >
       //"Welcome to the Labri Market! You can find anything here." -- Basler
 
-      You grew up in a highly populated center of trade and culture.
-      You're familiar with art, commerce, and political power.
+      You grew up among markets and traders,
+      whether in a populated city or on the road with a caravan.
       You've seen people from all over, and have heard
       or can even speak multiple languages.
 
@@ -26,15 +26,14 @@
       - Gauge someone's wants or needs
   back:
     <<: *tback
-    name: City
+    name: Mercantile
     desc: >
       //"...For the right price." -- Basler
 
       Not everything can be reduced to a simple transaction,
-      but city dwellers sometimes try anyway.
-      Some of what you've seen has made you numb.
-      The city eats people whole, so much so that you can be
-      blind to suffering.
+      but some people can't see any other way.
+      It becomes easy to ignore pain and devalue life
+      when money or power become a cocoon against existence.
     prompts:
       - Compromise a principle or ideal for expedience
       - Overcomplicate a plan or solution
