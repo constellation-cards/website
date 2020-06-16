@@ -38,27 +38,26 @@
       - Compromise a principle or ideal for expedience
       - Overcomplicate a plan or solution
       - Look past pain or hurt rather than soothe it
-- front: &Country
+- front: &Industrious
     <<: *tfront
-    name: Country
+    name: Industrious
     desc: >
-      //"Take a deep breath of that country air!" -- Tana
+      //"Take a deep breath of that farm air!" -- Tana
 
-      You grew up among farmers, ranchers, or other folk who lived
-      off the land. You might have lived in a tight-knit community,
-      or been miles away from the nearest neighbor.
-
-      You're familiar with the plants or animals of your region.
-      You're used to putting in an honest day's work.
+      You grew up among farmers, trappers, city laborers,
+      or other folk who made their way by the sweat of their brow.
+      Others expected you to carry your own weight.
+      Life could be routine, and you learned ways
+      to pass the time.
 
       You've learned to approach situations via effort.
     prompts:
-      - Endure wearying labor, physical or emotional
-      - Devise practical solutions to hard problems
-      - Understand someone's unspoken hardships
+      - Be sensitive to natural rhythms around you
+      - Make do with what's on hand
+      - Coordinate with others to get hard work done
   back:
     <<: *tback
-    name: Country
+    name: Industrious
     desc: >
       //"Smells like cow breakfast" -- Basler
 
@@ -67,42 +66,9 @@
       You're used to getting down in the mud,
       but it's important to reach for the stars as well.
     prompts:
-      - Condemn someone for shunning hard work
-      - Balk at complex explanations or solutions
+      - Work harder, not smarter
       - Sacrifice tomorrow's hopes for today's needs
-- front: &Frontier
-    <<: *tfront
-    name: Frontier
-    desc: >
-      //"The forest demands self-sufficiency" -- Woody
-
-      You grew up at the edge of civilization, whether a harsh
-      desert, a lonely mountain, a deep forest, or somewhere
-      equally remote. You learned to fend for yourself from
-      a young age.
-
-      You can hunt, trap, or otherwise live off the land.
-      Your life is a careful balance of trust and caution.
-
-      You've learned to approach situations through resourcefulness.
-    prompts:
-      - Come well-prepared for harsh conditions
-      - Find what you need in the environment
-      - Anticipate danger
-  back:
-    <<: *tback
-    name: Frontier
-    desc: >
-      //"Well the forest sounds pretty demanding" -- Basler
-
-      When much of your life is preoccupied with taking care
-      of yourself and your needs, it's easy to lose sight of
-      others' wants.
-      Carefulness and selfishness are matters of degree.
-    prompts:
-      - Prioritize your immediate needs over the plans or stores of others
-      - Disregard the scruples and niceties of civilized folk
-      - Imagine a threat in every shadow
+      - Lay a heavy burden on light shoulders
 - front: &Insular
     <<: *tfront
     name: Insular
