@@ -8,6 +8,38 @@
 - template: &tback
     <<: *template
     rule: Flip when a prompt is narrated by anyone.
+- front: &Cosmopolitan
+    <<: *tfront
+    name: Cosmopolitan
+    desc: >
+      //"The clear skies, the lure of the open road, it's perfect!" -- Tana
+
+      Whether you grew up traveling the world,
+      or whether you lived in a city where the world came to you,
+      you've met many people from all over the world.
+      You listened to their stories and saw their ways of living.
+      These experiences let you understand and embrace difference.
+
+      You've learned to approach situations through openness.
+    prompts:
+      - Recall a story that will bring people together or solutions to light
+      - Bring a fresh perspective to a situation
+      - Forge a path to acceptance or compromise
+  back:
+    <<: *tback
+    name: Cosmopolitan
+    desc: >
+      //"Do these wagon wheels fall off often?" -- Emory
+
+      It's possible to mistake your breadth of experience for depth,
+      and fail to hear wiser voices.
+      Similarly, it's possible to meet a few people
+      and think that's all you need to know about their folk.
+      There's always more to learn, however much you know now.
+    prompts:
+      - Overestimate your own wisdom or experience
+      - Lose focus of people as individuals
+      - Treat one person as representative of a whole group
 - front: &Industrious
     <<: *tfront
     name: Industrious
@@ -100,38 +132,6 @@
       - Compromise a principle or ideal for expedience
       - Overcomplicate a plan or solution
       - Look past pain or hurt rather than soothe it
-- front: &Nomadic
-    <<: *tfront
-    name: Nomadic
-    desc: >
-      //"The clear skies, the lure of the open road, it's perfect!" -- Tana
-
-      You grew up traveling, whether with family or other companions.
-      You've visited many communities, seen many interesting sights,
-      and heard many fascinating tales.
-      These experiences let you understand and embrace difference.
-
-      You've learned to approach situations through openness.
-    prompts:
-      - Recall a story that will bring people together or solutions to light
-      - Bring a fresh perspective to a situation
-      - Forge a path to acceptance or compromise
-  back:
-    <<: *tback
-    name: Nomadic
-    desc: >
-      //"Do these wagon wheels fall off often?" -- Emory
-
-      Life on the road is never easy.
-      It can be tempting to avoid responsibility
-      or relationships through an early departure.
-      It's also easy to mistake your breadth of
-      experience for depth, and fail to hear
-      wiser voices.
-    prompts:
-      - Overestimate your own wisdom or experiences
-      - Leave a half-solved problem behind and move on
-      - See people as faces in the crowd, not individuals
 - front: &Solitary
     <<: *tfront
     name: Solitary
