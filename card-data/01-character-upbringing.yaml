@@ -16,11 +16,10 @@
 
       Whether you grew up traveling the world,
       or whether you lived in a city where the world came to you,
-      you've met many people from all over the world.
+      you've met people from all over.
       You listened to their stories and saw their ways of living.
-      These experiences let you understand and embrace difference.
 
-      You've learned to approach situations through openness.
+      You've learned to approach situations through differences.
     prompts:
       - Recall a story that will bring people together or solutions to light
       - Bring a fresh perspective to a situation
@@ -221,3 +220,34 @@
       - Lash out at threats to your ego
       - Build yourself up in the eyes of the impressionable
       - Run afoul of those in power
+- front: &Unfettered
+    <<: *tfront
+    name: Unfettered
+    desc: >
+      //"As a princess, I had power. As a ranger, I have freedom." -- Woody
+      
+      Whether you were a scion of privilege,
+      a child wandering the halls of an artisan's guild,
+      or a free spirit roaming a mystic forest,
+      you were accustomed to going where you wished
+      and doing whatever seemed best.
+
+      You've learned to approach situations via directness.
+    prompts:
+      - Force an issue or break a deadlock through action
+      - Reject restrictions and break chains
+      - Drag others along your unique path
+  back:
+    <<: *tback
+    name: Unfettered
+    desc: >
+      //"Those who go their own way often find the path lonely." -- Emory
+
+      Rules aren't always made to be broken.
+      You can offend others, or even hurt them or yourself
+      when you go where you don't belong
+      or do what you ought not do.
+    prompts:
+      - Sabotage a subtle effort
+      - Trample on a cherished tradition
+      - Disappoint or frustrate a more cautious ally
