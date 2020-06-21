@@ -8,36 +8,6 @@
 - template: &tback
     <<: *template
     rule: Flip when a prompt is narrated by anyone.
-- front: &Mercantile
-    <<: *tfront
-    name: Mercantile
-    desc: >
-      //"Welcome to the Labri Market! You can find anything here." -- Basler
-
-      You grew up among markets and traders,
-      whether in a populated city or on the road with a caravan.
-      You've seen people from all over, and have heard
-      or can even speak multiple languages.
-
-      You've learned to approach situations via negotiation.
-    prompts:
-      - Make a deal or haggle over details
-      - Navigate a physical or social labyrinth
-      - Gauge someone's wants or needs
-  back:
-    <<: *tback
-    name: Mercantile
-    desc: >
-      //"...For the right price." -- Basler
-
-      Not everything can be reduced to a simple transaction,
-      but some people can't see any other way.
-      It becomes easy to ignore pain and devalue life
-      when money or power become a cocoon against existence.
-    prompts:
-      - Compromise a principle or ideal for expedience
-      - Overcomplicate a plan or solution
-      - Look past pain or hurt rather than soothe it
 - front: &Industrious
     <<: *tfront
     name: Industrious
@@ -100,39 +70,36 @@
       - Violate unspoken rules or cultural taboos
       - Cause conflict through misunderstanding
       - Fall back on a trusted authority
-- front: &Noble
+- front: &Mercantile
     <<: *tfront
-    name: Noble
+    name: Mercantile
     desc: >
-      //"Knights should be glorious champions of honor!" -- Emory
+      //"Welcome to the Labri Market! You can find anything here." -- Basler
 
-      Your family might be Old Money,
-      or the most valuable thing you have is an old name.
-      Things are done just so, with elegance and refinement.
-      You hold a high station, and expectations of you
-      are equally high.
-      Otherwise, what is the point of you?
+      You grew up among markets and traders,
+      whether in a populated city or on the road with a caravan.
+      You've seen people from all over, and have heard
+      or can even speak multiple languages.
 
-      You've learned to approach situations through protocol.
+      You've learned to approach situations via negotiation.
     prompts:
-      - Do what is right and proper, no matter what
-      - Hold others to a high standard
-      - Leverage your power and authority
+      - Make a deal or haggle over details
+      - Navigate a physical or social labyrinth
+      - Gauge someone's wants or needs
   back:
     <<: *tback
-    name: Noble
+    name: Mercantile
     desc: >
-      //"As opposed to ironclad thugs lording it over the peasants?" -- Basler
+      //"...For the right price." -- Basler
 
-      Not everyone benefits from, or approves of,
-      a system of aristocracy or nobility.
-      People might assume you look down on them,
-      or that you'll abuse the power you hold.
-      And all too often, they'll be right.
+      Not everything can be reduced to a simple transaction,
+      but some people can't see any other way.
+      It becomes easy to ignore pain and devalue life
+      when money or power become a cocoon against existence.
     prompts:
-      - Mire a situation in pomp and etiquette
-      - Demand sacrifices you haven't made
-      - Lord it over your perceived lessers
+      - Compromise a principle or ideal for expedience
+      - Overcomplicate a plan or solution
+      - Look past pain or hurt rather than soothe it
 - front: &Nomadic
     <<: *tfront
     name: Nomadic
@@ -195,6 +162,36 @@
       - Accumulate emotional debt
       - Keep your reservations unspoken
       - Leave others behind to fend for themselves
+- front: &Strict
+    <<: *tfront
+    name: Strict
+    desc: >
+      //"Knights should be glorious champions of honor!" -- Emory
+
+      You knew from a young age that there's a right and wrong way to do things.
+      You might be from a noble family where things are done just so,
+      or your parents might have lived in constant fear of something,
+      and their caution rubbed off on you.
+
+      You've learned to approach situations through protocol.
+    prompts:
+      - Uphold a code of behavior in the face of doubt or weakness
+      - Use the training or skills that led to your code's adoption
+      - Inspire or counsel others using your code
+  back:
+    <<: *tback
+    name: Strict
+    desc: >
+      //"As opposed to ironclad thugs lording it over the peasants?" -- Basler
+
+      While committing to a way of life gives you strength
+      to press on, it can make people inflexible or stubborn.
+      Some will reject anything outside their experience,
+      while others will actively fight against it.
+    prompts:
+      - Refuse to adapt your code to new or difficult situations
+      - See the world through a narrow lens
+      - Chastise or punish those who don't conform to your expectations
 - front: &Underclass
     <<: *tfront
     name: Underclass
