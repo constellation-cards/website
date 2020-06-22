@@ -1,0 +1,90 @@
+- neighborhood-front-template: &neighborhood-front
+    tags:
+      - city-builder
+      - neighborhood
+    rule: Flip to see the oppressed version of this neighborhood
+  neighborhood-back-template: &neighborhood-back
+    tags:
+      - city-builder
+      - neighborhood
+    rule: Flip to see the prosperous version of this neighborhood
+- front: &Boulevard
+    <<: *neighborhood-front
+    name: The Boulevard
+    desc: >
+      Stores, eateries, and so on.
+  back:
+    <<: *neighborhood-back
+    name: The Boulevard
+    desc: >
+      TBD
+- front: &Harbor
+    <<: *neighborhood-front
+    name: The Harbor
+    desc: >
+      where ships come in
+  back:
+    <<: *neighborhood-back
+    name: The Harbor
+    desc: >
+      TBD
+- front: &Marketplace
+    <<: *neighborhood-front
+    name: The Marketplace
+    desc: >
+      commercial shops and vendors
+  back:
+    <<: *neighborhood-back
+    name: The Marketplace
+    desc: >
+      TBD
+- front: &Sanctuary
+    <<: *neighborhood-front
+    name: The Sanctuary
+    desc: >
+      a walled-off city within a city
+  back:
+    <<: *neighborhood-back
+    name: The Sanctuary
+    desc: >
+      TBD
+- front: &Temple
+    <<: *neighborhood-front
+    name: The Temple
+    desc: >
+      a religious area
+  back:
+    <<: *neighborhood-back
+    name: The Temple
+    desc: >
+      TBD
+- front: &Underground
+    <<: *neighborhood-front
+    name: The Underground
+    desc: >
+      sewers, tunnels, or anything else subterranean
+  back:
+    <<: *neighborhood-back
+    name: The Underground
+    desc: >
+      TBD
+- front: &Uptown
+    <<: *neighborhood-front
+    name: Uptown
+    desc: >
+      a geographically elevated area
+  back:
+    <<: *neighborhood-back
+    name: Uptown
+    desc: >
+      TBD
+- front: &Warren
+    <<: *neighborhood-front
+    name: The Warren
+    desc: >
+      a rat's nest of alleyways
+  back:
+    <<: *neighborhood-back
+    name: The Warren
+    desc: >
+      TBD
