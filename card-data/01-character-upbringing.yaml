@@ -107,15 +107,17 @@
     desc: >
       //"Welcome to the Labri Market! You can find anything here." -- Basler
 
-      You grew up among markets and traders,
-      whether in a populated city or on the road with a caravan.
-      You've seen people from all over, and have heard
-      or can even speak multiple languages.
+      You grew up among those who bartered with others.
+      This could be the busy markets of a city,
+      an oceanic trade route, or the corridors of power in an embassy or castle.
+      You understand that some people have wants or needs,
+      that others can satisfy them,
+      and the power that comes from mediating between the two.
 
       You've learned to approach situations via negotiation.
     prompts:
       - Make a deal or haggle over details
-      - Navigate a physical or social labyrinth
+      - Navigate a complex or ambiguous situation
       - Gauge someone's wants or needs
   back:
     <<: *tback
