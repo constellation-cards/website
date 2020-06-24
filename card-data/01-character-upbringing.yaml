@@ -14,16 +14,16 @@
     desc: >
       //"The clear skies, the lure of the open road, it's perfect!" -- Tana
 
-      Whether you grew up traveling the world,
-      or whether you lived in a city where the world came to you,
-      you've met people from all over.
+      You've lived your life among people from all over.
+      Maybe you lived in a bustling city, or maybe you
+      traveled the world.
       You listened to their stories and saw their ways of living.
 
-      You've learned to approach situations through differences.
+      You've learned to approach situations by understanding many perspectives.
     prompts:
-      - Recall a story that will bring people together or solutions to light
+      - Recall a story that inspires people to new ways of thinking
       - Bring a fresh perspective to a situation
-      - Forge a path to acceptance or compromise
+      - Unite people by finding the common threads between them
   back:
     <<: *tback
     name: Cosmopolitan
@@ -32,9 +32,9 @@
 
       It's possible to mistake your breadth of experience for depth,
       and fail to hear wiser voices.
-      Similarly, it's possible to meet a few people
-      and think that's all you need to know about their folk.
-      There's always more to learn, however much you know now.
+      Similarly, you can make false assumptions about a culture
+      based on experience with a few of its individuals.
+      There's always more to learn. There's always a new perspective.
     prompts:
       - Overestimate your own wisdom or experience
       - Lose focus of people as individuals
@@ -51,9 +51,9 @@
       Life could be routine, and you learned ways
       to pass the time.
 
-      You've learned to approach situations via effort.
+      You've learned to approach situations with direct, hard work.
     prompts:
-      - Be sensitive to natural rhythms around you
+      - Be sensitive to the rhythms around you--cycles of nature, or people's routines
       - Make do with what's on hand
       - Coordinate with others to get hard work done
   back:
@@ -107,14 +107,14 @@
     desc: >
       //"Welcome to the Labri Market! You can find anything here." -- Basler
 
-      You grew up among those who bartered with others.
+      You grew up among those who made their living through trade.
       This could be the busy markets of a city,
       an oceanic trade route, or the corridors of power in an embassy or castle.
       You understand that some people have wants or needs,
       that others can satisfy them,
       and the power that comes from mediating between the two.
 
-      You've learned to approach situations via negotiation.
+      You've learned to approach situations through canny negotiation.
     prompts:
       - Make a deal or haggle over details
       - Navigate a complex or ambiguous situation
@@ -128,11 +128,11 @@
       Not everything can be reduced to a simple transaction,
       but some people can't see any other way.
       It becomes easy to ignore pain and devalue life
-      when money or power become a cocoon against existence.
+      when money or power becomes a cocoon against existence.
     prompts:
       - Compromise a principle or ideal for expedience
       - Overcomplicate a plan or solution
-      - Look past pain or hurt rather than soothe it
+      - Value people as commodities rather than individuals with thoughts and feelings
 - front: &Solitary
     <<: *tfront
     name: Solitary
@@ -192,7 +192,7 @@
     prompts:
       - Refuse to adapt your code to new or difficult situations
       - See the world through a narrow lens
-      - Chastise or punish those who don't conform to your expectations
+      - Disdain or punish those who don't conform to your expectations
 - front: &Underclass
     <<: *tfront
     name: Underclass
@@ -234,7 +234,7 @@
       you were accustomed to going where you wished
       and doing whatever seemed best.
 
-      You've learned to approach situations via directness.
+      You've learned to approach situations through force of will.
     prompts:
       - Force an issue or break a deadlock through action
       - Reject restrictions and break chains
