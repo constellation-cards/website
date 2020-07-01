@@ -1,4 +1,4 @@
-- emotion-front-template: &emotion-front
+- template: &emotion-hidden
     name: Emotion
     img: help-circle.png
     tags:
@@ -11,14 +11,14 @@
       
       Each emotion has two neighbors. You can use the emotion itself, or choose to mix it with a neighbor.
     rule: Flip to reveal an answer
-  emotion-back-template: &emotion-back
+- template: &emotion-revealed
     tags:
       - oracle
       - emotion
     rule: Discard and shuffle into related cards
-- front: *emotion-front
-  back:
-    <<: *emotion-back
+- back: *emotion-hidden
+  front:
+    <<: *emotion-revealed
     name: Ecstacy
     desc: >
       Ecstacy, Joy, or Serenity.
@@ -26,9 +26,9 @@
       With Vigilance: yields Optimism.
       
       With Admiration: yields Love.
-- front: *emotion-front
-  back:
-    <<: *emotion-back
+- back: *emotion-hidden
+  front:
+    <<: *emotion-revealed
     name: Admiration
     desc: >
       Admiration, Trust, or Acceptance.
@@ -36,9 +36,9 @@
       With Ecstacy: yields Love.
       
       With Terror: yields Submission.
-- front: *emotion-front
-  back:
-    <<: *emotion-back
+- back: *emotion-hidden
+  front:
+    <<: *emotion-revealed
     name: Terror
     desc: >
       Terror, Fear, or Apprehension.
@@ -46,9 +46,9 @@
       With Admiration: yields Submission.
       
       With Amazement: yields Awe.
-- front: *emotion-front
-  back:
-    <<: *emotion-back
+- back: *emotion-hidden
+  front:
+    <<: *emotion-revealed
     name: Amazement
     desc: >
       Amazement, Surprise, or Distraction.
@@ -56,9 +56,9 @@
       With Terror: yields Awe.
       
       With Grief: yields Disapproval.
-- front: *emotion-front
-  back:
-    <<: *emotion-back
+- back: *emotion-hidden
+  front:
+    <<: *emotion-revealed
     name: Grief
     desc: >
       Grief, Sadness, or Pensiveness.
@@ -66,9 +66,9 @@
       With Amazement: yields Disapproval.
       
       With Loathing: yields Remorse.
-- front: *emotion-front
-  back:
-    <<: *emotion-back
+- back: *emotion-hidden
+  front:
+    <<: *emotion-revealed
     name: Loathing
     desc: >
       Loathing, Disgust, or Boredom.
@@ -76,9 +76,9 @@
       With Grief: yields Remorse.
       
       With Rage: yields Contempt.
-- front: *emotion-front
-  back:
-    <<: *emotion-back
+- back: *emotion-hidden
+  front:
+    <<: *emotion-revealed
     name: Rage
     desc: >
       Rage, Anger, or Annoyance.
@@ -86,9 +86,9 @@
       With Loathing: yields Contempt.
       
       With Vigilance: yields Aggressiveness.
-- front: *emotion-front
-  back:
-    <<: *emotion-back
+- back: *emotion-hidden
+  front:
+    <<: *emotion-revealed
     name: Vigilance
     desc: >
       Vigilance, Anticipation, or Interest.
