@@ -10,6 +10,7 @@ const cardMetadata = (createNodeId, card, contentDigest) => {
     parent: null,
     children: [],
     name,
+    qty: card.qty || 1,
     front: card.front,
     back: card.back,
     internal: {
@@ -48,6 +49,7 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
         edges {
           node {
             name
+            qty
             front {
               name
               tags
