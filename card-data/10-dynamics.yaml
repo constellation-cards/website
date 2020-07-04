@@ -1,9 +1,9 @@
-- dynamic-front-template: &dynamic-front
+- template: &dynamic-front
     tags:
       - city-builder
       - dynamic
     rule: Flip to see the unstable version of this dynamic
-  dynamic-back-template: &dynamic-back
+- template: &dynamic-back
     tags:
       - city-builder
       - dynamic

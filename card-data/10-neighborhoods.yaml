@@ -1,23 +1,48 @@
-- neighborhood-front-template: &neighborhood-front
+- template: &neighborhood-front
     tags:
       - city-builder
       - neighborhood
-    rule: Flip to see the oppressed version of this neighborhood
-  neighborhood-back-template: &neighborhood-back
+    rule: Flip to see the struggling version of this neighborhood
+- template: &neighborhood-back
     tags:
       - city-builder
       - neighborhood
-    rule: Flip to see the prosperous version of this neighborhood
+    rule: Flip to see the flourishing version of this neighborhood
 - front: &Boulevard
     <<: *neighborhood-front
     name: The Boulevard
     desc: >
-      Stores, eateries, and so on.
+      A Boulevard is where the city's various offerings
+      connect with individual citizens.
+      The neighborhood attracts tourists and locals alike
+      by offering a variety of sights, sounds, and smells.
+
+      A flourishing boulevard boasts big crowds.
+      Shops, eateries, arcades, and more offer visitors
+      chances to spend their money and their time.
+    prompts:
+      - What are some of the notable sights and attractions?
+      - What sort of crowds are found here?
+      - Does the crowd change due to time of day, season, etc.?
   back:
     <<: *neighborhood-back
     name: The Boulevard
     desc: >
-      TBD
+      A Boulevard is where the city's various offerings
+      connect with individual citizens.
+      Something is lacking,
+      whether a supply of attractions to experience
+      or a demand for them from the populace.
+
+      A struggling boulevard lacks a healthy crowd of visitors.
+      Whether the neighborhood is trying to attract
+      new people, or whether it has fallen from its
+      former glory, it's not giving people a reason to come.
+    prompts:
+      - Was the boulevard once successful, or not?
+      - What emotions do visitors feel when they see the state of things?
+      - Is anyone trying to attract new visitors?
+      - Is anyone trying to stop them?
 - front: &Harbor
     <<: *neighborhood-front
     name: The Harbor
