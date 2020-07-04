@@ -1,0 +1,51 @@
+- template: &randomfront
+    tags:
+      - oracle
+      - success
+    name: Random Outcome
+    desc: >
+      You can choose to draw a card of this type
+      to see if you meet a challenge.
+
+      The card will suggest ways in which the challenge was met.
+      You can use one of these, or make up your own.
+
+      If a card indicates that you missed,
+      you may not try to meet the challenge in other ways.
+
+      A GM or other facilitator may adjust the ratio
+      of hit or miss cards in this stack
+      to reflect the difficulty of a given action.
+    rule: Draw a random card from this stack
+- front: *randomfront
+  back: &hit
+    name: Hit
+    tags:
+      - oracle
+      - success
+    desc: >
+      You successfully met the challenge!
+      Narrate how it happened.
+    prompts:
+      - Luck or coincidence made it work somehow
+      - You were carrying the right item at the right moment
+      - Allies intervened in your favor
+      - An important lesson from your past came to mind
+    rule: Discard to generate a hit
+  qty: 5
+- front: *randomfront
+  back: &miss
+    name: Miss
+    tags:
+      - oracle
+      - success
+    desc: >
+      You failed to meet the challenge!
+      Narrate how it happened.
+    prompts:
+      - Bad luck or unhappy coincidence
+      - Your equipment failed or you left something behind
+      - Allies were thwarted, absent, or ineffective
+      - Overconfidence sabotaged your success
+    rule: Discard this card
+  qty: 5
