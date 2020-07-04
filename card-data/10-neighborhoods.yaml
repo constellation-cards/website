@@ -12,14 +12,14 @@
     <<: *neighborhood-front
     name: The Boulevard
     desc: >
-      A Boulevard is where the city's various offerings
-      connect with individual citizens.
-      The neighborhood attracts tourists and locals alike
-      by offering a variety of sights, sounds, and smells.
-
-      A flourishing boulevard boasts big crowds.
+      A Boulevard is where the city's artistic and aesthetic
+      offerings connect with individual citizens.
       Shops, eateries, arcades, and more offer visitors
       chances to spend their money and their time.
+
+      A flourishing Boulevard boasts big crowds.
+      The neighborhood attracts tourists and locals alike
+      by offering a variety of sights, sounds, and smells.
     prompts:
       - What are some of the notable sights and attractions?
       - What sort of crowds are found here?
@@ -28,18 +28,18 @@
     <<: *neighborhood-back
     name: The Boulevard
     desc: >
-      A Boulevard is where the city's various offerings
-      connect with individual citizens.
+      A Boulevard is where the city's artistic and aesthetic
+      offerings connect with individual citizens.
       Something is lacking,
       whether a supply of attractions to experience
       or a demand for them from the populace.
 
       A struggling boulevard lacks a healthy crowd of visitors.
-      Whether the neighborhood is trying to attract
-      new people, or whether it has fallen from its
-      former glory, it's not giving people a reason to come.
+      Whether fallen from former glories,
+      or built around a nucleus of hope and ambition,
+      it's not giving people a reason to come right now.
     prompts:
-      - Was the boulevard once successful, or not?
+      - How new is the Boulevard compared to the rest of the city?
       - What emotions do visitors feel when they see the state of things?
       - Is anyone trying to attract new visitors?
       - Is anyone trying to stop them?
@@ -47,12 +47,37 @@
     <<: *neighborhood-front
     name: The Harbor
     desc: >
-      where ships come in
+      A Harbor is the home of trade and travel, to and from the city.
+      It is often a visitor's first introduction to the city.
+      Commercial transports, whether caravans, trains, or zeppelins,
+      are found everywhere here.
+
+      A flourishing Harbor is the life and breath of a city.
+      Anything people need or want that isn't obtained locally
+      must be brought from somewhere else, and it all comes through the Harbor.
+    prompts:
+      - What kinds of vehicles or technology move people or cargo here?
+      - What is the experience of someone coming here? Of leaving?
+      - What are some of the trading partners or destinations represented here?
+      - Are other cultures and their visitors mostly found here, or do they inhabit the rest of the city?
   back:
     <<: *neighborhood-back
     name: The Harbor
     desc: >
-      TBD
+      A Harbor is the home of trade and travel, to and from the city.
+      It is often the last sight a regretful traveler sees before leaving.
+      Commercial transports, whether caravans, trains, or zeppelins,
+      are uncommon or sometimes found in states of neglect.
+
+      A struggling Harbor is doing its best to keep the city afloat.
+      Whether conditions are bad here, or whether the city's trading partners
+      have fallen on hard times (or abandoned it),
+      all the neighborhood can do is keep moving whatever's left.
+    prompts:
+      - What kinds of transportation vehicles or technology were or are found here?
+      - Did the city let its trading partners down, or the other way around?
+      - What things are in short supply because of the situation?
+      - Who could provide them? Why aren't they?
 - front: &Marketplace
     <<: *neighborhood-front
     name: The Marketplace
