@@ -92,12 +92,36 @@
     <<: *neighborhood-front
     name: The Sanctuary
     desc: >
-      a walled-off city within a city
+      The Sanctuary is a city within the city.
+      It might be a walled-off enclave, a culturally distinct community,
+      a gentrified neighborhood, a historical relic, or something else.
+      A sanctuary has its own shops, homes, and infrastructure,
+      enough to sustain its residents and sharing their aesthetic tastes.
+
+      A flourishing Sanctuary is self-sufficient.
+      The citizens are healthy and prosperous.
+      The uniqueness of the Sanctuary is maintained and respected.
+    prompts:
+      - Who lives here? Why do they live here specifically?
+      - What is it that separates the Sanctuary from the rest of the city?
+      - What sustains the sanctuary and its peoples' lifestyles?
   back:
     <<: *neighborhood-back
     name: The Sanctuary
     desc: >
-      TBD
+      The Sanctuary is a city within the city.
+      It might be an isolated enclave, a brow-beaten borough,
+      a place to abandon the unwanted, or something else.
+      A sanctuary can barely sustain its residents, whether due to lack of goods
+      or intentional deprivation.
+
+      A struggling Sanctuary needs support from outside.
+      The inhabitants might ask for, or demand, or beg for assistance.
+      The uniqueness of the Sanctuary is threatened, or seen as a threat.
+    prompts:
+      - Who lives here? Why do they live in the Sanctuary specifically?
+      - Is the Sanctuary keeping the outside out, or the inhabitants in?
+      - Who rules here? Who suffers?
 - front: &Temple
     <<: *neighborhood-front
     name: The Temple
