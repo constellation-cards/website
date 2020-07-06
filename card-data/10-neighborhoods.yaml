@@ -158,9 +158,33 @@
     <<: *neighborhood-front
     name: The Warren
     desc: >
-      a rat's nest of alleyways
+      The Warren is the hidden heart of the city.
+      It is an organic tangle of alleyways, residences, nameless shops,
+      side streets, historical buildings, and more.
+      It is what the city does with itself when no one is looking.
+
+      A flourishing Warren keeps the city's heart beating.
+      The things that make the city unique, such as
+      its culture, tastes, and trends, emerge from here unannounced.
+      The city's history is likewise on display for curious visitors.
+    prompts:
+      - What traditions or styles did the Warren give birth to?
+      - What hidden treasures can be found here?
+      - How do locals and visitors interact with each other?
   back:
     <<: *neighborhood-back
     name: The Warren
     desc: >
-      TBD
+      The Warren is the hidden heart of the city.
+      It is an impenetrable maze of dark alleys, boarded-up shops,
+      narrow streets, ancient graveyards, and more.
+      It is the city's secret suffering.
+
+      A struggling Warren is the city's surrender to despair.
+      Strangers receive furtive looks when they visit
+      this neighborhood, and long-time residents talk
+      wistfully or bitterly about "the way things used to be".
+    prompts:
+      - Has the city forsaken itself, or fallen prey to outside influence?
+      - What secrets do the inhabitants furtively guard?
+      - Does the Warren bristle at visitors, or hunker down and wait for them to leave?
