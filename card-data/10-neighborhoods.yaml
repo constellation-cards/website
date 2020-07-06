@@ -138,12 +138,31 @@
     <<: *neighborhood-front
     name: The Underground
     desc: >
-      sewers, tunnels, or anything else subterranean
+      The Underground is what people don't see about the city.
+      It is actual underground construction, like sewers or burial chambers.
+      It is infrastructure, like aqueducts, that everyone needs but nobody cares about.
+
+      A flourishing Underground ensures quality of life for the city's inhabitants.
+      The city's needs, like water and waste, flow where they must.
+    prompts:
+      - Was the Underground mostly natural to begin with, such as rivers or caves? How much was constructed?
+      - How does the Underground physically connect with the rest of the city?
+      - Who lives here, and what do they do?
   back:
     <<: *neighborhood-back
     name: The Underground
     desc: >
-      TBD
+      The Underground is what people don't want to see about the city.
+      It is the filthy waterways and skull-strewn tombs.
+      It is the home of the city's underprivileged and forgotten.
+
+      A struggling Underground has been abandoned or is being misused.
+      It might provide hideouts for violent criminals,
+      or prove dangerous to visitors through mere neglect.
+    prompts:
+      - How much of the Underground still functions? What has broken down?
+      - What social ills, like disease or poverty, have taken hold?
+      - Who lives here, and how are they suffering?
 - front: &Uptown
     <<: *neighborhood-front
     name: Uptown
