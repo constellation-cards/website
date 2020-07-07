@@ -191,12 +191,37 @@
     <<: *neighborhood-front
     name: Uptown
     desc: >
-      a geographically elevated area
+      Uptown is the city's crown.
+      It is home to the elite, including skilled creators,
+      wealthy merchants, influential politicians, and beloved performers.
+      Visitors might beseech an Uptown resident to fund their ventures,
+      or seek their attention for some new idea or creation.
+
+      A flourishing Uptown can exert its will, for good or ill,
+      on the surrounding city.
+      They say "power is where you say it is",
+      and the city says that social power lives here.
+    prompts:
+      - What political and social systems support the neighborhood's position?
+      - How is that power wielded, and for whom?
+      - How does someone become accepted by Uptown?
   back:
     <<: *neighborhood-back
     name: Uptown
     desc: >
-      TBD
+      Uptown is the city's fallen crown.
+      Bourgeoisie merchants with pretentions to greatness,
+      shabby aristocrats fallen from favor,
+      or forgotten influencers might all be found here.
+
+      A struggling Uptown is a hollow vessel once filled with power,
+      or a puppet dancing on someone else's strings.
+      Residents might uphold the veneer out of pride,
+      or dream of ways to reclaim real glory.
+    prompts:
+      - What political or social systems once supported the neighborhood?
+      - Do the inhabitants still believe they hold real power?
+      - What will they do to get it back?
 - front: &Warren
     <<: *neighborhood-front
     name: The Warren
