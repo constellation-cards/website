@@ -12,12 +12,37 @@
     <<: *dynamic-front
     name: Criminal
     desc: >
-      theft, assassination, etc.
+      Two neighborhoods are connected via criminal activity.
+      This could range from petty theft or pickpocketing,
+      to smuggling of contraband, to intimidation or murder.
+      Not every criminal is disliked; someone who steals from
+      the rich to give to the poor will be popular among the poor.
+
+      A stable Criminal dynamic often means organized crime,
+      such as a cartel, criminal fraternity, thieves' guild,
+      or the like.
+    prompts:
+      - What kinds of laws exist in the city? Which ones are being broken?
+      - Who enforces those laws? Why aren't they doing so here?
+      - How does the public view this criminal element, e.g. as heroes or villains?
   back:
     <<: *dynamic-back
-    name: The Boulevard
+    name: Criminal
     desc: >
-      TBD
+      Two neighborhoods are connected via criminal activity.
+      This could range from petty theft or pickpocketing,
+      to smuggling of contraband, to intimidation or murder.
+      Not every criminal is disliked; someone who steals from
+      the rich to give to the poor will be popular among the poor.
+
+      An unstable Criminal dynamic might mean gang war
+      between rival criminal factions. It might also mean
+      a single leader is responsible, and they could be taken
+      down via force or guile.
+    prompts:
+      - What kinds of laws exist in the city?
+      - Who enforces those laws? Why aren't they doing so here?
+      - How does the public view this criminal element, e.g. as heroes or villains?
 - front: &Commercial
     <<: *dynamic-front
     name: Commercial
