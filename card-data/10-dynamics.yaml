@@ -1,0 +1,115 @@
+- template: &dynamic-front
+    tags:
+      - city-builder
+      - dynamic
+    rule: Flip to see the unstable version of this dynamic
+- template: &dynamic-back
+    tags:
+      - city-builder
+      - dynamic
+    rule: Flip to see the stable version of this dynamic
+- front: &Criminal
+    <<: *dynamic-front
+    name: Criminal
+    desc: >
+      Two neighborhoods are connected via criminal activity.
+      This could range from petty theft or pickpocketing,
+      to smuggling of contraband, to intimidation or murder.
+      Not every criminal is disliked; someone who steals from
+      the rich to give to the poor will be popular among the poor.
+
+      A stable Criminal dynamic often means organized crime,
+      such as a cartel, criminal fraternity, thieves' guild,
+      or the like.
+    prompts:
+      - What kinds of laws exist in the city? Which ones are being broken?
+      - Who enforces those laws? Why aren't they doing so here?
+      - How does the public view this criminal element, e.g. as heroes or villains?
+  back:
+    <<: *dynamic-back
+    name: Criminal
+    desc: >
+      Two neighborhoods are connected via criminal activity.
+      This could range from petty theft or pickpocketing,
+      to smuggling of contraband, to intimidation or murder.
+      Not every criminal is disliked; someone who steals from
+      the rich to give to the poor will be popular among the poor.
+
+      An unstable Criminal dynamic might mean gang war
+      between rival criminal factions. It might also mean
+      a single leader is responsible, and they could be taken
+      down via force or guile.
+    prompts:
+      - What kinds of laws exist in the city?
+      - Who enforces those laws? Why aren't they doing so here?
+      - How does the public view this criminal element, e.g. as heroes or villains?
+- front: &Commercial
+    <<: *dynamic-front
+    name: Commercial
+    desc: >
+      business activity
+  back:
+    <<: *dynamic-back
+    name: Commercial
+    desc: >
+      TBD
+- front: &External
+    <<: *dynamic-front
+    name: External
+    desc: >
+      activities originating outside the city
+  back:
+    <<: *dynamic-back
+    name: External
+    desc: >
+      TBD
+- front: &Financial
+    <<: *dynamic-front
+    name: Financial
+    desc: >
+      money and valuables
+  back:
+    <<: *dynamic-back
+    name: Financial
+    desc: >
+      TBD
+- front: &Magical
+    <<: *dynamic-front
+    name: Magical
+    desc: >
+      arcane goods and services
+  back:
+    <<: *dynamic-back
+    name: Magical
+    desc: >
+      TBD
+- front: &Material
+    <<: *dynamic-front
+    name: Material
+    desc: >
+      mundane goods and services
+  back:
+    <<: *dynamic-back
+    name: Material
+    desc: >
+      TBD
+- front: &Political
+    <<: *dynamic-front
+    name: Political
+    desc: >
+      power, influence
+  back:
+    <<: *dynamic-back
+    name: Political
+    desc: >
+      TBD
+- front: &Social
+    <<: *dynamic-front
+    name: Social
+    desc: >
+      status, fashion, the populace
+  back:
+    <<: *dynamic-back
+    name: Social
+    desc: >
+      TBD
