@@ -57,7 +57,16 @@
     <<: *dynamic-front
     name: External
     desc: >
-      activities originating outside the city
+      Two neighborhoods are connected via something outside the city.
+      This could include shipping or selling merchandise from around the world,
+      tourism, immigration, museums and exhibits, and so on.
+
+      A stable External dynamic means the arrangement is likely to continue.
+      Prosperous trading partners, safe trade routes, easy access to travel,
+      and other factors all contribute to this dynamic.
+    prompts:
+      - What people or things are coming or going from elsewhere?
+      - 
   back:
     <<: *dynamic-back
     name: External
