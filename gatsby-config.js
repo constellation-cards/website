@@ -1,8 +1,8 @@
 module.exports = {
-  pathPrefix: "/flip-a-card",
+  pathPrefix: "/website",
   siteMetadata: {
-    title: `Flip-a-Card`,
-    description: `A project page for a new RPG`,
+    title: `Constellation Cards`,
+    description: `The project page for Constellation Cards, an RPG played on index cards`,
     author: `@astralfrontier`,
   },
   plugins: [
