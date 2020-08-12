@@ -1,6 +1,6 @@
 {
-  "name": "flip-a-card",
-  "version": "1.0.0",
+  "name": "website",
+  "version": "2.0.0",
   "description": "## Setup Instructions",
   "main": "index.js",
   "scripts": {
@@ -17,15 +17,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/astralfrontier/flip-a-card.git"
+    "url": "git+https://github.com/constellation-cards/website.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/astralfrontier/flip-a-card/issues"
+    "url": "https://github.com/constellation-cards/website/issues"
   },
-  "homepage": "https://github.com/astralfrontier/flip-a-card#readme",
+  "homepage": "https://github.com/constellation-cards/website#readme",
   "dependencies": {
     "@material-ui/core": "^4.10.0",
     "@material-ui/icons": "^4.9.1",

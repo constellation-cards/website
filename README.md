@@ -1,4 +1,4 @@
-# Flip-a-Card
+# Constellation Cards
 
-Homepage: https://astralfrontier.github.io/flip-a-card/
+Homepage: https://constellation.cards/
 

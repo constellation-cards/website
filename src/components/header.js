@@ -63,7 +63,7 @@ const Header = ({ siteTitle }) => (
       <IconExternalLink title={'PDF (Print)'} href={withPrefix(`/cards-print.pdf`)}>
         <PrintIcon />
       </IconExternalLink>
-      <IconExternalLink title={'Github'} href={`https://github.com/astralfrontier/flip-a-card`}>
+      <IconExternalLink title={'Github'} href={`https://github.com/constellation-cards/website`}>
         <GitHubIcon />
       </IconExternalLink>
     </Toolbar>

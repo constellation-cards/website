@@ -6,7 +6,7 @@ To use these files:
 4. Create a new API file containing the JS file
 5. Launch the game
 6. Create a new handout called "cards.json" (all one word, lowercase)
-7. Open https://astralfrontier.github.io/flip-a-card/cards.json
+7. Open https://constellation.cards/cards.json
 8. Paste the contents of this file into the "cards.json" handout
 
 To play, you have three commands:
