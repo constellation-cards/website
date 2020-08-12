@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: "/website",
+  pathPrefix: "/",
   siteMetadata: {
     title: `Constellation Cards`,
     description: `The project page for Constellation Cards, an RPG played on index cards`,
