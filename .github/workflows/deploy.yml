@@ -37,4 +37,4 @@ jobs:
       with:
         webhook_id: ${{ secrets.WEBHOOK_ID }}
         webhook_token: ${{ secrets.WEBHOOK_TOKEN }}
-        args: Constellation Cards build finished. See https://constellation.cards/cards.pdf
+        args: Website updated https://constellation.cards/
