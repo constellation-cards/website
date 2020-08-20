@@ -47,13 +47,28 @@
     <<: *dynamic-front
     name: Cultural
     desc: >
-      Status, fashion - neighborhoods influencing each other
-      Cultural appropriation or hipster trends
+      Two neighborhoods are connected by culture.
+      This includes clothing, foods, favorite hobbies,
+      who and what is popular or ostracized, and more.
+      It can represent a larger culture, such as a distinct
+      ethnic group that lives or works in both neighborhoods.
+
+      A stable Cultural dynamic means what?
+    prompts:
+      - TODO
   back:
     <<: *dynamic-back
     name: Cultural
     desc: >
-      TBD
+      Two neighborhoods are connected by culture.
+      This includes clothing, foods, favorite hobbies,
+      who and what is popular or ostracized, and more.
+      It can represent a larger culture, such as a distinct
+      ethnic group that lives or works in both neighborhoods.
+
+      An unstable Cultural dynamic means what?
+    prompts:
+      - TODO
 - front: &External
     <<: *dynamic-front
     name: External
