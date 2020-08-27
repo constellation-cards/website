@@ -47,18 +47,18 @@ const newEncounter = (
   state: PlayState,
   setState: SetStateFunction
 ) => {
-  const newCards = [
-    sample(stacks["encounter"]),
-    sample(stacks["encounter"]),
+  let newCards = [
     sample(stacks["oracle/emotion"]),
+    sample(stacks["encounter"]),
   ]
+  newCards.push(sample(without(newCards, stacks["encounter"])))
   setState({ ...state, cards: newCards })
 }
 
 const toggleAllCards = (
   state: PlayState,
   setState: SetStateFunction
-) => allCardsIsOpen => {
+) => (allCardsIsOpen: boolean) => {
   setState({ ...state, allCardsIsOpen })
 }
 
@@ -71,9 +71,11 @@ const CardPage = ({ stacks }: { stacks: Stacks }) => {
   const drawerCallback = toggleAllCards(state, setState)
 
   const dealStackAction = (stackName: string) => () => {
-    const stack = stacks[stackName]
-    const newCards = concat(state.cards, [sample(stack)])
-    setState({ ...state, cards: newCards })
+    const stack = without(state.cards, stacks[stackName])
+    if (stack.length) {
+      const newCards = concat(state.cards, [sample(stack)])
+      setState({ ...state, cards: newCards })  
+    }
   }
 
   const dealCardAction = (card: Card) => () => {
@@ -103,7 +105,7 @@ const CardPage = ({ stacks }: { stacks: Stacks }) => {
         <List dense={false}>
           {map(
             stackName => (
-              <StackList stacks={stacks} stackName={stackName} dealStackAction={dealStackAction} dealCardAction={dealCardAction} />
+              <StackList cards={state.cards} stacks={stacks} stackName={stackName} dealStackAction={dealStackAction} dealCardAction={dealCardAction} />
             ),
             sortBy(identity, Object.keys(stacks))
           )}

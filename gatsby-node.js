@@ -88,7 +88,7 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
 
   createPage({
     path: '/play',
-    component: path.resolve('src/components/play.js'),
+    component: path.resolve('src/components/play.tsx'),
     context: {
       title: 'Play',
       description: 'A tool for playing the game online',

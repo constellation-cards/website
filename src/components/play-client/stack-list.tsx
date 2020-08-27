@@ -1,5 +1,5 @@
 import React from "react"
-import { map } from "ramda"
+import { map, without } from "ramda"
 
 import { makeStyles } from "@material-ui/core/styles"
 import Collapse from "@material-ui/core/Collapse"
@@ -14,7 +14,7 @@ import ListItemText from "@material-ui/core/ListItemText"
 import NavigateNextIcon from "@material-ui/icons/NavigateNext"
 import Tooltip from "@material-ui/core/Tooltip"
 
-import { Card, Stacks } from "./index"
+import { Card, Stack, Stacks } from "./index"
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -28,10 +28,11 @@ const useStyles = makeStyles(theme => ({
 }))
 
 interface StackListProps {
-  stacks: Stacks
-  stackName: string
-  dealStackAction: Function,
-  dealCardAction: Function
+  cards: Stack;
+  stacks: Stacks;
+  stackName: string;
+  dealStackAction: Function;
+  dealCardAction: Function;
 }
 
 function cardListItem(classes, card: Card, dealCardAction: Function) {
@@ -54,11 +55,13 @@ function cardListItem(classes, card: Card, dealCardAction: Function) {
   )
 }
 
-export default function StackList({ stacks, stackName, dealStackAction, dealCardAction }: StackListProps) {
+export default function StackList({ cards, stacks, stackName, dealStackAction, dealCardAction }: StackListProps) {
   const classes = useStyles()
   const [isOpen, setIsOpen] = React.useState(false)
 
   const handleClick = () => setIsOpen(!isOpen)
+
+  const usableCards = without(cards, stacks[stackName])
 
   return (
     <>
@@ -71,6 +74,7 @@ export default function StackList({ stacks, stackName, dealStackAction, dealCard
               edge="end"
               aria-label="deal"
               onClick={dealStackAction(stackName)}
+              disabled={usableCards.length === 0}
             >
               <DoubleArrowIcon />
             </IconButton>
@@ -79,7 +83,7 @@ export default function StackList({ stacks, stackName, dealStackAction, dealCard
       </ListItem>
       <Collapse in={isOpen} timeout="auto" unmountOnExit>
         <List component="div" disablePadding>
-          {map((card: Card) => cardListItem(classes, card, dealCardAction), stacks[stackName])}
+          {map((card: Card) => cardListItem(classes, card, dealCardAction), usableCards)}
         </List>
       </Collapse>
     </>
