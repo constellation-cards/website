@@ -13,87 +13,98 @@ import DoubleArrowIcon from "@material-ui/icons/DoubleArrow"
 import { identity, map, sortBy, without } from "ramda"
 import ClientCards from "./client-card"
 import ClientCardDrawer from "./client-card-drawer"
+import StackList from "./stack-list"
 
 import { concat } from "ramda"
 
-type Card = any; // TODO: better signature
+export type Card = any // TODO: better signature
 
-export type Stack = Card[];
+export type Stack = Card[]
 
-export type Stacks = Record<string,Stack>;
-
-type SetStateFunction = Function; // TODO: better signature
+export type Stacks = Record<string, Stack>
 
 interface PlayState {
-  allCardsIsOpen: boolean;
-  cards: Card[];
+  allCardsIsOpen: boolean
+  cards: Card[]
 }
+
+type SetStateFunction = Function // TODO: better signature
 
 // Return a random element from an array
 const sample = items => items[Math.floor(Math.random() * items.length)]
 
-const dealCard = (stack: Stack, state: PlayState, setState: SetStateFunction) => {
-  const newCards = concat(state.cards, [sample(stack)])
-  setState({...state, cards: newCards})
-}
-
-const discardCard = (state: PlayState, setState: SetStateFunction) => card => {
-  const newCards = without([card], state.cards)
-  setState({...state, cards: newCards})
-}
-
-const newCharacter = (stacks: Stacks, state: PlayState, setState: SetStateFunction) => {
+const newCharacter = (
+  stacks: Stacks,
+  state: PlayState,
+  setState: SetStateFunction
+) => {
   const newCards = [
     sample(stacks["character/upbringing"]),
     sample(stacks["character/role"]),
     sample(stacks["character/focus"]),
   ]
-  setState({...state, cards: newCards})
+  setState({ ...state, cards: newCards })
 }
 
-const newEncounter = (stacks: Stacks, state: PlayState, setState: SetStateFunction) => {
+const newEncounter = (
+  stacks: Stacks,
+  state: PlayState,
+  setState: SetStateFunction
+) => {
   const newCards = [
     sample(stacks["encounter"]),
     sample(stacks["encounter"]),
     sample(stacks["oracle/emotion"]),
   ]
-  setState({...state, cards: newCards})
+  setState({ ...state, cards: newCards })
 }
 
-const toggleAllCards = (state: PlayState, setState: SetStateFunction) => (allCardsIsOpen) => {
-  setState({...state, allCardsIsOpen})
+const toggleAllCards = (
+  state: PlayState,
+  setState: SetStateFunction
+) => allCardsIsOpen => {
+  setState({ ...state, allCardsIsOpen })
 }
 
-const listItemForStack = (stacks: Stacks, stackName: string, state: PlayState, setState: SetStateFunction) => (
-  <ListItem key={stackName}>
-    <ListItemText primary={stackName} />
-    <ListItemSecondaryAction>
-      <IconButton
-        edge="end"
-        aria-label="delete"
-        onClick={() => dealCard(stacks[stackName], state, setState)}
-      >
-        <DoubleArrowIcon />
-      </IconButton>
-    </ListItemSecondaryAction>
-  </ListItem>
-)
-
-const CardPage = ({ stacks }: {stacks: Stacks}) => {
+const CardPage = ({ stacks }: { stacks: Stacks }) => {
   const [state, setState]: [PlayState, SetStateFunction] = useState({
     allCardsIsOpen: false,
-    cards: []
+    cards: [],
   })
 
   const drawerCallback = toggleAllCards(state, setState)
 
+  const dealStackAction = (stackName: string) => () => {
+    const stack = stacks[stackName]
+    const newCards = concat(state.cards, [sample(stack)])
+    setState({ ...state, cards: newCards })
+  }
+
+  const dealCardAction = (card: Card) => () => {
+    const newCards = concat(state.cards, [card])
+    setState({ ...state, cards: newCards })
+  }
+
+  const discardAction = (card: Card) => () => {
+    const newCards = without([card], state.cards)
+    setState({ ...state, cards: newCards })
+  } 
+
   return (
     <>
       <ClientCardDrawer
-        stacks={stacks}
-        cards={state.cards} 
         allCardsIsOpen={state.allCardsIsOpen}
-        drawerCallback={drawerCallback} />
+        drawerCallback={drawerCallback}
+      >
+        <List dense={false}>
+          {map(
+            stackName => (
+              <StackList stacks={stacks} stackName={stackName} dealStackAction={dealStackAction} dealCardAction={dealCardAction} />
+            ),
+            sortBy(identity, Object.keys(stacks))
+          )}
+        </List>
+      </ClientCardDrawer>
       <Grid container spacing={3}>
         <Grid item xs={12}>
           <ButtonGroup
@@ -102,20 +113,19 @@ const CardPage = ({ stacks }: {stacks: Stacks}) => {
             aria-label="outlined primary button group"
           >
             <Button onClick={() => drawerCallback(true)}>All Cards</Button>
-            <Button onClick={() => newCharacter(stacks, state, setState)}>New Character</Button>
-            <Button onClick={() => newEncounter(stacks, state, setState)}>New Encounter</Button>
+            <Button onClick={() => newCharacter(stacks, state, setState)}>
+              New Character
+            </Button>
+            <Button onClick={() => newEncounter(stacks, state, setState)}>
+              New Encounter
+            </Button>
           </ButtonGroup>
         </Grid>
-        <Grid item xs={12} md={4}>
-          <List dense={false}>
-            {map(
-              stackName => listItemForStack(stacks, stackName, state, setState),
-              sortBy(identity, Object.keys(stacks))
-            )}
-          </List>
-        </Grid>
-        <Grid item xs={12} md={8}>
-          <ClientCards cards={state.cards} discardCard={discardCard(state, setState)} />
+        <Grid item xs={12}>
+          <ClientCards
+            cards={state.cards}
+            discardAction={discardAction}
+          />
         </Grid>
       </Grid>
     </>
