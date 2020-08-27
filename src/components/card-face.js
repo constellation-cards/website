@@ -9,7 +9,7 @@ import slug from "slug"
 
 // const singleBadge = tags => <Badge variant="secondary">{join(', ', tags || [])}</Badge>
 
-const invisStyle = { color: "inherit", "text-decoration": "inherit" }
+const invisStyle = { color: "inherit", textDecoration: "inherit" }
 
 const multiBadge = tags =>
   map(
@@ -57,7 +57,7 @@ const CardFace = ({ side, brand, href }) => (
         <li>{prompt}</li>
       ))}
     </ul>
-    <p style={{ "text-align": "center" }}>
+    <p style={{ textAlign: "center" }}>
       <em>{side.rule}</em>
     </p>
   </Paper>

@@ -86,6 +86,16 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
     }
   })
 
+  createPage({
+    path: '/play',
+    component: path.resolve('src/components/play.js'),
+    context: {
+      title: 'Play',
+      description: 'A tool for playing the game online',
+      cards
+    }
+  })
+
   tags.forEach(tag => {
     const tagSlug = `tags/${slug(tag).toLowerCase()}`
     createPage({
