@@ -8,7 +8,8 @@ import SEO from "../components/seo"
 
 const PlayClient = loadable(() => import("./play-client"))
 
-const explodeStack = stack => reduce((a, v) => concat(a, repeat(v, v.qty || 1)), [], clone(stack))
+// TODO: uncomment when we support unique cards
+const explodeStack = stack => reduce((a, v) => concat(a, repeat(v, /* v.qty || */ 1)), [], clone(stack))
 
 /**
  * Given an array of cards,
