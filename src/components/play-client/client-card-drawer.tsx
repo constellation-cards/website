@@ -2,6 +2,8 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 
+import {Stack, Stacks} from "./index"
+
 const drawerWidth = 240;
 
 const useStyles = makeStyles((theme) => ({
@@ -24,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const ClientCardDrawer = ({ stacks, allCardsIsOpen, drawerCallback }) => {
+const ClientCardDrawer = ({ stacks, cards, allCardsIsOpen, drawerCallback }: {stacks: Stacks, cards: Stack, allCardsIsOpen: boolean, drawerCallback: Function}) => {
   const classes = useStyles();
 
   return (

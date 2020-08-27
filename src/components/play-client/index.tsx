@@ -16,20 +16,33 @@ import ClientCardDrawer from "./client-card-drawer"
 
 import { concat } from "ramda"
 
+type Card = any; // TODO: better signature
+
+export type Stack = Card[];
+
+export type Stacks = Record<string,Stack>;
+
+type SetStateFunction = Function; // TODO: better signature
+
+interface PlayState {
+  allCardsIsOpen: boolean;
+  cards: Card[];
+}
+
 // Return a random element from an array
 const sample = items => items[Math.floor(Math.random() * items.length)]
 
-const dealCard = (stack, state, setState) => {
+const dealCard = (stack: Stack, state: PlayState, setState: SetStateFunction) => {
   const newCards = concat(state.cards, [sample(stack)])
   setState({...state, cards: newCards})
 }
 
-const discardCard = (state, setState) => card => {
+const discardCard = (state: PlayState, setState: SetStateFunction) => card => {
   const newCards = without([card], state.cards)
   setState({...state, cards: newCards})
 }
 
-const newCharacter = (stacks, state, setState) => {
+const newCharacter = (stacks: Stacks, state: PlayState, setState: SetStateFunction) => {
   const newCards = [
     sample(stacks["character/upbringing"]),
     sample(stacks["character/role"]),
@@ -38,7 +51,7 @@ const newCharacter = (stacks, state, setState) => {
   setState({...state, cards: newCards})
 }
 
-const newEncounter = (stacks, state, setState) => {
+const newEncounter = (stacks: Stacks, state: PlayState, setState: SetStateFunction) => {
   const newCards = [
     sample(stacks["encounter"]),
     sample(stacks["encounter"]),
@@ -47,11 +60,11 @@ const newEncounter = (stacks, state, setState) => {
   setState({...state, cards: newCards})
 }
 
-const toggleAllCards = (state, setState) => (allCardsIsOpen) => {
+const toggleAllCards = (state: PlayState, setState: SetStateFunction) => (allCardsIsOpen) => {
   setState({...state, allCardsIsOpen})
 }
 
-const listItemForStack = (stacks, stackName, state, setState) => (
+const listItemForStack = (stacks: Stacks, stackName: string, state: PlayState, setState: SetStateFunction) => (
   <ListItem key={stackName}>
     <ListItemText primary={stackName} />
     <ListItemSecondaryAction>
@@ -66,8 +79,8 @@ const listItemForStack = (stacks, stackName, state, setState) => (
   </ListItem>
 )
 
-const CardPage = ({ stacks }) => {
-  const [state, setState] = useState({
+const CardPage = ({ stacks }: {stacks: Stacks}) => {
+  const [state, setState]: [PlayState, SetStateFunction] = useState({
     allCardsIsOpen: false,
     cards: []
   })
@@ -76,7 +89,11 @@ const CardPage = ({ stacks }) => {
 
   return (
     <>
-      <ClientCardDrawer allCardsIsOpen={state.allCardsIsOpen} drawerCallback={drawerCallback} stacks={stacks} cards={state.cards} />
+      <ClientCardDrawer
+        stacks={stacks}
+        cards={state.cards} 
+        allCardsIsOpen={state.allCardsIsOpen}
+        drawerCallback={drawerCallback} />
       <Grid container spacing={3}>
         <Grid item xs={12}>
           <ButtonGroup

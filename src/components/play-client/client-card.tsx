@@ -8,7 +8,9 @@ import Grid from "@material-ui/core/Grid"
 
 import CardFace from "../card-face"
 
-const ClientCards = ({ cards, discardCard }) => (
+import {Stack} from "./index"
+
+const ClientCards = ({ cards, discardCard }: { cards: Stack, discardCard: Function}) => (
   <Grid container spacing={3}>
     {map(
       card => (
