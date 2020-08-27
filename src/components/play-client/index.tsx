@@ -4,13 +4,9 @@ import Button from "@material-ui/core/Button"
 import ButtonGroup from "@material-ui/core/ButtonGroup"
 import Grid from "@material-ui/core/Grid"
 import List from "@material-ui/core/List"
-import ListItem from "@material-ui/core/ListItem"
-import ListItemSecondaryAction from "@material-ui/core/ListItemSecondaryAction"
-import ListItemText from "@material-ui/core/ListItemText"
-import IconButton from "@material-ui/core/IconButton"
-import DoubleArrowIcon from "@material-ui/icons/DoubleArrow"
+import Tooltip from "@material-ui/core/Tooltip"
 
-import { identity, map, sortBy, without } from "ramda"
+import { identity, map, reject, sortBy, without } from "ramda"
 import ClientCards from "./client-card"
 import ClientCardDrawer from "./client-card-drawer"
 import StackList from "./stack-list"
@@ -88,7 +84,15 @@ const CardPage = ({ stacks }: { stacks: Stacks }) => {
   const discardAction = (card: Card) => () => {
     const newCards = without([card], state.cards)
     setState({ ...state, cards: newCards })
-  } 
+  }
+
+  const showCoreRules = () => {
+    const newCards = reject(
+      card => card.back.tags.includes("player"),
+      stacks["core-rules"]
+    )
+    setState({...state, cards: newCards})
+  }
 
   return (
     <>
@@ -112,13 +116,22 @@ const CardPage = ({ stacks }: { stacks: Stacks }) => {
             color="secondary"
             aria-label="outlined primary button group"
           >
-            <Button onClick={() => drawerCallback(true)}>All Cards</Button>
-            <Button onClick={() => newCharacter(stacks, state, setState)}>
-              New Character
-            </Button>
-            <Button onClick={() => newEncounter(stacks, state, setState)}>
-              New Encounter
-            </Button>
+            <Tooltip title="Show a drawer containing all cards">
+              <Button onClick={() => drawerCallback(true)}>All Cards</Button>
+            </Tooltip>
+            <Tooltip title="Deal all the Core Rules cards">
+              <Button onClick={showCoreRules}>Core Rules</Button>
+            </Tooltip>
+            <Tooltip title="Create a new random character">
+              <Button onClick={() => newCharacter(stacks, state, setState)}>
+                New Character
+              </Button>
+            </Tooltip>
+            <Tooltip title="Create a new random encounter">
+              <Button onClick={() => newEncounter(stacks, state, setState)}>
+                New Encounter
+              </Button>
+            </Tooltip>
           </ButtonGroup>
         </Grid>
         <Grid item xs={12}>

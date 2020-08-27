@@ -12,6 +12,7 @@ import ListItem from "@material-ui/core/ListItem"
 import ListItemSecondaryAction from "@material-ui/core/ListItemSecondaryAction"
 import ListItemText from "@material-ui/core/ListItemText"
 import NavigateNextIcon from "@material-ui/icons/NavigateNext"
+import Tooltip from "@material-ui/core/Tooltip"
 
 import { Card, Stacks } from "./index"
 
@@ -39,13 +40,15 @@ function cardListItem(classes, card: Card, dealCardAction: Function) {
     <ListItem button className={classes.nested} onClick={onClick}>
       <ListItemText primary={card.name} />
       <ListItemSecondaryAction>
-        <IconButton
-          edge="end"
-          aria-label="deal"
-          onClick={onClick}
-        >
-          <NavigateNextIcon />
-        </IconButton>
+        <Tooltip title="Deal this specific card">
+          <IconButton
+            edge="end"
+            aria-label="deal"
+            onClick={onClick}
+          >
+            <NavigateNextIcon />
+          </IconButton>
+        </Tooltip>
       </ListItemSecondaryAction>
     </ListItem>
   )
@@ -63,13 +66,15 @@ export default function StackList({ stacks, stackName, dealStackAction, dealCard
         {isOpen ? <ExpandLess /> : <ExpandMore />}
         <ListItemText primary={stackName} />
         <ListItemSecondaryAction>
-          <IconButton
-            edge="end"
-            aria-label="deal"
-            onClick={dealStackAction(stackName)}
-          >
-            <DoubleArrowIcon />
-          </IconButton>
+          <Tooltip title="Deal a random card from this stack">
+            <IconButton
+              edge="end"
+              aria-label="deal"
+              onClick={dealStackAction(stackName)}
+            >
+              <DoubleArrowIcon />
+            </IconButton>
+          </Tooltip>
         </ListItemSecondaryAction>
       </ListItem>
       <Collapse in={isOpen} timeout="auto" unmountOnExit>
