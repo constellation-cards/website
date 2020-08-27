@@ -8,7 +8,14 @@ import Grid from "@material-ui/core/Grid"
 
 import CardFace from "../card-face"
 
-const ClientCards = ({ cards, discardCard }) => (
+import { Stack } from "./index"
+
+interface ClientCardsProps {
+  cards: Stack
+  discardAction: Function
+}
+
+const ClientCards = ({ cards, discardAction }: ClientCardsProps) => (
   <Grid container spacing={3}>
     {map(
       card => (
@@ -19,7 +26,7 @@ const ClientCards = ({ cards, discardCard }) => (
               color="primary"
               aria-label="outlined primary button group"
             >
-              <Button onClick={() => discardCard(card)}>Discard</Button>
+              <Button onClick={discardAction(card)}>Discard</Button>
             </ButtonGroup>
           </Grid>
           <Grid item xs={12} md={6}>
