@@ -13,6 +13,7 @@ import Typography from "@material-ui/core/Typography"
 import HomeIcon from "@material-ui/icons/Home"
 import MenuBookIcon from "@material-ui/icons/MenuBook"
 import ViewAgendaIcon from "@material-ui/icons/ViewAgenda"
+import PlayArrowIcon from "@material-ui/icons/PlayCircleOutline"
 import PictureAsPdfIcon from "@material-ui/icons/PictureAsPdf"
 import PrintIcon from "@material-ui/icons/Print"
 import GitHubIcon from "@material-ui/icons/GitHub"
@@ -70,6 +71,9 @@ const Header = ({ siteTitle }) => {
         </IconLink>
         <IconLink title={"All Cards"} to={`/all-cards`}>
           <ViewAgendaIcon />
+        </IconLink>
+        <IconLink title={"Play Interactive"} to={`/play`}>
+          <PlayArrowIcon />
         </IconLink>
         <IconExternalLink title={"PDF (Web)"} href={withPrefix(`/cards.pdf`)}>
           <PictureAsPdfIcon />
