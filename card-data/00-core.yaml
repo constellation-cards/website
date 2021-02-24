@@ -1,21 +1,21 @@
 - template: &template
     tags:
       - core-rules
-- template: &gmcard
+- template: &agenda
     tags:
       - core-rules
-      - player
+      - agenda
     desc: >
-      Several core rules are roles assigned to a single player.
+      During play, you can speak from one of several agendas.
 
-      These roles can be assigned individually to several people,
+      These agendas can be assigned individually to several people,
       or all given to a single player ("the Game Master" or "the GM").
 
-      The roles can change hands during the game.
-      You cannot take a role away from someone else,
-      but you can ask someone else to give up a role.
+      The agendas can change hands during the game.
+      You cannot take an agenda away from someone else,
+      but you can ask someone else to give up an agenda.
 
-      If you've been assigned a role, you are bound by the Principles.
+      If you've been assigned a agenda, you are bound to speak from it.
 - front: &thegame
     <<: *template
     name: The Game
@@ -53,7 +53,7 @@
       - Look for opportunities to advance your story
       - Support other players' stories
   back:
-    <<: *gmcard
+    <<: *agenda
     <<: *principal
   qty: 6
 - template: &facilitator
@@ -78,7 +78,7 @@
       - away from a cliffhanger or moment of tension
       - away from any player who's had it too long
   back:
-    <<: *gmcard
+    <<: *agenda
     <<: *facilitator
 - template: &loremaster
     <<: *template
@@ -103,7 +103,7 @@
       - How does magic work, anyway?
       - Why are orcs monotheistic?
   back:
-    <<: *gmcard
+    <<: *agenda
     <<: *loremaster
 - template: &referee
     <<: *template
@@ -122,7 +122,7 @@
       - How should a given card's text be interpreted?
       - Is it time to create a new card?
   back:
-    <<: *gmcard
+    <<: *agenda
     <<: *referee
 - template: &storyteller
     <<: *template
@@ -146,7 +146,7 @@
       - Don't steal agency or spotlight from the PCs
       - Initiate actions that prompt a PC response
   back:
-    <<: *gmcard
+    <<: *agenda
     <<: *storyteller
 - template: &challenges
     <<: *template
