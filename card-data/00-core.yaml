@@ -1,10 +1,12 @@
 - template: &template
     tags:
       - core-rules
-- template: &agenda
+- template: &agendafront
     tags:
       - core-rules
       - agenda
+- template: &agendaback
+    <<: *agendafront
     desc: >
       During play, you can speak from one of several agendas.
 
@@ -26,14 +28,8 @@
 
       Follow every rule on the cards on the table.
   back: *thegame
-- front: &principles
-    <<: *template
-    name: The Principles
-    desc: >
-      This is a placeholder. Individual settings will introduce their own Principles.
-  back: *principles
 - template: &principal
-    <<: *template
+    <<: *agendafront
     name: The Principal
     rule: Whoever plays this card is a principal. Flip for additional rules.
   front:
@@ -53,11 +49,11 @@
       - Look for opportunities to advance your story
       - Support other players' stories
   back:
-    <<: *agenda
+    <<: *agendaback
     <<: *principal
   qty: 6
 - template: &facilitator
-    <<: *template
+    <<: *agendafront
     name: The Facilitator
     rule: Whoever plays this card is the facilitator. Flip for additional rules.
   front:
@@ -78,10 +74,10 @@
       - away from a cliffhanger or moment of tension
       - away from any player who's had it too long
   back:
-    <<: *agenda
+    <<: *agendaback
     <<: *facilitator
 - template: &loremaster
-    <<: *template
+    <<: *agendafront
     name: The Loremaster
     rule: Whoever plays this card is the loremaster. Flip for additional rules.
   front:
@@ -103,10 +99,10 @@
       - How does magic work, anyway?
       - Why are orcs monotheistic?
   back:
-    <<: *agenda
+    <<: *agendaback
     <<: *loremaster
 - template: &referee
-    <<: *template
+    <<: *agendafront
     name: The Referee
     rule: Whoever plays this card is the referee. Flip for additional rules.
   front:
@@ -122,10 +118,10 @@
       - How should a given card's text be interpreted?
       - Is it time to create a new card?
   back:
-    <<: *agenda
+    <<: *agendaback
     <<: *referee
 - template: &storyteller
-    <<: *template
+    <<: *agendafront
     name: The Storyteller
     rule: Whoever plays this card is the storyteller. Flip for additional rules.
   front:
@@ -146,7 +142,7 @@
       - Don't steal agency or spotlight from the PCs
       - Initiate actions that prompt a PC response
   back:
-    <<: *agenda
+    <<: *agendaback
     <<: *storyteller
 - template: &challenges
     <<: *template
