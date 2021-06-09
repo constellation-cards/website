@@ -70,34 +70,6 @@
       - Show off needlessly
       - Push things for the sake of pushing
       - Take advantage of someone's emotions
-- front: &Chi
-    <<: *tfront
-    name: Chi
-    desc: >
-      //"The mind directs the body's power. I get it now." -- Basler
-
-      Through training, mindfulness, and practice,
-      you've learned to use your own mind and body as a tool.
-
-      Chi lets you fight, move, and act with grace, power, and precision.
-      You can push your own abilities past normal limits, or unlock new ones.
-    prompts:
-      - Use your body's abilities in place of weapons, armor, or equipment
-      - Focus inner strength to resist torment or temptation
-      - Gain an understanding of someone from how they move
-  back:
-    <<: *tback
-    name: Chi
-    desc: >
-      //"Well, I can't pick locks with my fingernails, can I?" -- Basler
-
-      Your training is demanding,
-      and while your body is versatile and powerful,
-      it can't compete with everything.
-    prompts:
-      - Face a problem that requires tools after all
-      - Spend time honing yourself instead of accomplishing an important goal
-      - Reveal your abilities to someone you'd rather not see them
 - front: &Instinct
     <<: *tfront
     name: Instinct
@@ -211,6 +183,34 @@
       - The gadget has unexpected side effects or fails to work at a key moment
       - A gadget malfunctions or breaks in interesting ways
       - People distrust or avoid your strange science
+- front: &Training
+    <<: *tfront
+    name: Training
+    desc: >
+      //"The mind directs the body's power. I get it now." -- Basler
+
+      Through exercise, mindfulness, and practice,
+      you've learned to use your own mind and body as a tool.
+
+      Training lets you fight, move, and act with grace, power, and precision.
+      You can push your own abilities past normal limits, or unlock new ones.
+    prompts:
+      - Use your body's abilities in place of weapons, armor, or equipment
+      - Focus inner strength to resist torment or temptation
+      - Gain an understanding of someone from how they move
+  back:
+    <<: *tback
+    name: Training
+    desc: >
+      //"Well, I can't pick locks with my fingernails, can I?" -- Basler
+
+      Your discipline is demanding,
+      and while your body is versatile and powerful,
+      it can't compete with everything.
+    prompts:
+      - Face a problem that requires tools after all
+      - Spend time honing yourself instead of accomplishing an important goal
+      - Reveal your abilities to someone you'd rather not see them
 - front: &Wits
     <<: *tfront
     name: Wits
