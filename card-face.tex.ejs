@@ -28,11 +28,15 @@ function formatDesc(line) {
 <% } -%>
 \vspace*{\fill}
 <% if (rule) { -%>
-\begin{adjustwidth}{1.5cm}{1.5cm}
+\begin{adjustwidth}{1.2cm}{1.2cm}
 {\cardrulefont\center\emph
 <%- rule %>\par
 }
 \end{adjustwidth}
+{\cardpromptfont\center
+Core Rules
+\par
+}
 <% } -%>
 \begin{tikzpicture}[remember picture,overlay,shift={(current page.south west)}]
 <% for (let i = 0; i < icons.length; i++) { -%>
