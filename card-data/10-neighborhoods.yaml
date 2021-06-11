@@ -76,8 +76,8 @@
     prompts:
       - What kinds of transportation vehicles or technology were or are found here?
       - Did the city let its trading partners down, or the other way around?
-      - What things are in short supply because of the situation?
-      - Who could provide them? Why aren't they?
+      - What is now short supply?
+      - Who could help? Why don't they?
 - front: &Marketplace
     <<: *neighborhood-front
     name: The Marketplace
@@ -95,7 +95,7 @@
     prompts:
       - What goods is the neighborhood best known for?
       - What can be found here, but is unknown to most visitors?
-      - Who holds power over what is produced and distributed?
+      - Who controls what's found here?
   back:
     <<: *neighborhood-back
     name: The Marketplace
@@ -182,7 +182,7 @@
     prompts:
       - What belief system or systems were practiced here?
       - What motive, such as greed, corruption, or apathy, stands against them?
-      - How has a lack of faith helped the city? Hurt the city?
+      - How has a lack of faith helped, or hurt?
 - front: &Underground
     <<: *neighborhood-front
     name: The Underground

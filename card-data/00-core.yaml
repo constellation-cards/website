@@ -157,10 +157,9 @@
       There's no challenge if this can't happen.
     prompts:
       - You're navigating rough terrain, and might fall or lose equipment
-      - You're in a tense conversation and might offend someone
       - You're fighting or fleeing a dangerous monster, and might get hurt
       - You're working with complex magic or technology, and it might malfunction
-      - You're confronting an emotionally fraught situation, and might lose self control
+      - You're confronting an emotionally fraught situation where harm is possible
   back:
     <<: *challenges
     desc: >

@@ -16,11 +16,9 @@
       - core-rules
     iconImg: condition
     desc: >
-      You've been affected by a temporary problem.
-      Injury, delirium, debts, magical curses, and so on are all conditions.
+      You've been affected by injury, delirium, debts, magical curses, or other problems.
 
-      You can choose to take a condition to get a hit. Describe how.
-      Players who challenge you can suggest conditions to meet it.
+      You can take a condition to get a hit. Describe how. Players who challenge you can suggest conditions to meet it.
       
       The condition is fictionally true and limits your actions.
       If you narrate an action the condition would interfere with,
@@ -44,7 +42,7 @@
     prompts:
       - "You choose to take Disarmed to score a telling blow on the enemy."
       - "The facilitator or another player thinks touching the idol will leave you Magicked."
-      - "A poisonous cloud envelops you. If you want to stay in it, meet the challenge by taking Weakened, otherwise you must leave the cloud."
+      - "A poisonous cloud envelops you. If you want to stay in it, meet the challenge by taking Weakened."
       - "You're already Hurt, but you can worsen it to Wounded to get a hit. You attack, blood gushing from reopened wounds, and strike down your enemy before falling in a faint yourself."
       - "You spend a scene being healed by a priestess to discard Hurt. You wanted to talk to her anyway, about..."
       - "You spend a week of downtime doing odd jobs to pay off Indebted. During that time, you listen for new adventure opportunities."
@@ -135,17 +133,13 @@
     name: Obliged
     desc: >
       //"We will deal with the brigands, your highness." -- Emory
-      
-      You took on or were given an important responsibility.
-      
-      Someone or something will be watching you to see you
-      uphold your end of the bargain.
+
+      You have a heavy responsibility, and someone is watching to make sure you uphold it.
       There will be consequences if you delay or decline.
-      
-      Your patron might grow impatient or asks for more.
-      Rivals or enemies might interfere.
+
+      Your patron might grow impatient or demand more. Rivals or enemies might interfere.
       The task might need to be kept secret, lest someone be hurt.
-      
+
       Do you have to fight, haggle, or steal something to make good?
       Do you end up making new enemies? New friends?
     prompts:
@@ -202,13 +196,10 @@
       //"They definitely saw us!" -- Basler
       
       You are being actively hunted, by someone or something that wishes you ill.
-      
-      You must stay hidden from searchers,
-      conceal or disguise yourself when in the open,
-      or take other steps to avoid attention.
-      
-      Your pursuers might have some idea about your immediate goals,
-      and work to thwart them as well.
+
+      You must stay hidden, disguise yourself when in the open, or take other steps to avoid attention.
+
+      Your pursuers might have some idea about your immediate goals, and work to thwart them as well.
 
       What new discoveries does your escape lead you to?
       How do you change your identity or habits to escape notice?
@@ -236,7 +227,7 @@
     prompts:
       - Charms, illusions, delusions, and deceptions
       - Magical prohibitions against entering or leaving a place
-      - Vexing problems, minor bad luck, or other trickery
+      - Vexing problems, bad luck, or other trickery
   back:
     <<: *tback
     name: Cursed
@@ -368,16 +359,14 @@
       //"I can't feel the grimoire! I can't feel ANY magic!" -- Tana
       
       A sense or faculty you normally depend on has been temporarily lost.
-      You might have pushed yourself past a limit,
-      or been affected by a disease or magical effect.
-      
-      You are unable to use the affected abilities.
-      If your mind or senses are affected,
-      you may make important mistakes in judgement.
+      You might have pushed yourself past a limit, or been affected by a disease or magical effect.
 
-      What do things change for you, in practical terms and in your attitude?
-      What new understanding do you gain? What hard truths do you deny?
-      Whose support is vital during your recuperation?
+      You are unable to use the affected abilities.
+      If your mind or senses are affected, you may make important mistakes in judgement.
+
+      What changes for you, physically or emotionally?
+      What new understanding do you gain?
+      Do you try to go back to how you were, or go forward to something new?
     prompts:
       - Temporarily blind, deaf, or mute
       - Unable to cast spells or use other special abilities
