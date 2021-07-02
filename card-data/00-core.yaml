@@ -91,7 +91,6 @@
       - What languages might my character learn to speak?
       - When did the dragons disappear?
       - How does magic work, anyway?
-      - Why are orcs monotheistic?
   back:
     <<: *agendaback
     <<: *loremaster

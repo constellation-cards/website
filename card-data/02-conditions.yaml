@@ -53,7 +53,8 @@
     desc: >
       //"Ow! Watch who you carve up with that thing!" -- Basler
       
-      You've been bloodied, bruised, stunned, or otherwise physically harmed.
+      You've been bloodied, bruised, stunned, or suffered some other
+      temporary physical harm.
       
       You can't exert yourself too much without making it worse.
       Enemies can target existing sites of injury as well.
@@ -253,7 +254,7 @@
     <<: *tfront
     name: Altered
     desc: >
-      //"A leg brace of tree bark and vines? Well, at least I can walk." -- Woody
+      //"Don't let them peck you, or you'll croak with the voice of the Raven God" -- Woody
       
       Powerful magic has physically changed your appearance or abilities.
       Your new features might be helpful in limited ways,
@@ -266,29 +267,28 @@
       What mystic ingredient or substance can hold the change at bay, or undo it?
       Who looks at you funny, and what might they do next?
     prompts:
-      - Animal ears or tails
-      - Monstrous modifications like claws, fangs, or scales
-      - Partial petrification or zombification
+      - Animal traits like tails, claws, or scales
+      - Limbs or extremities turned to stone or plant life
+      - Physically marked with supernatural quirks
   back:
     <<: *tback
     name: Transformed
     desc: >
-      //"Aww, the doggie is barking!... Basler?!" -- Tana
+      //"Hey, that raven looks familiar... Basler?!" -- Tana
       
       You've been physically remade into something new by powerful magic.
       You can still function, but it's a big adjustment.
-      Your new form's abilities don't match your old one's.
       
-      People may flee or attack at the sight of you.
+      Other people may react with fear, curiosity, or hostility.
       You may be unable to speak or explain yourself to them.
       
-      Who, or what, can undo the baneful magic you're under?
-      What must you do or obtain or discard to return to normal?
-      Who now hunts or fears you?
+      Who or what could undo the magic that holds you?
+      What must you do, obtain, or discard to return to your former self?
+      Who now hates or hunts you?
     prompts:
       - Polymorphed into an animal
-      - Changed into a monster
-      - Zombified
+      - Changed into a supernatural creature
+      - Made undead or demonic
   qty: 6
 - front:
     <<: *tfront
