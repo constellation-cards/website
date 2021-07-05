@@ -33,9 +33,11 @@ function formatDesc(line) {
 <%- rule %>\par
 }
 \end{adjustwidth}
+<% } -%>
+<% if (stack) { -%>
 {\cardpromptfont\center
-Core Rules
-\par
+    <%- stack %>
+    \par
 }
 <% } -%>
 \begin{tikzpicture}[remember picture,overlay,shift={(current page.south west)}]

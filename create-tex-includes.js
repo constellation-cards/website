@@ -19,7 +19,7 @@ const {
   reject,
 } = require("ramda")
 
-const { getCardData, iconForTag } = require("./lib/card-data")
+const { getCardData, iconForTag, stackForCard } = require("./lib/card-data")
 
 const tagsToIcons = faceData => {
   return reject(isNil, map(iconForTag, faceData.tags))
@@ -28,6 +28,7 @@ const tagsToIcons = faceData => {
 async function writeCardAsTex(face, extraFlag) {
   const faceData = {
     name: propOr("", "name", face),
+    stack: stackForCard(face),
     tags: prepend(extraFlag, propOr([], "tags", face)),
     img: iconForTag(propOr("", "iconImg", face)) || propOr("", "img", face),
     desc: propOr("", "desc", face),
