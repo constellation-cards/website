@@ -16,6 +16,6 @@
       doesn't mean your character isn't courageous,
       only that it's not going to be the quality we see most often or most plainly.
     prompts:
-      - "Topside: get a hit by flipping the card"
-      - "Flipside: flip when a prompt is narrated by anyone"
+      - "Front: get a hit by flipping the card"
+      - "Back: flip when a prompt is narrated by anyone"
   back: *characters
